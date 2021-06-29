@@ -12,6 +12,10 @@ module.exports = ({
           test: /\.svg$/,
           use: "@svgr/webpack",
         },
+        {
+          test: /\.png$/,
+          use: "src/assets",
+        },
       ]
     );
     return config;
