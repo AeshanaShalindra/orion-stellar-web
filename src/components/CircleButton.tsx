@@ -26,10 +26,11 @@ export default function CircleButton({ title }: Props) {
           transition: transform .2s; 
 
           cursor: pointer;
+          border: none;
         }
         button:active,
         button:hover {
-          background-color: rgba(0, 0, 0, 0.4);
+          /* background-color: rgba(0, 0, 0, 0.4); */
           transform: scale(1.05)
         }
         .text{
