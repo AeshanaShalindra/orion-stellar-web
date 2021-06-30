@@ -117,46 +117,65 @@ export default function Index() {
         </div>
         <span className="hiddenTitle">Uniqueness</span>
         <div className="card-section">
-           <InfoCard 
-           image="/images/card1.png" 
-           title="Sri Lanka’s First High Density Data Center."
-           description="15Kw+ per Rack
+          <InfoCard
+            image="/images/card1.png"
+            title="Sri Lanka’s First High Density Data Center."
+            description="15Kw+ per Rack
            Design PUE at 1.4
            Best Power Efficiency"
-           />
-           <InfoCard 
-           image="/images/card2.png" 
-           title="Sri Lanka’s First Carrier Neutral Data Center."
-           description="15Kw+ per Rack
+          />
+          <InfoCard
+            image="/images/card2.png"
+            title="Sri Lanka’s First Carrier Neutral Data Center."
+            description="15Kw+ per Rack
            Design PUE at 1.4
            Best Power Efficiency"
-           />
-           <InfoCard 
-           image="/images/card3.png" 
-           title="Superior Rack Space per Footprint"
-           description="15Kw+ per Rack
+          />
+          <InfoCard
+            image="/images/card3.png"
+            title="Superior Rack Space per Footprint"
+            description="15Kw+ per Rack
            Design PUE at 1.4
            Best Power Efficiency"
-           />
-           <InfoCard 
-           image="/images/card4.png" 
-           title="Fine Energy Metering Granularity"
-           description="Able to meter power usage at U Level “Pay as you go“ model"
-           />
-           <InfoCard 
-           image="/images/card5.png" 
-           title="Colombo’s only Tier 3 Certified Data Center."
-           description="15Kw+ per Rack
+          />
+          <InfoCard
+            image="/images/card4.png"
+            title="Fine Energy Metering Granularity"
+            description="Able to meter power usage at U Level “Pay as you go“ model"
+          />
+          <InfoCard
+            image="/images/card5.png"
+            title="Colombo’s only Tier 3 Certified Data Center."
+            description="15Kw+ per Rack
            Design PUE at 1.4
            Best Power Efficiency"
-           />
-           <InfoCard 
-           image="/images/card6.png" 
-           title="Strategic Location Advantage"
-           description="15Kw+ per Rack
+          />
+          <InfoCard
+            image="/images/card6.png"
+            title="Strategic Location Advantage"
+            description="15Kw+ per Rack
            Design PUE at 1.4
            Best Power Efficiency"
-           />
+          />
+        </div>
+        <div className="partner-section">
+          <div className="title">
+            <h5>Strategic partners</h5>
+          </div>
+          <div className="logos">
+            <img src="/images/logos/schneider.png" alt="schneider" />
+            <img src="/images/logos/cat.png" alt="cat" />
+            <img src="/images/logos/socomec.png" alt="socomec" />
+            <img src="/images/logos/apc.png" alt="apc" />
+            <img src="/images/logos/cisco.png" alt="cisco" />
+          </div>
+          <div className="logos">
+            <img src="/images/logos/corning.png" alt="corning" />
+            <img src="/images/logos/siemens.png" alt="siemens" />
+            <img src="/images/logos/hisharp.png" alt="hisharp" />
+            <img src="/images/logos/paessler.png" alt="paessler" />
+            <img src="/images/logos/css.png" alt="css" />
+          </div>
         </div>
       </div>
       <style jsx>{ `
@@ -358,6 +377,42 @@ export default function Index() {
           display: flex;
           justify-content: space-evenly;
           flex-wrap: wrap;
+        }
+        .partner-section{
+          width: 95%;
+          margin-top: 160px;
+        }
+        .partner-section .title{
+          width: 484px;
+          height: 46px;
+          background: #FFFFFF;
+          opacity: 0.9;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          margin-bottom: 100px;
+        }
+        .partner-section .title h5{
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 101.69%;
+          letter-spacing: 0.595em;
+          text-transform: uppercase;
+          color: #000000;
+        }
+        .partner-section .logos{
+          width:100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .partner-section .logos img{
+          height: fit-content;
         }
         @media (min-width: 769px) {
           h1 {
