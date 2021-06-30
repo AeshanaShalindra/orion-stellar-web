@@ -7,6 +7,8 @@ import StarIcon from "../assets/star-alt.svg";
 import LocationIcon from "../assets/pin-alt.svg";
 import PaidIcon from "../assets/paid-alt.svg";
 import Image from 'next/image';
+import React from "react";
+import CardButton from "../components/CardButton";
 
 export default function Index() {
   return (
@@ -33,7 +35,7 @@ export default function Index() {
             <h1><strong>High Density</strong> Data Center</h1>
             <h5>Nimble | Connected | Sustainable</h5>
           </div>
-          <CircleButton title="Virtual Tour" />
+          <CircleButton title="Virtual Tour" dark={ true } />
         </div>
         <div className="main-row last">
           <div style={ { display: "flex" } }>
@@ -87,6 +89,29 @@ export default function Index() {
               added services to unburden these challenges such that businesses could focus on their core
               business and innovation in their forward march to become a digital enterprise.</p>
           </div>
+        </div>
+        <div className="service-card-section">
+          <div>
+            <CardButton title="enterprise" image="/images/enterprise.png" />
+            <CardButton title="start up" image="/images/startup.png" marginLeft="60px" />
+          </div>
+          <CircleButton title="More Services" />
+        </div>
+        <div className="env-section">
+          <div className="content">
+            <h1>Environmental</h1>
+            <h2>Sustainability</h2>
+            <ul>
+              <li>IT consumes 3% of the power off the grid globally and the power demand keep increasing
+                hence the need for power efficient datacenters has become a necessity in terms of
+                environmental protection. </li>
+              <li>Orion stellar data center has the most optimum Power Usage
+                Efficiency (PUE) in the country.</li>
+              <li>Lighting control system that could give 50% of energy saving</li>
+              <li>LEED silver certified green building housing the datacenter</li>
+            </ul>
+          </div>
+          <img src="/images/environment.png" alt="environment" />
         </div>
       </div>
       <style jsx>{ `
@@ -209,6 +234,7 @@ export default function Index() {
         .service {
           display: flex;
           background: linear-gradient(125.54deg, #0F1D31 30.98%, rgba(62, 9, 114, 0.86) 163.03%);
+          flex-wrap: wrap;
         }
         .service h1{
           font-family: Segoe UI;
@@ -228,7 +254,46 @@ export default function Index() {
         .service .content{
           padding: 200px 120px
         }
-
+        .service .service-card-section{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: -91px;
+        }
+        .env-section{
+          display: flex;
+          align-items: center;
+        }
+        .env-section img{
+          height: fit-content;
+        }
+        .env-section h1{
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 130px;
+          line-height: 173px;
+          color: #00CB76;
+        }
+        .env-section h2{
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 100px;
+          line-height: 133px;
+          color: #FFFFFF;
+          margin: -40px 0 60px 0;
+        }
+        .env-section ul li{
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 32px;
+          color: #FFFFFF;
+          mix-blend-mode: normal;
+        }
         @media (min-width: 769px) {
           h1 {
             font-size: 3rem;

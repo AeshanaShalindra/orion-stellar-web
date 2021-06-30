@@ -1,8 +1,9 @@
 
 type Props = {
   title: string;
+  dark?: boolean;
 };
-export default function CircleButton({ title }: Props) {
+export default function CircleButton({ title, dark }: Props) {
   return (
     <>
       <button
@@ -21,7 +22,7 @@ export default function CircleButton({ title }: Props) {
           width: 185px;
           height: 185px;
 
-          background-color: #000000;
+          background-color: ${dark ? "#000" : "#fff"};
           border-radius: 1000px;
           transition: transform .2s; 
 
@@ -30,7 +31,6 @@ export default function CircleButton({ title }: Props) {
         }
         button:active,
         button:hover {
-          /* background-color: rgba(0, 0, 0, 0.4); */
           transform: scale(1.05)
         }
         .text{
@@ -40,7 +40,7 @@ export default function CircleButton({ title }: Props) {
           font-size: 20px;
           line-height: 23px;
 
-          color: #FFFFFF;
+          color: ${dark ? "#fff" : "#000"};
         }
       `}</style>
     </>
