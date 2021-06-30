@@ -9,6 +9,7 @@ import PaidIcon from "../assets/paid-alt.svg";
 import Image from 'next/image';
 import React from "react";
 import CardButton from "../components/CardButton";
+import InfoCard from "../components/InfoCard";
 
 export default function Index() {
   return (
@@ -110,8 +111,52 @@ export default function Index() {
               <li>Lighting control system that could give 50% of energy saving</li>
               <li>LEED silver certified green building housing the datacenter</li>
             </ul>
+            <img src="/images/cert-leed.png" alt="leed certification" />
           </div>
           <img src="/images/environment.png" alt="environment" />
+        </div>
+        <span className="hiddenTitle">Uniqueness</span>
+        <div className="card-section">
+           <InfoCard 
+           image="/images/card1.png" 
+           title="Sri Lanka’s First High Density Data Center."
+           description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+           />
+           <InfoCard 
+           image="/images/card2.png" 
+           title="Sri Lanka’s First Carrier Neutral Data Center."
+           description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+           />
+           <InfoCard 
+           image="/images/card3.png" 
+           title="Superior Rack Space per Footprint"
+           description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+           />
+           <InfoCard 
+           image="/images/card4.png" 
+           title="Fine Energy Metering Granularity"
+           description="Able to meter power usage at U Level “Pay as you go“ model"
+           />
+           <InfoCard 
+           image="/images/card5.png" 
+           title="Colombo’s only Tier 3 Certified Data Center."
+           description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+           />
+           <InfoCard 
+           image="/images/card6.png" 
+           title="Strategic Location Advantage"
+           description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+           />
         </div>
       </div>
       <style jsx>{ `
@@ -293,6 +338,26 @@ export default function Index() {
           line-height: 32px;
           color: #FFFFFF;
           mix-blend-mode: normal;
+        }
+        .env-section .content img{
+          position: absolute;
+          left: 894px;
+          margin-top: -60px;
+        }
+        .hiddenTitle{
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 336px;
+          line-height: 483px;
+          color: rgba(0, 0, 0, 0.3);
+          margin-bottom: -99px;
+          margin-top: -163px;
+        }
+        .card-section{
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
         }
         @media (min-width: 769px) {
           h1 {
