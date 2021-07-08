@@ -54,8 +54,13 @@ export default function Index() {
               Attributes
             </h2>
             <ul>
-              <li>A <b>new breed</b> technology company</li>
-              <li>Emphasis on <b>stellar performance</b> and <b>global standards</b></li>
+              <li>
+                A <b>new breed</b> technology company
+              </li>
+              <li>
+                Emphasis on <b>stellar performance</b> and{" "}
+                <b>global standards</b>
+              </li>
               <li>
                 Lean and mean organization structure with a start up thinking
               </li>
@@ -205,9 +210,21 @@ export default function Index() {
           />
         </div>
 
-
         <BackTitle title="Team" />
         <img src="/images/team.png" alt="team" />
+
+        <div className="learn-back">
+          <h2 className="main-title learn">Learn more about us!</h2>
+          <h3>Have a casual chat with our COO</h3>
+          <div>
+            <h4>Nalaka Bandara</h4>
+            <small>Chief Operating Officer</small>
+            <img src="/images/logo-white.svg" alt="logo" />
+          </div>
+          <h4 className="contact">+94 77 3335100</h4>
+          <img className="coo" src="/images/team/Nalaka.png" alt="nalaka" />
+        </div>
+
         <Footer />
       </div>
       <style jsx>{`
@@ -240,23 +257,23 @@ export default function Index() {
         }
         .company-back {
           position: absolute;
-    width: 679px;
-    height: 396px;
-    left: 0;
-    top: 403px;
-    background: #000000;
-    z-index: 0;
+          width: 679px;
+          height: 396px;
+          left: 0;
+          top: 403px;
+          background: #000000;
+          z-index: 0;
         }
         .company-back p {
           width: 338px;
-    height: 157px;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: 350;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffffff;
-    margin: 100px 278px;
+          height: 157px;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+          margin: 100px 278px;
         }
         .mtp-wrap {
           position: absolute;
@@ -328,13 +345,15 @@ export default function Index() {
           left: 160px;
           top: 1296px;
         }
+
         .value-back {
           width: 100%;
           height: 458px;
           background: #000000;
-          margin-top:356px;
-          margin-bottom:128px;
+          margin-top: 356px;
+          margin-bottom: 128px;
         }
+
         .value-back ul {
           margin: 100px 164px;
         }
@@ -485,6 +504,68 @@ export default function Index() {
           flex-wrap: wrap;
           justify-content: space-around;
           align-items: flex-start;
+        }
+        .learn-back {
+          width: 100%;
+          height: 458px;
+          background: #000000;
+          margin-top: 256px;
+          margin-bottom: 128px;
+        }
+        .learn-back h3 {
+          position: relative;
+          top: -180px;
+          left: 160px;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 60px;
+          line-height: 94.01%;
+          color: #ffffff;
+        }
+        .learn-back div {
+          position: relative;
+          top: -271px;
+          left: 160px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 60%;
+        }
+        .learn-back h4 {
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 115.51%;
+          color: #ffffff;
+          position: relative;
+        }
+        .learn-back .contact {
+          top: -338px;
+          left: 509px;
+        }
+        .learn-back small {
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 40px;
+          color: #ffffff;
+        }
+        .learn-back div img {
+          width: 259px;
+        }
+        .learn-back .coo {
+          position: relative;
+          top: -692px;
+          left: 1400px;
+        }
+        .main-title.learn {
+          position: relative;
+          top: -160px;
+          left: 160px;
         }
         @media (min-width: 769px) {
           h1 {
