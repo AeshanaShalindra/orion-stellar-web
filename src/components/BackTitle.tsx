@@ -12,7 +12,7 @@ export default function BackTitle({ title, size, bottom }: Props) {
           font-family: Segoe UI;
           font-style: normal;
           font-weight: bold;
-          font-size: ${size || 336}px;
+          font-size: ${size || 32}vh;
           line-height: 483px;
           color: rgba(0, 0, 0, 0.3);
           margin-bottom: -${bottom || 99}px;

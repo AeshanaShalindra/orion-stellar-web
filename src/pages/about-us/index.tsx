@@ -17,8 +17,87 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container cover">
         <NavBar />
+        <h2 className="main-title company">Company</h2>
+        <div className="company-back">
+          <p>
+            Orionstellar is a newly established digital infrastructure services
+            brand from digital realty pvt limited, jointly held by Dialog
+            Broadband Network (Pvt) Limited, a fully owned subsidiary of Dialog
+            Axiata Plc and St. Anthony’s Property Developers (Private) Limited
+            (SAPD)
+          </p>
+        </div>
+
+        <div className="mtp-wrap">
+          <h2 className="main-title mtp">Our MTP</h2>
+          <h3 className="sub-title mtp">(Massive Transformative Purpose)</h3>
+          <h4 className="quote mtp">
+            “Simplify enterprise digital infrastructure challenges to accelerate
+            digitalization & growth.”
+          </h4>
+        </div>
+
+        <div className="brand-back">
+          <h2 className="main-title brand">Brand</h2>
+          <h4 className="quote brand">
+            “Orion” from the mother brand Orion City + “stellar” for Star
+            Performance.
+            <br />
+            <b>
+              We Connect the dots and raise the industry bars to reach the
+              heights.
+            </b>
+          </h4>
+          <div className="attributes">
+            <h2 className="main-title brand">
+              Our Brand <br />
+              Attributes
+            </h2>
+            <ul>
+              <li>A <b>new breed</b> technology company</li>
+              <li>Emphasis on <b>stellar performance</b> and <b>global standards</b></li>
+              <li>
+                Lean and mean organization structure with a start up thinking
+              </li>
+              <li>A focus in B2B markets in Sri Lanka and the region.</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div className="container service">
+        <h2 className="main-title value">Values</h2>
+        <div className="value-back">
+          <ul>
+            <li>Uncompromised integrity</li>
+            <li>Technology inclusion and equal opportunities</li>
+            <li>power data in decision making (data driven enterprise)</li>
+            <li>continuous improvement to meet global standards</li>
+            <li>commitment to environmental sustainability</li>
+          </ul>
+        </div>
+
+        <div className="stand-for">
+          <h2 className="main-title">What do we stand for:</h2>
+          <div className="stand-list">
+            <div>
+              <img src="/images/target.svg" alt="focus" />
+              <h5>Focus on your core business & innovation</h5>
+            </div>
+            <div>
+              <img src="/images/time.svg" alt="focus" />
+              <h5>Accelerate your digitalisation roadmap</h5>
+            </div>
+            <div>
+              <img src="/images/regulation.svg" alt="focus" />
+              <h5>Rationalise your IT infrastructure cost</h5>
+            </div>
+            <div>
+              <img src="/images/innovation.svg" alt="focus" />
+              <h5>Reduce energy costs</h5>
+            </div>
+          </div>
+        </div>
+
         <BackTitle title="Deliverables" />
         <div className="card-section">
           <InfoCard
@@ -126,6 +205,9 @@ export default function Index() {
           />
         </div>
 
+
+        <BackTitle title="Team" />
+        <img src="/images/team.png" alt="team" />
         <Footer />
       </div>
       <style jsx>{`
@@ -140,34 +222,163 @@ export default function Index() {
           display: flex;
           flex-direction: column;
         }
-        .nav-row {
-          display: flex;
-          justify-content: space-between;
-          flex: 1 1 auto;
-          padding: 0 40px;
-          font-family: "Segoe UI", sans-serif;
+        .main-title {
+          font-family: Segoe UI;
           font-style: normal;
+          font-weight: bold;
+          font-size: 100px;
           color: #ffffff;
-          margin-top: 48px;
-          height: 0;
         }
-        .nav-row .logo h6 {
+        .main-title.company {
+          position: absolute;
+          width: 667px;
+          height: 200px;
+          left: 160px;
+          top: 191px;
+          font-size: 130px !important;
+          z-index: 1;
+        }
+        .company-back {
+          position: absolute;
+    width: 679px;
+    height: 396px;
+    left: 0;
+    top: 403px;
+    background: #000000;
+    z-index: 0;
+        }
+        .company-back p {
+          width: 338px;
+    height: 157px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 100px 278px;
+        }
+        .mtp-wrap {
+          position: absolute;
+          width: 516px;
+          height: 146px;
+          left: 160px;
+          top: 890px;
+        }
+        .main-title.mtp {
+          margin: 0;
+        }
+        .sub-title.mtp {
+          margin: 0;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-size: 22px;
+          color: #ffffff;
+        }
+        .quote {
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          color: #ffffff;
+        }
+        .brand-back {
+          position: absolute;
+          width: 639px;
+          height: 1181px;
+          left: 1024px;
+          top: 690px;
+          padding: 85px;
+          background: linear-gradient(
+            131.77deg,
+            rgba(255, 255, 255, 0.4234) 10.66%,
+            rgba(255, 255, 255, 0.1508) 95.86%
+          );
+          backdrop-filter: blur(30px);
+        }
+        .quote.brand {
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 350;
+          font-size: 30px;
+          line-height: 40px;
+        }
+        .main-title.brand {
+          margin: 0;
+        }
+        .brand-back .attributes {
+          margin-top: 300px;
+        }
+        .brand-back .attributes {
+          margin-top: 300px;
+        }
+        .brand-back .attributes ul li {
+          font-family: Segoe UI;
+          font-style: normal;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: 0.125em;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        .main-title.value {
+          position: absolute;
+          width: 301px;
+          height: 133px;
+          left: 160px;
+          top: 1296px;
+        }
+        .value-back {
+          width: 100%;
+          height: 458px;
+          background: #000000;
+          margin-top:356px;
+          margin-bottom:128px;
+        }
+        .value-back ul {
+          margin: 100px 164px;
+        }
+        .value-back ul li {
           font-family: Segoe UI;
           font-style: normal;
           font-weight: normal;
-          font-size: 20px;
-          letter-spacing: 0.14em;
-          margin-top: 12px;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: 0.125em;
+          text-transform: uppercase;
+          color: #ffffff;
         }
-        .nav-row .logo {
-          flex: 2;
+        .stand-for {
+          width: 100%;
+          padding: 80px;
         }
-        .nav-row .button-list {
+        .stand-for h2 {
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 100px;
+          line-height: 94.01%;
+        }
+        .stand-list {
           display: flex;
-          align-items: flex-start;
-          justify-content: space-around;
-          flex: 1;
-          padding: 0 130px;
+          justify-content: space-evenly;
+          margin-top: 124px;
+        }
+        .stand-list div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .stand-list div h5 {
+          width: 220px;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 156.51%;
+          text-align: center;
+          letter-spacing: 0.045em;
+          color: #ffffff;
         }
         .main-row {
           display: flex;
@@ -216,11 +427,6 @@ export default function Index() {
           letter-spacing: 0.215em;
           text-transform: uppercase;
           color: #ffffff;
-        }
-        .cer-image {
-          height: 102.62px;
-          width: auto;
-          margin-left: 40px;
         }
         .service {
           display: flex;
@@ -280,43 +486,6 @@ export default function Index() {
           justify-content: space-around;
           align-items: flex-start;
         }
-        .partner-section {
-          width: 95%;
-          margin-top: 160px;
-        }
-        .partner-section .title {
-          width: 484px;
-          height: 46px;
-          background: #ffffff;
-          opacity: 0.9;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          margin-bottom: 100px;
-        }
-        .partner-section .title h5 {
-          font-family: Segoe UI;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 101.69%;
-          letter-spacing: 0.595em;
-          text-transform: uppercase;
-          color: #000000;
-        }
-        .partner-section .logos {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          align-items: center;
-        }
-        .partner-section .logos img {
-          height: fit-content;
-        }
-
         @media (min-width: 769px) {
           h1 {
             font-size: 3rem;
