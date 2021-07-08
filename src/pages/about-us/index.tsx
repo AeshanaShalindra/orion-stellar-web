@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import BackTitle from "../../components/BackTitle";
 import ProfileCard from "../../components/ProfileCard";
 import NavBar from "../../components/NavBar";
+import CircleButton from "../../components/CircleButton";
 
 export default function Index() {
   return (
@@ -38,6 +39,9 @@ export default function Index() {
         </div>
 
         <div className="brand-back">
+          <div className="tour-button">
+            <CircleButton title="Virtual Tour" dark={true} />
+          </div>
           <h2 className="main-title brand">Brand</h2>
           <h4 className="quote brand">
             “Orion” from the mother brand Orion City + “stellar” for Star
@@ -48,6 +52,9 @@ export default function Index() {
               heights.
             </b>
           </h4>
+          <div className="mid-button">
+            <CircleButton title="" dark={false} />
+          </div>
           <div className="attributes">
             <h2 className="main-title brand">
               Our Brand <br />
@@ -211,17 +218,19 @@ export default function Index() {
         </div>
 
         <BackTitle title="Team" />
-        <img src="/images/team.png" alt="team" />
+        <img className="team-image" src="/images/team.png" alt="team" />
 
         <div className="learn-back">
           <h2 className="main-title learn">Learn more about us!</h2>
-          <h3>Have a casual chat with our COO</h3>
           <div>
-            <h4>Nalaka Bandara</h4>
-            <small>Chief Operating Officer</small>
-            <img src="/images/logo-white.svg" alt="logo" />
+            <h3>Have a casual chat with our COO</h3>
+            <div>
+              <h4>Nalaka Bandara</h4>
+              <small>Chief Operating Officer</small>
+              <img src="/images/logo-white.svg" alt="logo" />
+            </div>
+            <h4 className="contact">+94 77 3335100</h4>
           </div>
-          <h4 className="contact">+94 77 3335100</h4>
           <img className="coo" src="/images/team/Nalaka.png" alt="nalaka" />
         </div>
 
@@ -312,6 +321,16 @@ export default function Index() {
             rgba(255, 255, 255, 0.1508) 95.86%
           );
           backdrop-filter: blur(30px);
+        }
+        .brand-back .tour-button {
+          position: absolute;
+          top: -87px;
+          right: 95px;
+        }
+        .brand-back .mid-button {
+          position: absolute;
+          top: 485px;
+          right: 708px;
         }
         .quote.brand {
           font-family: Segoe UI;
@@ -505,67 +524,73 @@ export default function Index() {
           justify-content: space-around;
           align-items: flex-start;
         }
+        .team-image {
+          width: 100%;
+        }
         .learn-back {
           width: 100%;
           height: 458px;
           background: #000000;
           margin-top: 256px;
           margin-bottom: 128px;
+          display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
         }
-        .learn-back h3 {
-          position: relative;
-          top: -180px;
-          left: 160px;
+        .learn-back h2 {
+          margin: 0;
+          position: absolute;
+    top: 8143px;
+    left: 160px;
+        }
+        .learn-back div h3 {
           font-family: Segoe UI;
           font-style: normal;
           font-weight: normal;
           font-size: 60px;
           line-height: 94.01%;
           color: #ffffff;
+          margin: 0;
         }
-        .learn-back div {
-          position: relative;
-          top: -271px;
-          left: 160px;
+        .learn-back div div {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-          width: 60%;
+          width: 120%;
+          margin: 80px 0 30px 0;
         }
-        .learn-back h4 {
+        .learn-back div h4 {
           font-family: Segoe UI;
           font-style: normal;
           font-weight: bold;
           font-size: 50px;
           line-height: 115.51%;
           color: #ffffff;
-          position: relative;
+          margin: 0;
         }
-        .learn-back .contact {
+        .learn-back div .contact {
           top: -338px;
           left: 509px;
+          margin: 0;
         }
-        .learn-back small {
+        .learn-back div small {
           font-family: Segoe UI;
           font-style: normal;
           font-weight: normal;
           font-size: 30px;
           line-height: 40px;
           color: #ffffff;
+          margin: 0;
         }
         .learn-back div img {
           width: 259px;
+          margin: 0;
         }
         .learn-back .coo {
-          position: relative;
-          top: -692px;
-          left: 1400px;
         }
         .main-title.learn {
-          position: relative;
-          top: -160px;
-          left: 160px;
         }
         @media (min-width: 769px) {
           h1 {
