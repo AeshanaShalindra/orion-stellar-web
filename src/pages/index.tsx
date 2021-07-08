@@ -3,15 +3,12 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import CircleButton from "../components/CircleButton";
-import StarIcon from "../assets/star-alt.svg";
-import LocationIcon from "../assets/pin-alt.svg";
-import PaidIcon from "../assets/paid-alt.svg";
-import Image from "next/image";
 import React from "react";
 import CardButton from "../components/CardButton";
 import InfoCard from "../components/InfoCard";
 import Footer from "../components/Footer";
 import BackTitle from "../components/BackTitle";
+import NavBar from "../components/NavBar";
 
 export default function Index() {
   return (
@@ -20,18 +17,7 @@ export default function Index() {
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
       <div className="container cover">
-        <div className="nav-row">
-          <div className="logo">
-            <img src="/images/logo-white.svg" alt="orion sella logo" />
-            <h6>Accelerating Enterprise Digitalization</h6>
-          </div>
-          <div className="button-list">
-            <div>About Us</div>
-            <div>Our Services</div>
-            <div>Tour</div>
-            <div>Contact</div>
-          </div>
-        </div>
+      <NavBar />
         <div className="main-row first">
           <div className="title-container">
             <h1>Sri Lanka’s First</h1>
@@ -226,35 +212,7 @@ export default function Index() {
           display: flex;
           flex-direction: column;
         }
-        .nav-row {
-          display: flex;
-          justify-content: space-between;
-          flex: 1 1 auto;
-          padding: 0 40px;
-          font-family: "Segoe UI", sans-serif;
-          font-style: normal;
-          color: #ffffff;
-          margin-top: 48px;
-          height: 0;
-        }
-        .nav-row .logo h6 {
-          font-family: Segoe UI;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          letter-spacing: 0.14em;
-          margin-top: 12px;
-        }
-        .nav-row .logo {
-          flex: 2;
-        }
-        .nav-row .button-list {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-around;
-          flex: 1;
-          padding: 0 130px;
-        }
+       
         .main-row {
           display: flex;
           align-items: center;

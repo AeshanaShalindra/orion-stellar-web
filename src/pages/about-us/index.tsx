@@ -2,17 +2,12 @@ import Layout from "../../components/Layout";
 import BasicMeta from "../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
-import CircleButton from "../../components/CircleButton";
-import StarIcon from "../assets/star-alt.svg";
-import LocationIcon from "../assets/pin-alt.svg";
-import PaidIcon from "../assets/paid-alt.svg";
-import Image from "next/image";
 import React from "react";
-import CardButton from "../../components/CardButton";
 import InfoCard from "../../components/InfoCard";
 import Footer from "../../components/Footer";
 import BackTitle from "../../components/BackTitle";
 import ProfileCard from "../../components/ProfileCard";
+import NavBar from "../../components/NavBar";
 
 export default function Index() {
   return (
@@ -21,21 +16,8 @@ export default function Index() {
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
       <div className="container cover">
-        <div className="nav-row">
-          <div className="logo">
-            <img src="/images/logo-white.svg" alt="orion sella logo" />
-            <h6>Accelerating Enterprise Digitalization</h6>
-          </div>
-          <div className="button-list">
-            <div>About Us</div>
-            <div>Our Services</div>
-            <div>Tour</div>
-            <div>Contact</div>
-          </div>
-        </div>
-
+        <NavBar />
       </div>
-
       <div className="container service">
         <BackTitle title="Deliverables" />
         <div className="card-section">
@@ -82,7 +64,7 @@ export default function Index() {
         </div>
 
         <h4 className="section-header">Thought Leaders</h4>
-        <BackTitle title="Leadership" bottom={40}/>
+        <BackTitle title="Leadership" bottom={40} />
         <div className="leader-section">
           <ProfileCard
             image="/images/team/Rajendra.png"
@@ -284,7 +266,7 @@ export default function Index() {
           text-transform: uppercase;
           color: #ffffff;
           z-index: 2;
-    margin-bottom: -96px;
+          margin-bottom: -96px;
         }
         .card-section {
           display: flex;
