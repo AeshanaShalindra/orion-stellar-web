@@ -242,9 +242,8 @@ export default function Index() {
         }
         .cover {
           background-repeat: no-repeat;
-          background-size: cover;
           background-image: url("/images/cover2.png");
-          height: 1100px;
+          height: 1108px;
           display: flex;
           flex-direction: column;
         }
