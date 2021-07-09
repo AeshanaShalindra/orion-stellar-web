@@ -1,6 +1,12 @@
+import { useRouter } from "next/router";
 import ActiveLink from "../components/ActiveLink";
+import NavButton from "./NavButton";
 
 export default function NavBar() {
+  const {asPath} = useRouter();
+  
+  const activeLink = asPath;
+
   return (
     <>
       <div className="nav-row">
@@ -31,49 +37,25 @@ export default function NavBar() {
           <ActiveLink
             href="/about-us"
             children={
-              <div
-                style={{
-                  color: "#ffffff",
-                }}
-              >
-                About Us
-              </div>
+              <NavButton title="About Us" active={asPath === "/about-us"}/>
             }
           />
           <ActiveLink
             href="/services"
             children={
-              <div
-                style={{
-                  color: "#ffffff",
-                }}
-              >
-                Our Services
-              </div>
+              <NavButton title="Our Services" active={asPath === "/services"}/>
             }
           />
           <ActiveLink
             href="/tour"
             children={
-              <div
-                style={{
-                  color: "#ffffff",
-                }}
-              >
-                Tour
-              </div>
+              <NavButton title="Tour" active={asPath === "/tour"}/>
             }
           />
           <ActiveLink
             href="/contact"
             children={
-              <div
-                style={{
-                  color: "#ffffff",
-                }}
-              >
-                Contact
-              </div>
+              <NavButton title="Contact" active={asPath === "/contact"}/>
             }
           />
                     </div>
@@ -90,7 +72,6 @@ export default function NavBar() {
           font-family: "Segoe UI", sans-serif;
           font-style: normal;
           color: #ffffff;
-          margin-top: 48px;
           height: 0;
         }
         h6 {
@@ -102,6 +83,7 @@ export default function NavBar() {
           margin-top: 12px;
         }
         .nav-row .logo {
+          margin-top: 48px;
           flex: 2;
         }
         .nav-row .link-list {
@@ -116,7 +98,7 @@ export default function NavBar() {
         }
         .line{
           border: 1px solid rgba(255, 255, 255, 0.6);
-          margin-top: 36px;
+          margin-top: 24px;
           width: -webkit-fill-available;
         }
       `}</style>
