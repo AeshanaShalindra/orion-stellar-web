@@ -15,7 +15,7 @@ export default function NavButton({ title, active }: Props) {
     justify-content: center;
         }
         .title {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 17px;

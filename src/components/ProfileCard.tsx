@@ -54,7 +54,7 @@ export default function ProfileCard({
           margin-bottom: 36px;
         }
         small {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -62,7 +62,7 @@ export default function ProfileCard({
           color: #ffffff;
         }
         h5 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 35px;
@@ -78,7 +78,7 @@ export default function ProfileCard({
           margin-bottom: 36px;
         }
         p {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;

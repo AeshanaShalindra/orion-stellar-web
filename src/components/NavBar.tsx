@@ -21,7 +21,7 @@ export default function NavBar() {
                     fontSize: "20px",
                     letterSpacing: "0.14em",
                     marginTop: "12px",
-                    fontFamily: "Segoe UI",
+                    fontFamily: "SegoeUI",
                     color: "#ffffff",
                   }}
                 >
@@ -69,13 +69,13 @@ export default function NavBar() {
           justify-content: space-between;
           flex: 1 1 auto;
           padding: 0 40px;
-          font-family: "Segoe UI", sans-serif;
+          font-family: "SegoeUI", sans-serif;
           font-style: normal;
           color: #ffffff;
           height: 0;
         }
         h6 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 20px;

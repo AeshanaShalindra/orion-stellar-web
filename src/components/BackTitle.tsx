@@ -9,9 +9,9 @@ export default function BackTitle({ title, size, bottom }: Props) {
       <span className="back-title">{title}</span>
       <style jsx>{`
         .back-title {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
-          font-weight: bold;
+          font-weight: 900;
           font-size: ${size || 32}vh;
           line-height: 483px;
           color: rgba(0, 0, 0, 0.3);

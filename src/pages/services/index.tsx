@@ -56,11 +56,47 @@ export default function Index() {
         <h1 className="heading">Enterprise</h1>
       </div>
       <div className="container service">
+        <div className="grid">
+          <div className="row">
+            <h2 className="title">Colocation</h2>
+            <p className="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              ac elit ac morbi amet, nullam ultrices. Nulla at viverra gravida
+              tellus, in in aliquam aliquam. Enim eget ornare amet at luctus vel
+              tortor velit sem. Sit orci eget elit porta non posuere id
+              elementum integer. Neque ornare eu et blandit.
+            </p>
+          </div>
+          <div className="row">
+            <img src="images/colo1.png" alt="" className="image1" />
+            <img src="images/colo2.png" alt="" className="image2" />
+            <h5 className="row-2 description">DedicateD cages with multi-factor access Control</h5>
+          </div>
+          <div className="row">
+            <h5 className="row-3 description">U Level Rack Level or Cage-level hosting</h5>
+            <img src="images/colo3.png" alt="" className="image3" />
+            <img src="images/colo4.png" alt="" className="image4" />
+          </div>
+        </div>
+
+        <div className="grid">
+          <div className="row">
+          <h2 className="title">Managed Value-Added Services</h2>
+          </div>
+          <div className="row">
+          <img src="images/colo2.png" alt="" className="image5" />
+          <img src="images/colo3.png" alt="" className="image6" />
+          </div>
+        </div>
+
         <Footer />
       </div>
       <style jsx>{`
         .container {
           width: 100%;
+          font-family: "SegoeUI";
+          font-style: normal;
+          color: #ffffff;
         }
         .cover {
           background-repeat: no-repeat;
@@ -70,7 +106,7 @@ export default function Index() {
           flex-direction: column;
         }
         .main-title {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 100px;
@@ -83,7 +119,7 @@ export default function Index() {
           left: 110px;
           top: 388px;
 
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 340px;
@@ -98,7 +134,7 @@ export default function Index() {
           left: 137px;
           top: 580px;
 
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
@@ -116,7 +152,7 @@ export default function Index() {
           backdrop-filter: blur(30px);
         }
         .glass-box p {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 18px;
@@ -146,9 +182,9 @@ export default function Index() {
           height: 106px;
           left: 1305px;
           top: 224px;
-          z-index:2;
+          z-index: 2;
 
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 100px;

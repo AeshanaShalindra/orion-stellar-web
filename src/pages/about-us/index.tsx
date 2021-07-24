@@ -248,7 +248,7 @@ export default function Index() {
           flex-direction: column;
         }
         .main-title {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 100px;
@@ -275,7 +275,7 @@ export default function Index() {
         .company-back p {
           width: 338px;
           height: 157px;
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
@@ -295,13 +295,13 @@ export default function Index() {
         }
         .sub-title.mtp {
           margin: 0;
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-size: 22px;
           color: #ffffff;
         }
         .quote {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 600;
           font-size: 30px;
@@ -332,7 +332,7 @@ export default function Index() {
           right: 708px;
         }
         .quote.brand {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 30px;
@@ -348,7 +348,7 @@ export default function Index() {
           margin-top: 300px;
         }
         .brand-back .attributes ul li {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-size: 22px;
           line-height: 28px;
@@ -376,7 +376,7 @@ export default function Index() {
           margin: 100px 164px;
         }
         .value-back ul li {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 22px;
@@ -390,7 +390,7 @@ export default function Index() {
           padding: 80px;
         }
         .stand-for h2 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 100px;
@@ -408,7 +408,7 @@ export default function Index() {
         }
         .stand-list div h5 {
           width: 220px;
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 600;
           font-size: 24px;
@@ -428,7 +428,7 @@ export default function Index() {
           margin-bottom: 100px;
         }
         .title-container h1 {
-          font-family: "Segoe UI", sans-serif;
+          font-family: "SegoeUI", sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 95px;
@@ -475,14 +475,14 @@ export default function Index() {
           flex-wrap: wrap;
         }
         .service h1 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 130px;
           line-height: 173px;
         }
         .service p {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 24px;
@@ -500,7 +500,7 @@ export default function Index() {
           margin-top: -91px;
         }
         .section-header {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 600;
           font-size: 40px;
@@ -544,7 +544,7 @@ export default function Index() {
     left: 160px;
         }
         .learn-back div h3 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 60px;
@@ -561,7 +561,7 @@ export default function Index() {
           margin: 80px 0 30px 0;
         }
         .learn-back div h4 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 50px;
@@ -575,7 +575,7 @@ export default function Index() {
           margin: 0;
         }
         .learn-back div small {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 30px;

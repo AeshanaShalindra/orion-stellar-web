@@ -35,7 +35,7 @@ export default function CardButton({ title, image, marginLeft }: Props) {
         h5{
           position: absolute;
           padding: 0 40px;
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 600;
           font-size: 24px;

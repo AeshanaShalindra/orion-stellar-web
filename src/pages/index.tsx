@@ -224,7 +224,7 @@ export default function Index() {
           margin-bottom: 100px;
         }
         .title-container h1 {
-          font-family: "Segoe UI", sans-serif;
+          font-family: "SegoeUI", sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 95px;
@@ -288,7 +288,7 @@ export default function Index() {
         }
         .middle-banner p {
           margin-left: 48px;
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
@@ -304,14 +304,14 @@ export default function Index() {
           flex-wrap: wrap;
         }
         .service h1 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 130px;
           line-height: 173px;
         }
         .service p {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 24px;
@@ -336,7 +336,7 @@ export default function Index() {
           height: fit-content;
         }
         .env-section h1 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 130px;
@@ -344,7 +344,7 @@ export default function Index() {
           color: #00cb76;
         }
         .env-section h2 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 100px;
@@ -353,7 +353,7 @@ export default function Index() {
           margin: -40px 0 60px 0;
         }
         .env-section ul li {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 24px;
@@ -388,7 +388,7 @@ export default function Index() {
           margin-bottom: 100px;
         }
         .partner-section .title h5 {
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: 600;
           font-size: 18px;

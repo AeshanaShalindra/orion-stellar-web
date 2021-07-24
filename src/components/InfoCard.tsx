@@ -39,7 +39,7 @@ export default function InfoCard({ title, image, description }: Props) {
           height: 395px;
         }
         h5{          
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 35px;
@@ -47,7 +47,7 @@ export default function InfoCard({ title, image, description }: Props) {
           margin-bottom:12px;
         }
         p{          
-          font-family: Segoe UI;
+          font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
