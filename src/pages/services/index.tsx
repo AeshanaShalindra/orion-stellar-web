@@ -112,6 +112,7 @@ export default function Index() {
         </div>
 
         <div className="grid">
+          <div className="line"></div>
           <div className="row">
             <h2 className="title">Colocation</h2>
             <p className="sub-title">
@@ -150,15 +151,118 @@ export default function Index() {
           </p>
         </div>
 
-        {/* <div className="grid-2">
+        <div className="grid-2">
+          <div className="title-1"> Managed </div>
+          <div className="title-main">Value-Added Services </div>
+          <div className="sub-title">for Enterprises.</div>
           <div className="row">
-            <h2 className="title">Managed Value-Added Services</h2>
+            <div className="description">
+              <p>
+                Enterprises have relied on Managed Infrastructure Service
+                Providers (MSP) to get standardized and cost-efficient services
+                which allows Enterprises to focus on their core business while
+                minimizing risk, increasing infrastructure up time and gain
+                access to newer technologies. The rapid pace of adoption of
+                Digital technologies has changed the expectations of Enterprises
+                which requires MSPs to deliver much higher value by becoming
+                trusted partners and enablers in the Digital Journey of
+                Enterprises.
+              </p>
+              <p>
+                Enterprises in their forward march to digitalization have the
+                option to leverage on Managed services to help reduce the total
+                cost of ownership and increase agility.
+              </p>
+            </div>
+
+            <div className="line"></div>
+
+            <div className="service-des">
+              <div className="title">
+                OrionStellar managed value-added services
+              </div>
+              <p>
+                OrionStellar man aged value-added services are designed and
+                delivered to ensure our clients can focus on the core business
+                while we take care of digital infrastructure related services
+                and service management compiling with both client’s and industry
+                standards.
+              </p>
+            </div>
           </div>
-          <div className="row">
-            <img src="images/colo2.png" alt="" className="image5" />
-            <img src="images/colo3.png" alt="" className="image6" />
+        </div>
+
+        <div className="deliverables">
+          <BackTitle title="Deliverables" />
+          <div className="card-section">
+            <InfoCard
+              image="/images/card1.png"
+              title="Sri Lanka’s First High Density Data Center."
+              description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+            />
+            <InfoCard
+              image="/images/card2.png"
+              title="Sri Lanka’s First Carrier Neutral Data Center."
+              description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+            />
+            <InfoCard
+              image="/images/card3.png"
+              title="Superior Rack Space per Footprint"
+              description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+            />
+            <InfoCard
+              image="/images/card4.png"
+              title="Fine Energy Metering Granularity"
+              description="Able to meter power usage at U Level “Pay as you go“ model"
+            />
+            <InfoCard
+              image="/images/card5.png"
+              title="Colombo’s only Tier 3 Certified Data Center."
+              description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+            />
+            <InfoCard
+              image="/images/card6.png"
+              title="Strategic Location Advantage"
+              description="15Kw+ per Rack
+           Design PUE at 1.4
+           Best Power Efficiency"
+            />
           </div>
-        </div> */}
+        </div>
+
+        <div className="grid-3">
+          <div className="logo">
+            <img src="/images/logo-white.svg" alt="orion sella logo" />
+          </div>
+          <div className="title-1"> Service Delivery </div>
+          <div className="title-2">Assurance</div>
+
+          <div className="sub-title">
+            OSDC Network Operating Center (NOC) 24*7*365
+          </div>
+
+          <p>
+            Our DCIM Provides ONE view of the entire Data center from IT loads
+            to supporting physical Infrastructure.
+          </p>
+          <p>DCIM is equipped with timely solutions for </p>
+          <p>
+            • Power, Cooling & Facility Infrastructure Monitoring & Management •
+            Environmental Monitoring (Temperature & Humidity) and • Fire
+            Detection & Fire Suppression To ensure an effective monitoring and
+            control at OSDC NOC Further, DCIM is a strategic enablement to
+            ensure Tier3 Standards, superior customer service, & Environmental
+            sustainability
+          </p>
+        </div>
 
         <Footer />
       </div>
@@ -340,6 +444,16 @@ export default function Index() {
           margin-top: 114px;
           height: 1200px;
         }
+        .grid .line {
+          position: absolute;
+          width: 1166px;
+          height: 0px;
+          left: 491px;
+          top: 3095px;
+
+          border: 1px solid #ffffff;
+          transform: rotate(90deg);
+        }
         .grid .row .title {
           position: absolute;
           width: 839px;
@@ -453,6 +567,117 @@ export default function Index() {
           line-height: 32px;
           text-align: center;
         }
+
+        .deliverables {
+          margin-top: 124px;
+        }
+        .deliverables .card-section {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: -124px !important;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .grid-2 {
+          margin-top: 124px;
+          margin-right: 134px;
+          margin-left: 134px;
+        }
+        .grid-2 .line {
+          position: absolute;
+          width: 336px;
+          height: 0px;
+          left: 743px;
+          top: 4530px;
+          border: 1px solid #ffffff;
+          transform: rotate(90deg);
+        }
+        .grid-2 .title-1 {
+          font-weight: bold;
+          font-size: 110px;
+          line-height: 128.51%;
+          color: #7c8c9b;
+        }
+        .grid-2 .title-main {
+          font-weight: bold;
+          font-size: 130px;
+          line-height: 134px;
+          color: #7c8c9b;
+          margin-top: -37px;
+          margin-bottom: -16px;
+        }
+        .grid-2 .sub-title {
+          font-weight: bold;
+          font-size: 100px;
+          line-height: 97.01%;
+          color: #7c8c9b;
+        }
+        .grid-2 .row {
+          display: flex;
+          margin-top: 100px;
+        }
+        .grid-2 .row p {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .grid-2 .row .service-des .title {
+          font-weight: bold;
+          font-size: 60px;
+          line-height: 70px;
+        }
+        .grid-2 .row .description {
+          flex: 1;
+          margin-right: 100px;
+        }
+        .grid-2 .row .service-des {
+          flex: 1;
+          margin-left: 100px;
+        }
+
+        .grid-3 {
+          margin-top: 124px;
+          margin-right: 134px;
+          margin-left: 134px;
+        }
+        .grid-3 .logo {
+          margin-left: 100px;
+        }
+        .grid-3 .title-1 {
+          font-weight: bold;
+          font-size: 160px;
+          color: #7c8c9b;
+          margin-bottom: -41px;
+        }
+        .grid-3 .title-2 {
+          font-weight: bold;
+          font-size: 110px;
+          line-height: 128.51%;
+          margin-left: 544px;
+          color: #7c8c9b;
+        }
+        .grid-3 .sub-title {
+          font-weight: bold;
+          font-size: 60px;
+          line-height: 99.01%;
+          margin-top: 64px;
+          margin-left: 100px;
+        }
+        .grid-3 p {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          margin-left: 100px;
+        }
+        .grid-3 p:first-child {
+          margin-top:164px;
+        }
+
         @media (min-width: 769px) {
           h1 {
             font-size: 3rem;
