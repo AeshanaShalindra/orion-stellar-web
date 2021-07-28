@@ -69,6 +69,7 @@ export default function Index() {
         </div>
       </div>
 
+      <Parallax className="middle-banner" y={[-20, 20]}>
         <div className="middle-banner">
           <img src="/images/logo-white.svg" alt="orion sella logo" />
           <p>
@@ -82,6 +83,7 @@ export default function Index() {
             managed services to the enterprises in the region.
           </p>
         </div>
+        </Parallax>
 
       <div className="container service">
         <div style={{ display: "flex" }}>
@@ -144,7 +146,7 @@ export default function Index() {
           </div>
           <img src="/images/environment.png" alt="environment" />
         </div>
-        <Parallax y={[-10, 20]}>
+        <Parallax y={[-10, 40]}>
           <BackTitle title="Uniqueness" />
         </Parallax>
         <div className="card-section">
@@ -279,11 +281,10 @@ export default function Index() {
         }
         .middle-banner {
           position: absolute;
-          left: 306px;
-          top: 973px;
-          /* position: absolute;
-          top: -110px;
-          left: 300px; */
+          /* left: 306px;
+          top: 973px; */
+          margin-left: 306px;
+    margin-top: -133px;
           width: 1050px;
           height: 160px;
 
@@ -385,6 +386,7 @@ export default function Index() {
           display: flex;
           justify-content: space-evenly;
           flex-wrap: wrap;
+          z-index:5;
         }
         .partner-section {
           width: 95%;
