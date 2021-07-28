@@ -29,10 +29,6 @@ export default function CircleButton({ title, dark }: Props) {
           cursor: pointer;
           border: none;
         }
-        button:active,
-        button:hover {
-          transform: scale(1.05)
-        }
         .text{
           font-family: 'Roboto', sans-serif;
           font-style: normal;
@@ -41,6 +37,14 @@ export default function CircleButton({ title, dark }: Props) {
           line-height: 23px;
 
           color: ${dark ? "#fff" : "#000"};
+        }
+        button:active,
+        button:hover {
+          transform: scale(1.05);          
+          background-color: ${dark ? "#fff" : "#000"};
+        }
+        button:hover .text {
+          color: ${dark ? "#000" : "#fff"};
         }
       `}</style>
     </>
