@@ -264,6 +264,109 @@ export default function Index() {
           </p>
         </div>
 
+        <div className="grid-4">
+          <img src="/images/startup-back.png" alt="startup background" />
+          <div className="main-title">Start-Ups</div>
+        </div>
+
+        <div className="root-sub-title">
+          OrionStellar Colocation services bundle for Startups and SMEs
+        </div>
+
+        <div className="grid-5">
+          <div className="main-title"> Options </div>
+          <div className="card-list">
+            <div className="price-card">
+              <div className="title">Single Unit Appliance</div>
+              <div className="content">
+                <div className="row">
+                  <h4>Rack Unit</h4>
+                  <h5>1U - 70kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>Unlimited Bandwith</h4>
+                  <h5>1Gbit</h5>
+                </div>
+                <div className="row">
+                  <h4>Static IP</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>24/7 Support</h4>
+                  <h5>Included</h5>
+                </div>
+              </div>
+              <div className="price">LKR XXX</div>
+            </div>
+            <div className="price-card">
+              <div className="title">Single Unit Appliance</div>
+              <div className="content">
+                <div className="row">
+                  <h4>Rack Unit</h4>
+                  <h5>1U - 70kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>Unlimited Bandwith</h4>
+                  <h5>1Gbit</h5>
+                </div>
+                <div className="row">
+                  <h4>Static IP</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>24/7 Support</h4>
+                  <h5>Included</h5>
+                </div>
+              </div>
+              <div className="price">LKR XXX</div>
+            </div>
+            <div className="price-card">
+              <div className="title">Single Unit Appliance</div>
+              <div className="content">
+                <div className="row">
+                  <h4>Rack Unit</h4>
+                  <h5>1U - 70kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>Unlimited Bandwith</h4>
+                  <h5>1Gbit</h5>
+                </div>
+                <div className="row">
+                  <h4>Static IP</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>24/7 Support</h4>
+                  <h5>Included</h5>
+                </div>
+              </div>
+              <div className="price">LKR XXX</div>
+            </div>
+            <div className="price-card">
+              <div className="title">Single Unit Appliance</div>
+              <div className="content">
+                <div className="row">
+                  <h4>Rack Unit</h4>
+                  <h5>1U - 70kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>Unlimited Bandwith</h4>
+                  <h5>1Gbit</h5>
+                </div>
+                <div className="row">
+                  <h4>Static IP</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>24/7 Support</h4>
+                  <h5>Included</h5>
+                </div>
+              </div>
+              <div className="price">LKR XXX</div>
+            </div>
+          </div>
+        </div>
+
         <Footer />
       </div>
       <style jsx>{`
@@ -329,11 +432,7 @@ export default function Index() {
         }
         .service {
           display: flex;
-          background: linear-gradient(
-            125.54deg,
-            #0f1d31 30.98%,
-            rgba(3, 91, 91, 0.77) 163.03%
-          );
+          background: linear-gradient(100deg, #0F1D31 30.98%, rgba(3, 96, 102, 0.81) 163.03%);
           flex-wrap: wrap;
         }
         .challenges .title {
@@ -667,6 +766,7 @@ export default function Index() {
           line-height: 99.01%;
           margin-top: 64px;
           margin-left: 100px;
+          margin-bottom: 124px;
         }
         .grid-3 p {
           font-weight: normal;
@@ -674,8 +774,94 @@ export default function Index() {
           line-height: 24px;
           margin-left: 100px;
         }
-        .grid-3 p:first-child {
-          margin-top:164px;
+
+        .grid-4 {
+          margin-top: 124px;
+        }
+        .grid-4 img {
+          width: 100%;
+        }
+        .grid-4 .main-title {
+          font-weight: bold;
+          font-size: 318px;
+          line-height: 452px;
+          text-align: center;
+          width: 100%;
+          margin-top: -363.8px;
+        }
+
+        .root-sub-title {
+          font-weight: bold;
+          font-size: 60px;
+          line-height: 99.01%;
+          margin-top: 64px;
+          margin-left: 100px;
+          margin-bottom: 124px;
+        }
+
+        .grid-5 {
+          width: 100%;
+        }
+        .grid-5 .main-title {
+          font-weight: bold;
+          font-size: 120px;
+          line-height: 160px;
+          color: #7c8c9b;
+          margin-left: 205px;
+        }
+        .grid-5 .card-list {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .price-card {
+          width: 362px;
+          /* height: 1150px; */
+          left: 148px;
+          top: 11690px;
+
+          background: #0a1422;
+          mix-blend-mode: normal;
+          backdrop-filter: blur(4px);
+          border-radius: 5px;
+        }
+        .price-card .title {
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 67px;
+          color: #ffffff;
+          padding: 28px;
+          padding-top: 114px;
+        }
+        .price-card .content {
+          padding: 28px;
+        }
+        .price-card .content .row {
+          margin-bottom: 24px;
+        }
+        .price-card .content h4 {
+          margin: 0;
+        }
+        .price-card .content h5 {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+          margin: 0;
+        }
+        .price-card .price {
+          width: 100%;
+          height: 90px;
+          font-weight: bold;
+          font-size: 35px;
+          line-height: 115.51%;
+          color: #000000;
+          background: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         @media (min-width: 769px) {
