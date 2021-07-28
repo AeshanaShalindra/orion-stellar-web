@@ -114,7 +114,11 @@ export default function Index() {
         <div className="grid">
           <div className="row">
             <h2 className="title">Colocation</h2>
-            <p className="description">
+            <p className="sub-title">
+              Services designed to meet different business segments with varying
+              requirements.
+            </p>
+            <p className="row-1 description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               ac elit ac morbi amet, nullam ultrices. Nulla at viverra gravida
               tellus, in in aliquam aliquam. Enim eget ornare amet at luctus vel
@@ -138,7 +142,15 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="grid">
+        <div className="message">
+          <p>
+            We complement our infrastructure offering with an array of managed
+            value-added services including{" "}
+            <strong>“Remote Pair of Hands”</strong>
+          </p>
+        </div>
+
+        {/* <div className="grid-2">
           <div className="row">
             <h2 className="title">Managed Value-Added Services</h2>
           </div>
@@ -146,7 +158,7 @@ export default function Index() {
             <img src="images/colo2.png" alt="" className="image5" />
             <img src="images/colo3.png" alt="" className="image6" />
           </div>
-        </div>
+        </div> */}
 
         <Footer />
       </div>
@@ -324,7 +336,123 @@ export default function Index() {
           font-size: 24px;
           line-height: 32px;
         }
+        .grid {
+          margin-top: 114px;
+          height: 1200px;
+        }
+        .grid .row .title {
+          position: absolute;
+          width: 839px;
+          height: 222px;
+          left: 203px;
+          top: 2554px;
 
+          font-weight: bold;
+          font-size: 160px;
+          line-height: 213px;
+
+          color: #7c8c9b;
+          margin: 0;
+        }
+        .grid .row .sub-title {
+          position: absolute;
+          width: 702px;
+          height: 44px;
+          left: 298px;
+          top: 2747px;
+
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 24px;
+
+          color: #ffffff;
+        }
+        .grid .row .image1 {
+          position: absolute;
+          width: 759.79px;
+          height: 359.56px;
+          left: 166.96px;
+          top: 2820px;
+        }
+        .grid .row .image2 {
+          position: absolute;
+          width: 358.49px;
+          height: 359.56px;
+          left: 964.21px;
+          top: 2824.28px;
+        }
+        .grid .row .image3 {
+          position: absolute;
+          width: 358.49px;
+          height: 359.56px;
+          left: 568.26px;
+          top: 3214.88px;
+        }
+        .grid .row .image4 {
+          position: absolute;
+          width: 759.79px;
+          height: 359.56px;
+          left: 964.21px;
+          top: 3214.88px;
+        }
+        .grid .row-1.description {
+          position: absolute;
+          width: 525px;
+          height: 291px;
+          left: 1148px;
+          top: 2624px;
+
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .grid .row-2.description {
+          position: absolute;
+          width: 345px;
+          height: 255px;
+          left: 1355px;
+          top: 3044.46px;
+          margin: 0;
+
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 127.69%;
+
+          letter-spacing: 0.29em;
+          text-transform: uppercase;
+        }
+        .grid .row-3.description {
+          position: absolute;
+          width: 394px;
+          height: 254px;
+          left: 137px;
+          top: 3430.46px;
+
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 127.69%;
+          text-align: right;
+
+          letter-spacing: 0.29em;
+          text-transform: uppercase;
+        }
+        .message {
+          width: 1057px;
+          height: 156px;
+          margin-top: 1280px;
+          margin-left: 392px;
+          background: #000000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .message p {
+          width: 940px;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 32px;
+          text-align: center;
+        }
         @media (min-width: 769px) {
           h1 {
             font-size: 3rem;
