@@ -11,8 +11,11 @@ export default function NavButton({ title, active }: Props) {
           width: 140px;
           height: 80px;
           display: flex;
-    align-items: flex-end;
-    justify-content: center;
+          align-items: flex-end;
+          justify-content: center;
+        }
+        .container:hover {
+          background: #00000073;
         }
         .title {
           font-family: "SegoeUI";
@@ -21,7 +24,7 @@ export default function NavButton({ title, active }: Props) {
           font-size: 17px;
           line-height: 23px;
           color: #ffffff;
-          margin-bottom:12px;
+          margin-bottom: 12px;
         }
         .active {
           background: #000000;

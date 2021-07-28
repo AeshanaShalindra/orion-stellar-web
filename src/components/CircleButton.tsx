@@ -24,7 +24,7 @@ export default function CircleButton({ title, dark }: Props) {
 
           background-color: ${dark ? "#000" : "#fff"};
           border-radius: 1000px;
-          transition: transform .2s; 
+          transition: transform 0.5s; 
 
           cursor: pointer;
           border: none;
