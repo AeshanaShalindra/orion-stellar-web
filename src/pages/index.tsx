@@ -146,7 +146,7 @@ export default function Index() {
           </div>
           <img src="/images/environment.png" alt="environment" />
         </div>
-        <Parallax y={[-10, 40]}>
+        <Parallax y={[-10, 30]}>
           <BackTitle title="Uniqueness" />
         </Parallax>
         <div className="card-section">
