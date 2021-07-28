@@ -19,7 +19,7 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container cover">
         <NavBar />
-        <Parallax className="parallax-class" y={[-20, 20]} tagOuter="figure">
+        <Parallax className="parallax-class" y={[-20, 20]}>
           <div className="main-row first">
             <div className="title-container">
               <h1>Sri Lanka’s First</h1>
@@ -69,19 +69,19 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="middle-banner">
-        <img src="/images/logo-white.svg" alt="orion sella logo" />
-        <p>
-          A joint venture between SAPD ( St. Anthony’s property developers) and
-          Dialog Broad band Pvt Ltd in the business of best in class digital
-          infrastructure solutions . Orionstellar brings Sri Lanka’s first high
-          density and carrier neutral data center located at Orion city, the Sri
-          Lanka’s largest IT park located at Colombo 09 . This is the only Tier
-          3 certified DC in the Colombo city and is poised to offer an array of
-          digital infrastructure solutions and value-added managed services to
-          the enterprises in the region.
-        </p>
-      </div>
+        <div className="middle-banner">
+          <img src="/images/logo-white.svg" alt="orion sella logo" />
+          <p>
+            A joint venture between SAPD ( St. Anthony’s property developers)
+            and Dialog Broad band Pvt Ltd in the business of best in class
+            digital infrastructure solutions . Orionstellar brings Sri Lanka’s
+            first high density and carrier neutral data center located at Orion
+            city, the Sri Lanka’s largest IT park located at Colombo 09 . This
+            is the only Tier 3 certified DC in the Colombo city and is poised to
+            offer an array of digital infrastructure solutions and value-added
+            managed services to the enterprises in the region.
+          </p>
+        </div>
 
       <div className="container service">
         <div style={{ display: "flex" }}>
@@ -103,9 +103,15 @@ export default function Index() {
         </div>
         <div className="service-card-section">
           <div>
-            <CardButton title="enterprise" image="/images/enterprise.png" />
+            <CardButton 
+            title="enterprise" 
+            contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
+            image="/images/enterprise.png" 
+            />
             <CardButton
               title="start up"
+              contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
+              OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop."
               image="/images/startup.png"
               marginLeft="60px"
             />
@@ -138,7 +144,9 @@ export default function Index() {
           </div>
           <img src="/images/environment.png" alt="environment" />
         </div>
-        <BackTitle title="Uniqueness" />
+        <Parallax y={[-10, 20]}>
+          <BackTitle title="Uniqueness" />
+        </Parallax>
         <div className="card-section">
           <InfoCard
             image="/images/card1.png"
@@ -271,10 +279,13 @@ export default function Index() {
         }
         .middle-banner {
           position: absolute;
-          width: 1050px;
-          height: 160px;
           left: 306px;
           top: 973px;
+          /* position: absolute;
+          top: -110px;
+          left: 300px; */
+          width: 1050px;
+          height: 160px;
 
           display: flex;
           align-items: center;
@@ -322,7 +333,7 @@ export default function Index() {
           margin-top: 40px;
         }
         .service .content {
-          padding: 200px 120px;
+          padding: 200px 120px 10px 120px;
         }
         .service .service-card-section {
           width: 100%;
