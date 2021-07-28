@@ -1,8 +1,11 @@
+import { Parallax } from "react-scroll-parallax";
+
 type Props = {
   title: string;
   size?: string;
   bottom?: number;
 };
+
 export default function BackTitle({ title, size, bottom }: Props) {
   return (
     <>

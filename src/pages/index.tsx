@@ -9,6 +9,7 @@ import InfoCard from "../components/InfoCard";
 import Footer from "../components/Footer";
 import BackTitle from "../components/BackTitle";
 import NavBar from "../components/NavBar";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Index() {
   return (
@@ -17,17 +18,19 @@ export default function Index() {
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
       <div className="container cover">
-      <NavBar />
-        <div className="main-row first">
-          <div className="title-container">
-            <h1>Sri Lanka’s First</h1>
-            <h1>
-              <strong>High Density</strong> Data Center
-            </h1>
-            <h5>Nimble | Connected | Sustainable</h5>
+        <NavBar />
+        <Parallax className="parallax-class" y={[-20, 20]} tagOuter="figure">
+          <div className="main-row first">
+            <div className="title-container">
+              <h1>Sri Lanka’s First</h1>
+              <h1>
+                <strong>High Density</strong> Data Center
+              </h1>
+              <h5>Nimble | Connected | Sustainable</h5>
+            </div>
+            <CircleButton title="Virtual Tour" dark={true} />
           </div>
-          <CircleButton title="Virtual Tour" dark={true} />
-        </div>
+        </Parallax>
         <div className="main-row last">
           <div style={{ display: "flex" }}>
             <div className="row-tag">
@@ -212,7 +215,7 @@ export default function Index() {
           display: flex;
           flex-direction: column;
         }
-       
+
         .main-row {
           display: flex;
           align-items: center;
@@ -366,7 +369,7 @@ export default function Index() {
           left: 894px;
           margin-top: -60px;
         }
-       
+
         .card-section {
           display: flex;
           justify-content: space-evenly;
