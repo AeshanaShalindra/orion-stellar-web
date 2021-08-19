@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@georgedrpg/pannellum-react-next": "^1.2.5",
     "@mapbox/rehype-prism": "^0.6.0",
     "@svgr/webpack": "^5.5.0",
     "@types/js-yaml": "^4.0.0",

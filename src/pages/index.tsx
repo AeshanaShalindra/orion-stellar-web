@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import BackTitle from "../components/BackTitle";
 import NavBar from "../components/NavBar";
 import { Parallax } from "react-scroll-parallax";
+import PanoramaView from "../components/PanoramaView";
 
 export default function Index() {
   return (
@@ -83,7 +84,7 @@ export default function Index() {
             managed services to the enterprises in the region.
           </p>
         </div>
-        </Parallax>
+      </Parallax>
 
       <div className="container service">
         <div style={{ display: "flex" }}>
@@ -105,10 +106,10 @@ export default function Index() {
         </div>
         <div className="service-card-section">
           <div>
-            <CardButton 
-            title="enterprise" 
-            contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
-            image="/images/enterprise.png" 
+            <CardButton
+              title="enterprise"
+              contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
+              image="/images/enterprise.png"
             />
             <CardButton
               title="start up"
@@ -122,6 +123,11 @@ export default function Index() {
         </div>
         <div className="env-section">
           <div className="content">
+            <img
+              className="logo"
+              src="/images/logo-white.svg"
+              alt="orion sella logo"
+            />
             <h1>Environmental</h1>
             <h2>Sustainability</h2>
             <ul>
@@ -146,9 +152,7 @@ export default function Index() {
           </div>
           <img src="/images/environment.png" alt="environment" />
         </div>
-        <Parallax y={[-10, 30]}>
-          <BackTitle title="Uniqueness" />
-        </Parallax>
+        <BackTitle title="Uniqueness" />
         <div className="card-section">
           <InfoCard
             image="/images/card1.png"
@@ -191,6 +195,39 @@ export default function Index() {
            Best Power Efficiency"
           />
         </div>
+
+        <div className="data-center-tour-section">
+          <BackTitle
+            title="Data Center Tour"
+            subtitle="Virtual Tour"
+            size="23"
+          />
+          <img src="/images/datacenter.png" alt="datacenter" />
+          {/* <PanoramaView image="/images/pano-image.jpg"/> */}
+          <div className="message">
+            <div className="iso-message">
+              We welcome you to experience our State of the Art data center
+              located at Orion city the largest IT park in the county. You will
+              learn about the best in class technologies used in the DC built
+              and operation and management using Schneider Eco structure DCIM
+              platform . We can demonstrate how multilayered physical security
+              systems are in operation to ensure the Physical security as per
+              ISO 2700:2013 framework.
+            </div>
+            <img
+              className="cer-image"
+              src="/images/cert-iso.png"
+              alt="iso certification"
+            />
+          </div>
+
+        </div>
+          <BackTitle
+            title="Data Center Tour"
+            subtitle="Book A Tour"
+            size="23"
+          />
+
         <div className="partner-section">
           <div className="title">
             <h5>Strategic partners</h5>
@@ -284,7 +321,7 @@ export default function Index() {
           /* left: 306px;
           top: 973px; */
           margin-left: 306px;
-    margin-top: -133px;
+          margin-top: -133px;
           width: 1050px;
           height: 160px;
 
@@ -376,17 +413,36 @@ export default function Index() {
           color: #ffffff;
           mix-blend-mode: normal;
         }
+        .env-section .content .logo {
+          position: relative;
+          left: 280px;
+          margin-bottom: -46px;
+        }
         .env-section .content img {
           position: absolute;
           left: 894px;
           margin-top: -60px;
         }
-
+        .env-section img {
+          margin-top: 150px;
+        }
         .card-section {
           display: flex;
           justify-content: space-evenly;
           flex-wrap: wrap;
-          z-index:5;
+          z-index: 5;
+        }
+        .data-center-tour-section .message {
+          margin-left: 252px;
+          margin-top: 78px;
+          display: flex;
+        }
+        .data-center-tour-section .iso-message {
+          width: 978px;
+          height: 157px;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
         }
         .partner-section {
           width: 95%;
