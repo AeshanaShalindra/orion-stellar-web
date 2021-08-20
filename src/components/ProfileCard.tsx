@@ -21,8 +21,8 @@ export default function ProfileCard({
         <div className="text">
           <small>{title}</small>
           <h5>{name}</h5>
-          <small>{workTitle}</small>
-          <img className="work-logo" src={workLogo} alt="work place" />
+          {/* <small>{workTitle}</small>
+          <img className="work-logo" src={workLogo} alt="work place" /> */}
           <p>{description}</p>
         </div>
       </div>
