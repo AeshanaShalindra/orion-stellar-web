@@ -15,9 +15,11 @@ export default function BackTitle({ title, subtitle, size, bottom }: Props) {
         <Parallax y={[-10, 30]}>
           <span className="back-title">{title}</span>
         </Parallax>
-        <Parallax className="sub-title-wrap" y={[-5, 15]}>
+        <div className="sub-title-wrap">
+        <Parallax y={[-5, 15]}>
           <span className="sub-title">{subtitle}</span>
         </Parallax>
+        </div>
       </div>
       <style jsx>{`
         .back-title {

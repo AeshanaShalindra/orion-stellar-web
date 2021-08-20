@@ -11,6 +11,7 @@ import BackTitle from "../components/BackTitle";
 import NavBar from "../components/NavBar";
 import { Parallax } from "react-scroll-parallax";
 import PanoramaView from "../components/PanoramaView";
+import BookingView from "../components/BookingView";
 
 export default function Index() {
   return (
@@ -220,13 +221,18 @@ export default function Index() {
               alt="iso certification"
             />
           </div>
-
         </div>
+
+        <div className="book-tour-section">
           <BackTitle
             title="Data Center Tour"
             subtitle="Book A Tour"
             size="23"
           />
+          <div className="calendar">
+          <BookingView />
+          </div>
+        </div>
 
         <div className="partner-section">
           <div className="title">
@@ -443,6 +449,9 @@ export default function Index() {
           font-size: 18px;
           line-height: 24px;
           color: #ffffff;
+        }
+        .book-tour-section .calendar{
+          margin-top:100px;
         }
         .partner-section {
           width: 95%;
