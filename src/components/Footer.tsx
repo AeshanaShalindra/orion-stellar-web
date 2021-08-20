@@ -11,6 +11,7 @@ export default function Footer() {
                 Get Exclusive <span>Digitalization Technology</span> updates
                 straight to your inbox
               </p>
+              <input type="text" name="email" id="email" placeholder="Email address" />
             </div>
             <div className="link-group">
               <h5>About Us</h5>
@@ -150,6 +151,12 @@ export default function Footer() {
           line-height: 25px;
 
           color: #ffffff;
+        }
+        .footer .form input {
+          height: 65px;
+          width: 536px;
+          padding-left: 28px;
+          padding-right: 28px;
         }
         .footer .link-group {
           flex: 1;

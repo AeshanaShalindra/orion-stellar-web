@@ -30,12 +30,22 @@ export default function Index() {
         </div>
 
         <div className="mtp-wrap">
-          <h2 className="main-title mtp">Our MTP</h2>
-          <h3 className="sub-title mtp">(Massive Transformative Purpose)</h3>
-          <h4 className="quote mtp">
-            “Simplify enterprise digital infrastructure challenges to accelerate
-            digitalization & growth.”
-          </h4>
+          <h2 className="main-title brand">
+            Our Brand <br />
+            Attributes
+          </h2>
+          <ul>
+            <li>
+              A <b>new breed</b> technology company
+            </li>
+            <li>
+              Emphasis on <b>stellar performance</b> and <b>global standards</b>
+            </li>
+            <li>
+              Lean and mean organization structure with a start up thinking
+            </li>
+            <li>A focus in B2B markets in Sri Lanka and the region.</li>
+          </ul>
         </div>
 
         <div className="brand-back">
@@ -43,52 +53,51 @@ export default function Index() {
             <CircleButton title="Virtual Tour" dark={true} />
           </div>
           <h2 className="main-title brand">Brand</h2>
-          <h4 className="quote brand">
-            “Orion” from the mother brand Orion City + “stellar” for Star
-            Performance.
+          <p>
+            The origin of our brand name “OrionStellar” is linked to the main
+            brand “Orion city” which is the country’s largest IT park. The
+            second part of the name ‘Stellar” stands for the higher standards
+            and star performance we are striving for. OrionStellar wordmark logo
+            is simple yet with an elegant touch that summarizes how well we
+            simplifies and uplifts the industry performance. Our main logo
+            colors are shades of grey and blue which have been again inspired
+            from the main colors of the mother brand “Orion City” which are
+            grey, blue, and green. These shades of grey and blue affirm with a
+            masculine & professional outlook.
             <br />
-            <b>
-              We Connect the dots and raise the industry bars to reach the
-              heights.
-            </b>
-          </h4>
-          <div className="mid-button">
-            <CircleButton title="" dark={false} />
-          </div>
+            <br />
+            Our brand story is all about the high performance, high standards
+            together with the new opportunities we would spark for those who are
+            around us. We would ideally help our client companies to raise their
+            bars to reach the heights.
+          </p>
           <div className="attributes">
-            <h2 className="main-title brand">
-              Our Brand <br />
-              Attributes
-            </h2>
-            <ul>
-              <li>
-                A <b>new breed</b> technology company
-              </li>
-              <li>
-                Emphasis on <b>stellar performance</b> and{" "}
-                <b>global standards</b>
-              </li>
-              <li>
-                Lean and mean organization structure with a start up thinking
-              </li>
-              <li>A focus in B2B markets in Sri Lanka and the region.</li>
-            </ul>
+            <h2 className="main-title mtp">Our MTP</h2>
+            <h3 className="sub-title mtp">(Massive Transformative Purpose)</h3>
+            <h4 className="quote mtp">
+              “Simplify enterprise digital infrastructure challenges to
+              <br />
+              accelerate digitalization & growth.”
+            </h4>
           </div>
         </div>
       </div>
-      <div className="container service">
-        <h2 className="main-title value">Values</h2>
-        <div className="value-back">
-          <ul>
-            <li>Uncompromised integrity</li>
-            <li>Technology inclusion and equal opportunities</li>
-            <li>power data in decision making (data driven enterprise)</li>
-            <li>continuous improvement to meet global standards</li>
-            <li>commitment to environmental sustainability</li>
-          </ul>
-        </div>
 
-        <div className="stand-for">
+      <div className="cop-image">
+        <img src="/images/cop-val.png" alt="cooperate" />
+      </div>
+
+      <div className="container service">
+        <h2 className="main-title value">Our Corporate Values</h2>
+        <ul className="cop-value">
+          <li>Uncompromised integrity</li>
+          <li>Technology inclusion and equal opportunities</li>
+          <li>power data in decision making (data driven enterprise)</li>
+          <li>continuous improvement to meet global standards</li>
+          <li>commitment to environmental sustainability</li>
+        </ul>
+
+        {/* <div className="stand-for">
           <h2 className="main-title">What do we stand for:</h2>
           <div className="stand-list">
             <div>
@@ -108,9 +117,9 @@ export default function Index() {
               <h5>Reduce energy costs</h5>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <BackTitle title="Deliverables" />
+        {/* <BackTitle title="Deliverables" />
         <div className="card-section">
           <InfoCard
             image="/images/card1.png"
@@ -152,10 +161,9 @@ export default function Index() {
            Design PUE at 1.4
            Best Power Efficiency"
           />
-        </div>
+        </div> */}
 
-        <h4 className="section-header">Thought Leaders</h4>
-        <BackTitle title="Leadership" bottom={40} />
+        <BackTitle title="Leadership" subtitle="Thought Leaders" bottom={40} />
         <div className="leader-section">
           <ProfileCard
             image="/images/team/Rajendra.png"
@@ -290,6 +298,15 @@ export default function Index() {
           left: 160px;
           top: 890px;
         }
+        .mtp-wrap ul li {
+          font-family: "SegoeUI";
+          font-style: normal;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: 0.125em;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
         .main-title.mtp {
           margin: 0;
         }
@@ -305,6 +322,14 @@ export default function Index() {
           font-style: normal;
           font-weight: 600;
           font-size: 30px;
+          color: #ffffff;
+        }
+        .quote.mtp {
+          font-family: "SegoeUI";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 48px;
           color: #ffffff;
         }
         .brand-back {
@@ -342,10 +367,12 @@ export default function Index() {
           margin: 0;
         }
         .brand-back .attributes {
-          margin-top: 300px;
+          margin-top: 80px;
         }
-        .brand-back .attributes {
-          margin-top: 300px;
+        .brand-back p {
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 24px;
         }
         .brand-back .attributes ul li {
           font-family: "SegoeUI";
@@ -356,12 +383,19 @@ export default function Index() {
           text-transform: uppercase;
           color: #ffffff;
         }
+
         .main-title.value {
-          position: absolute;
-          width: 301px;
-          height: 133px;
-          left: 160px;
-          top: 1296px;
+          margin-left: 204px;
+          margin-bottom: 36px;
+        }
+
+        .cop-value {
+          margin-left: 204px;
+          font-size: 24px;
+          line-height: 140%;
+          letter-spacing: 0.125em;
+          text-transform: uppercase;
+          color: #ffffff;
         }
 
         .value-back {
@@ -465,7 +499,13 @@ export default function Index() {
           text-transform: uppercase;
           color: #ffffff;
         }
+        .cop-image {
+          padding-top: 400px;
+          background-color: black;
+        }
+
         .service {
+          margin-top: -200px;
           display: flex;
           background: linear-gradient(
             125.54deg,
@@ -533,15 +573,15 @@ export default function Index() {
           margin-top: 256px;
           margin-bottom: 128px;
           display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
         }
         .learn-back h2 {
           margin: 0;
           position: absolute;
-    top: 8143px;
-    left: 160px;
+          top: 8143px;
+          left: 160px;
         }
         .learn-back div h3 {
           font-family: "SegoeUI";
