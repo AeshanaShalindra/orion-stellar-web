@@ -93,7 +93,7 @@ export default function Index() {
           <div className="content">
             <h1>Services</h1>
             <p>
-              In the era of 4 th industrial revolution and Gig economy the
+              In the era of 4th industrial revolution and Digital Economy the
               Digital infrastructure is in the middle of business strategy and
               CIOs are challenged continuously to scale up the IT systems to
               meet the exponential demands in terms of volume , computational
