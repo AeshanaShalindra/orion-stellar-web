@@ -230,7 +230,7 @@ export default function Index() {
             size="23"
           />
           <div className="calendar">
-          <BookingView />
+            <BookingView />
           </div>
         </div>
 
@@ -450,8 +450,8 @@ export default function Index() {
           line-height: 24px;
           color: #ffffff;
         }
-        .book-tour-section .calendar{
-          margin-top:100px;
+        .book-tour-section .calendar {
+          margin-top: 400px;
         }
         .partner-section {
           width: 95%;

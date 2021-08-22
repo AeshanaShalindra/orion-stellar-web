@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Calendar from "react-calendar";
 
 export default function BookingView() {
   const [value, onChange] = useState(new Date());
+
+  useEffect(() => {
+    console.log(`>>>`, value);
+  }, [value]);
 
   return (
     <>
@@ -39,7 +43,7 @@ export default function BookingView() {
         </div>
       </div>
       <div className="send-btn">SEND BOOKING REQUEST</div>
-      <style jsx>{`
+      <style jsx>{`        
         .content {
           display: flex;
           justify-content: space-around;
