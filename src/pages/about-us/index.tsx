@@ -2,8 +2,7 @@ import Layout from "../../components/Layout";
 import BasicMeta from "../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
-import React from "react";
-import InfoCard from "../../components/InfoCard";
+import React, {  } from "react";
 import Footer from "../../components/Footer";
 import BackTitle from "../../components/BackTitle";
 import ProfileCard from "../../components/ProfileCard";
@@ -503,7 +502,9 @@ export default function Index() {
           padding-top: 400px;
           background-color: black;
         }
-
+        .cop-image img{
+          width:100%
+        }
         .service {
           margin-top: -200px;
           display: flex;
