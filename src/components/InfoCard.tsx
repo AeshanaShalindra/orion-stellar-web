@@ -1,27 +1,23 @@
-
 type Props = {
   image: string;
   title: string;
-  description: string;
+  description: JSX.Element;
 };
 export default function InfoCard({ title, image, description }: Props) {
   return (
     <>
-      <button
-        type="button"
-        className="button"
-      >
-        <img src={ image } alt={ title } />
+      <button type="button" className="button">
+        <img src={image} alt={title} />
         <div className="text">
-          <h5>{ title }</h5>
-          <p>{ description }</p>
+          <h5>{title}</h5>
+          <div className="desc">{description}</div>
         </div>
       </button>
-      <style jsx>{ `
+      <style jsx>{`
         .button {
           width: 490px;
           height: 650px;
-          transition: transform .2s; 
+          transition: transform 0.2s;
           cursor: pointer;
           border: none;
           padding: 0;
@@ -30,23 +26,26 @@ export default function InfoCard({ title, image, description }: Props) {
           display: flex;
           flex-direction: column;
         }
-        .text{
-          padding: 0 30px;
+        .text {
+          padding: 0 44px;
           text-align: left;
         }
-        img{
+        img {
           width: 490px;
           height: 395px;
         }
-        h5{          
+        h5 {
           font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
           font-size: 35px;
           line-height: 115.51%;
-          margin-bottom:12px;
+          margin-bottom: 12px;
         }
-        p{          
+        .desc {
+          margin-top: 23px;
+        }
+        p {
           font-family: "SegoeUI";
           font-style: normal;
           font-weight: normal;

@@ -158,43 +158,74 @@ export default function Index() {
           <InfoCard
             image="/images/card1.png"
             title="Sri Lanka’s First High Density Data Center."
-            description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+            description={
+              <ul>
+                <li>15Kw+ per Rack</li>
+                <li>Design PUE at 1.4</li>
+                <li>Best Power Efficiency</li>
+              </ul>
+            }
           />
           <InfoCard
             image="/images/card2.png"
             title="Sri Lanka’s First Carrier Neutral Data Center."
-            description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+            description={
+              <ul>
+                <li>2x MMRs</li>
+                <li>Both SLT, Dialog available with fiber rings</li>
+                <li>SD-WAN Enabled</li>
+              </ul>
+            }
           />
           <InfoCard
             image="/images/card3.png"
             title="Superior Rack Space per Footprint"
-            description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+            description={
+              <ul>
+                <li>50U Vs 42U in other data centers</li>
+                <li>Cost optimization</li>
+              </ul>
+            }
           />
           <InfoCard
             image="/images/card4.png"
             title="Fine Energy Metering Granularity"
-            description="Able to meter power usage at U Level “Pay as you go“ model"
+            description={
+              <ul>
+                <li>Able to meter power usage at U Level</li>
+                <li>“Pay as you go“ model</li>
+              </ul>
+            }
           />
           <InfoCard
             image="/images/card5.png"
             title="Colombo’s only Tier 3 Certified Data Center."
-            description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+            description={
+              <ul>
+                <li>Only Rated 3 commercial data center in Colombo</li>
+              </ul>
+            }
           />
           <InfoCard
             image="/images/card6.png"
             title="Strategic Location Advantage"
-            description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+            description={
+              <ul>
+                <li>Access to Business Hubs & IT parks</li>
+                <li>Ports & Administrative District</li>
+              </ul>
+            }
           />
+        </div>
+
+        <div className="sub-btn">
+          <h5 className="sub-btn-title">More Details</h5>
+          <div className="btn-wrap">
+            <div className="first-btn">What is a Meet-Me Room?</div>
+            <div className="middle-btn">
+              Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
+            </div>
+          </div>
         </div>
 
         <div className="data-center-tour-section">
@@ -437,6 +468,39 @@ export default function Index() {
           justify-content: space-evenly;
           flex-wrap: wrap;
           z-index: 5;
+        }
+        .sub-btn {
+          font-style: normal;
+          color: #ffffff;
+          font-family: Segoe UI;
+        }
+        .sub-btn .sub-btn-title {
+          font-weight: bold;
+          font-size: 35px;
+          line-height: 115.51%;
+          margin-left: 93px;
+          margin-bottom: 44px;
+        }
+        .sub-btn .btn-wrap {
+          display: flex;
+          flex-direction: row;
+          gap: 28px;
+        }
+        .sub-btn .first-btn {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          padding: 10px 20px 10px 93px;
+          background: black;
+          cursor: pointer;
+        }
+        .sub-btn .middle-btn {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          padding: 10px 20px 10px 20px;
+          background: black;
+          cursor: pointer;
         }
         .data-center-tour-section .message {
           margin-left: 252px;
