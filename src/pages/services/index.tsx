@@ -20,11 +20,10 @@ export default function Index() {
         <NavBar />
         <div className="subtitle-circle"></div>
         <p className="heading-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
-          elit ac morbi amet, nullam ultrices. Nulla at viverra gravida tellus,
-          in in aliquam aliquam. Enim eget ornare amet at luctus vel tortor
-          velit sem. Sit orci eget elit porta non posuere id elementum integer.
-          Neque ornare eu et blandit.
+          Enterprises seeking to thrive in a digital economy in which they can
+          both innovate and bring products and services to market faster, thus
+          staying ahead of their competition — treat IT infrastructure as a
+          strategic and enabling asset.
         </p>
         <h1 className="heading">Enterprise</h1>
       </div>
@@ -89,9 +88,6 @@ export default function Index() {
               Digitalization as our tagline denotes.
             </p>
           </div>
-          <div className="mid-btn">
-            <CircleButton title="" dark={false} />
-          </div>
           <div className="no-box">
             <p className="title">OrionStellar for Enterprises</p>
             <p>
@@ -143,15 +139,15 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="message">
+        {/* <div className="message">
           <p>
             We complement our infrastructure offering with an array of managed
             value-added services including{" "}
             <strong>“Remote Pair of Hands”</strong>
           </p>
-        </div>
+        </div> */}
 
-        <div className="grid-2">
+        {/* <div className="grid-2">
           <div className="title-1"> Managed </div>
           <div className="title-main">Value-Added Services </div>
           <div className="sub-title">for Enterprises.</div>
@@ -190,55 +186,84 @@ export default function Index() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="deliverables">
           <BackTitle title="Deliverables" />
           <div className="card-section">
             <InfoCard
-              image="/images/card1.png"
-              title="Sri Lanka’s First High Density Data Center."
-              description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+              image="/images/card7.png"
+              title="Up to 40%
+              Energy Saving"
+              description={
+                <ul>
+                  <li>Unmatched efficiency with a 1.4 PUE design</li>
+                  <li>Pay as You Go Usage</li>
+                </ul>
+              }
             />
             <InfoCard
-              image="/images/card2.png"
-              title="Sri Lanka’s First Carrier Neutral Data Center."
-              description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+              image="/images/card8.png"
+              title="19% More Rack Space"
+              description={
+                <ul>
+                  <li>
+                    Cost efficiency via optimized rack utilization compared to
+                    other data centers
+                  </li>
+                </ul>
+              }
             />
             <InfoCard
-              image="/images/card3.png"
-              title="Superior Rack Space per Footprint"
-              description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+              image="/images/card9.png"
+              title="Carrier Neutral
+              Networking"
+              description={
+                <ul>
+                  <li>Better Redundancy & amp; cost optimization</li>
+                </ul>
+              }
             />
             <InfoCard
-              image="/images/card4.png"
-              title="Fine Energy Metering Granularity"
-              description="Able to meter power usage at U Level “Pay as you go“ model"
+              image="/images/card10.png"
+              title="Bundled offers for
+              Startups & amp; SMEs"
+              description={
+                <ul>
+                  <li>All the infrastructure needed to run the business</li>
+                  <li>SD -WAN Enabled</li>
+                </ul>
+              }
             />
             <InfoCard
-              image="/images/card5.png"
-              title="Colombo’s only Tier 3 Certified Data Center."
-              description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+              image="/images/card11.png"
+              title="Travel & amp; 
+              Real Estate
+               Saving"
+              description={
+                <ul>
+                  <li>
+                    Run Production IT loads in a world class data center right
+                    here in Colombo
+                  </li>
+                </ul>
+              }
             />
             <InfoCard
-              image="/images/card6.png"
-              title="Strategic Location Advantage"
-              description="15Kw+ per Rack
-           Design PUE at 1.4
-           Best Power Efficiency"
+              image="/images/card12.png"
+              title="Accelerate Enterprise
+              Digitalization"
+              description={
+                <ul>
+                  <li>Run high density IT loads (~8-16kW/rack)</li>
+                  <li>Enable new breed of technologies</li>
+                </ul>
+              }
             />
           </div>
         </div>
 
-        <div className="grid-3">
+        {/* <div className="grid-3">
           <div className="logo">
             <img src="/images/logo-white.svg" alt="orion sella logo" />
           </div>
@@ -262,11 +287,33 @@ export default function Index() {
             ensure Tier3 Standards, superior customer service, & Environmental
             sustainability
           </p>
-        </div>
+        </div> */}
 
         <div className="grid-4">
           <img src="/images/startup-back.png" alt="startup background" />
           <div className="main-title">Start-Ups</div>
+            <div className="circle"></div>
+          <div className="startup-message">
+            If you are a startup, or with a SME set up, we believe that
+            OrionStellar can be your trusted technology partner since we
+            understand the start-up business format and the business
+            requirements. <br />
+            Our genes are mostly liked with startups since our top management
+            believe in startups, support the startup culture and has been the
+            pioneers in creating the flourishing startup culture in the country.
+            Our mother company Orion City is the first and the largest IT park
+            in the country while Hatch works Sri Lanka’s premier coworking,
+            Incubator and accelerator center , hosting a large number of starts
+            ups, is our sister company. Our chairman, Mr. Jeevan Gnanam has been
+            the visionary behind the country’s IT startup culture. Hence, we
+            know the heartbeat of startups and we are dedicated to serve your
+            start up or SME business set up. <br />
+            <br />
+            We have introduced customized service packages that Include
+            everything you need to kick-off your business. You can choose the
+            package depending on your requirement and we will help in further
+            customizing your service if required as well.
+          </div>
         </div>
 
         <div className="root-sub-title">
@@ -407,7 +454,7 @@ export default function Index() {
         }
         .heading-subtitle {
           position: absolute;
-          width: 768px;
+          width: 572px;
           height: 157px;
           left: 182px;
           top: 530px;
@@ -432,20 +479,21 @@ export default function Index() {
         }
         .service {
           display: flex;
-          background: linear-gradient(100deg, #0F1D31 30.98%, rgba(3, 96, 102, 0.81) 163.03%);
+          background: linear-gradient(
+            100deg,
+            #0f1d31 30.98%,
+            rgba(3, 96, 102, 0.81) 163.03%
+          );
           flex-wrap: wrap;
         }
         .challenges .title {
-          width: 818px;
-          margin-top: 179px;
-          margin-left: 298px;
-
-          font-family: Segoe UI;
+          margin-top: 144px;
+          margin-bottom: 57px;
+          margin-left: 200px;
           font-style: normal;
-          font-weight: 350;
+          font-weight: bold;
           font-size: 24px;
           line-height: 32px;
-
           color: #ffffff;
         }
         .challenges .box-row {
@@ -502,13 +550,6 @@ export default function Index() {
         .solutions {
           margin-top: 140px;
           display: flex;
-        }
-        .solutions .mid-btn {
-          position: absolute;
-          width: 193px;
-          height: 193px;
-          left: 825px;
-          top: 1917px;
         }
         .solutions .box {
           flex: 1;
@@ -785,9 +826,31 @@ export default function Index() {
           font-weight: bold;
           font-size: 318px;
           line-height: 452px;
-          text-align: center;
+          margin-left: 160px;
           width: 100%;
           margin-top: -363.8px;
+        }
+
+        .grid-4 .startup-message {
+          width: 1049px;
+          margin-left: 160px;
+          font-style: normal;
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+          z-index:10;
+        }
+
+        .grid-4 .circle {
+          width: 123px;
+    height: 122px;
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 104px;
+    z-index: 0;
+    border-radius: 100%;
+    background: #000000;
         }
 
         .root-sub-title {

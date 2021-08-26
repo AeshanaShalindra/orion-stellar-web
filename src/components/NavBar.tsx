@@ -170,7 +170,7 @@ export default function NavBar() {
         .nav-row .button-list {
           display: flex;
           align-items: flex-start;
-          justify-content: space-around;
+          justify-content: flex-end;
         }
         .line {
           border: 1px solid rgba(255, 255, 255, 0.6);
