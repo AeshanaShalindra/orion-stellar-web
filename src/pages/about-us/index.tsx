@@ -2,7 +2,7 @@ import Layout from "../../components/Layout";
 import BasicMeta from "../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
-import React, {  } from "react";
+import React from "react";
 import Footer from "../../components/Footer";
 import BackTitle from "../../components/BackTitle";
 import ProfileCard from "../../components/ProfileCard";
@@ -95,6 +95,45 @@ export default function Index() {
           <li>continuous improvement to meet global standards</li>
           <li>commitment to environmental sustainability</li>
         </ul>
+
+        <h2 className="main-title service-grid">
+          We are a new breed <br />
+          tech services company <br />
+          helping you to :
+        </h2>
+        <div className="service-grid-line"></div>
+        <div className="service-grid-container">
+          <div className="grid-item1">
+            <img src="images/target.png" alt="" className="grid-icon" />
+            <div className="grid-text">
+              FOCUS ON YOUR <br /> CORE BUSINESS <br /> AND INNOVATION
+            </div>
+          </div>
+          <div className="grid-item2">
+            <img src="images/colo5.png" alt="" className="grid-image" />
+          </div>
+          <div className="grid-item3">
+            <div className="grid-text">
+              ACCELLERATE YOUR <br /> DIGITALISATION <br /> ROADMAP
+            </div>
+          </div>
+          <div className="grid-item4">
+            <div className="grid-text">
+              RATIONALISE <br /> YOUR IT <br /> INFRASTRUCTURE <br /> COST
+            </div>
+          </div>
+          <div className="grid-item5">
+            <img src="images/colo6.png" alt="" className="grid-image" />
+          </div>
+          <div className="grid-item6">
+            <img
+              src="images/innovationwheel.svg"
+              alt=""
+              className="grid-icon"
+            />
+            <div className="grid-text">REDUCE ENERGY COSTS</div>
+          </div>
+        </div>
 
         {/* <div className="stand-for">
           <h2 className="main-title">What do we stand for:</h2>
@@ -227,6 +266,20 @@ export default function Index() {
         <BackTitle title="Team" />
         <img className="team-image" src="/images/team.png" alt="team" />
 
+        <div className="team-details">
+          We foster a culture of “Think big ,start small and move faster”. We
+          value the diversity in the workplace to bring out the best out of the
+          talent. Our highly trained customer support teams and technical teams,
+          fully equipped with the state of the art tools are focusing on best in
+          class service delivery .Our delivery assurance would ensure seamless
+          onboarding of customers to our data center. <br />
+          Our sales and marketing team will focus on customer life cycle
+          management adding value to our clients throughout the journey. Senior
+          management team is always available for client consultations,
+          feedback, and escalations to ensure we deliver what we promise as
+          OrionStellar.
+        </div>
+
         <div className="learn-back">
           <h2 className="main-title learn">Learn more about us!</h2>
           <div>
@@ -334,7 +387,7 @@ export default function Index() {
         .brand-back {
           position: absolute;
           width: 639px;
-          height: 1181px;
+          height: 1087px;
           left: 1024px;
           top: 690px;
           padding: 85px;
@@ -386,6 +439,85 @@ export default function Index() {
         .main-title.value {
           margin-left: 204px;
           margin-bottom: 36px;
+        }
+
+        .main-title.service-grid {
+          margin-top: 190px;
+          margin-left: 204px;
+          margin-bottom: 36px;
+        }
+
+        .service-grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap: 37px;
+          margin-left: 192px;
+          margin-right: 192px;
+          margin-top: 190px;
+          margin-bottom: 190px;
+          z-index: 10;
+        }
+        .service-grid-container .grid-item1 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .service-grid-container .grid-item2 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+        }
+        .service-grid-container .grid-item3 {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          display: flex;
+          align-items: center;
+        }
+        .service-grid-container .grid-item4 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          display: flex;
+          align-items: center;
+        }
+        .service-grid-container .grid-item4 .grid-text {
+          text-align: right;
+        }
+        .service-grid-container .grid-item5 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+        .service-grid-container .grid-item6 {
+          grid-column-start: 3;
+          grid-column-end: 5;
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .service-grid-container .grid-text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 127.69%;
+          letter-spacing: 0.29em;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        .service-grid-container .grid-image {
+          width: 100%;
+        }
+        .service-grid-line {
+          position: relative;
+          width: 1010px;
+          height: 0px;
+          margin-left: 551.04px;
+          margin-bottom: -600px;
+          margin-top: 561px;
+          z-index: 0;
+          border: 1px solid #ffffff;
+          transform: rotate(90deg);
         }
 
         .cop-value {
@@ -502,8 +634,8 @@ export default function Index() {
           padding-top: 400px;
           background-color: black;
         }
-        .cop-image img{
-          width:100%
+        .cop-image img {
+          width: 100%;
         }
         .service {
           margin-top: -200px;
@@ -567,6 +699,16 @@ export default function Index() {
         .team-image {
           width: 100%;
         }
+        .team-details {
+          width: 1060px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 32px;
+          color: #ffffff;
+          margin-left: 180px;
+          margin-top: 160px;
+        }
         .learn-back {
           width: 100%;
           height: 458px;
@@ -581,7 +723,7 @@ export default function Index() {
         .learn-back h2 {
           margin: 0;
           position: absolute;
-          top: 8143px;
+          top: 8976px;
           left: 160px;
         }
         .learn-back div h3 {

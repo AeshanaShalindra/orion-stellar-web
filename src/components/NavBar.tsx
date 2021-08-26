@@ -72,10 +72,6 @@ export default function NavBar() {
               }
             />
             <ActiveLink
-              href="/tour"
-              children={<NavButton title="Tour" active={asPath === "/tour"} />}
-            />
-            <ActiveLink
               href="/contact"
               children={
                 <NavButton title="Contact" active={asPath === "/contact"} />
@@ -126,16 +122,6 @@ export default function NavBar() {
                 <NavButton
                   title="Our Services"
                   active={asPath === "/services"}
-                  scroll={true}
-                />
-              }
-            />
-            <ActiveLink
-              href="/tour"
-              children={
-                <NavButton
-                  title="Tour"
-                  active={asPath === "/tour"}
                   scroll={true}
                 />
               }
