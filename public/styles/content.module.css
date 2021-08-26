@@ -2,6 +2,7 @@
   font-family: "Ubuntu", sans-serif;
   color: #222;
   font-weight: 200;
+  margin-top: 90px;
 }
 
 .content time {
@@ -9,8 +10,13 @@
 }
 
 .content p {
-  line-height: 1.5rem;
   margin: 1.5rem 0 0 0;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
 }
 
 .content a {
@@ -26,8 +32,15 @@
 .content h3,
 .content h4,
 .content h5 {
-  margin: 2rem 0 0 0;
-  line-height: 1.25em;
+  margin: 100px 0 64px 0;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 37px;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .content h2::before {

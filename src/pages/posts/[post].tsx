@@ -20,6 +20,7 @@ export type Props = {
   tags: string[];
   author: string;
   description?: string;
+  image?: string;
   source: MdxRemote.Source;
 };
 
@@ -37,6 +38,7 @@ export default function Post({
   tags,
   author,
   description = "",
+  image,
   source,
 }: Props) {
   const content = hydrate(source, { components })
@@ -48,6 +50,7 @@ export default function Post({
       tags={tags}
       author={author}
       description={description}
+      image={image}
     >
       {content}
     </PostLayout>

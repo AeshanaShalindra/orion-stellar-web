@@ -12,6 +12,7 @@ import NavBar from "../components/NavBar";
 import { Parallax } from "react-scroll-parallax";
 import PanoramaView from "../components/PanoramaView";
 import BookingView from "../components/BookingView";
+import ActiveLink from "../components/ActiveLink";
 
 export default function Index() {
   return (
@@ -19,275 +20,293 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <div className="container cover">
-        <NavBar />
-        <Parallax className="parallax-class" y={[-20, 20]}>
-          <div className="main-row first">
-            <div className="title-container">
-              <h1>Sri Lanka’s First</h1>
-              <h1>
-                <strong>High Density</strong> Data Center
-              </h1>
-              <h5>Nimble | Connected | Sustainable</h5>
-            </div>
-            <CircleButton title="Virtual Tour" dark={true} />
-          </div>
-        </Parallax>
-        <div className="main-row last">
-          <div style={{ display: "flex" }}>
-            <div className="row-tag">
-              <div className="row-tag-icon">
-                <img src="/images/star.svg" alt="star" />
-                <img src="/images/star.svg" alt="star" />
-                <img src="/images/star.svg" alt="star" />
+      <div className="back-wall">
+        <div className="container cover">
+          <NavBar />
+          <Parallax className="parallax-class" y={[-20, 20]}>
+            <div className="main-row first">
+              <div className="title-container">
+                <h1>Sri Lanka’s First</h1>
+                <h1>
+                  <strong>High Density</strong> Data Center
+                </h1>
+                <h5>Nimble | Connected | Sustainable</h5>
               </div>
-              <h6>TIA 03 Certified</h6>
+              <CircleButton title="Virtual Tour" dark={true} />
             </div>
-            <div className="row-tag">
-              <div className="row-tag-icon">
-                <img src="/images/location.svg" alt="pin" />
+          </Parallax>
+          <div className="main-row last">
+            <div style={{ display: "flex" }}>
+              <div className="row-tag">
+                <div className="row-tag-icon">
+                  <img src="/images/star.svg" alt="star" />
+                  <img src="/images/star.svg" alt="star" />
+                  <img src="/images/star.svg" alt="star" />
+                </div>
+                <h6>TIA 03 Certified</h6>
               </div>
-              <h6>Strategically located</h6>
-            </div>
-            <div className="row-tag">
-              <div className="row-tag-icon">
-                <img src="/images/money.svg" alt="location" />
+              <div className="row-tag">
+                <div className="row-tag-icon">
+                  <img src="/images/location.svg" alt="pin" />
+                </div>
+                <h6>Strategically located</h6>
               </div>
-              <h6>Value Added</h6>
+              <div className="row-tag">
+                <div className="row-tag-icon">
+                  <img src="/images/money.svg" alt="location" />
+                </div>
+                <h6>Value Added</h6>
+              </div>
             </div>
-          </div>
-          <div className="cer-list">
-            <img
-              className="cer-image"
-              src="/images/cert-ansi.png"
-              alt="ansi certification"
-            />
-            <img
-              className="cer-image"
-              src="/images/cert-iso.png"
-              alt="iso certification"
-            />
+            <div className="cer-list">
+              <img
+                className="cer-image"
+                src="/images/cert-ansi.png"
+                alt="ansi certification"
+              />
+              <img
+                className="cer-image"
+                src="/images/cert-iso.png"
+                alt="iso certification"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <Parallax className="middle-banner" y={[-20, 20]}>
-        <div className="middle-banner">
-          <img src="/images/logo-white.svg" alt="orion sella logo" />
-          <p>
-            A joint venture between SAPD ( St. Anthony’s property developers)
-            and Dialog Broad band Pvt Ltd in the business of best in class
-            digital infrastructure solutions . Orionstellar brings Sri Lanka’s
-            first high density and carrier neutral data center located at Orion
-            city, the Sri Lanka’s largest IT park located at Colombo 09 . This
-            is the only Tier 3 certified DC in the Colombo city and is poised to
-            offer an array of digital infrastructure solutions and value-added
-            managed services to the enterprises in the region.
-          </p>
-        </div>
-      </Parallax>
-
-      <div className="container service">
-        <div style={{ display: "flex" }}>
-          <img src="/images/services.png" alt="services" />
-          <div className="content">
-            <h1>Services</h1>
+        <Parallax className="middle-banner" y={[-20, 20]}>
+          <div className="middle-banner">
+            <img src="/images/logo-white.svg" alt="orion sella logo" />
             <p>
-              In the era of 4th industrial revolution and Digital Economy the
-              Digital infrastructure is in the middle of business strategy and
-              CIOs are challenged continuously to scale up the IT systems to
-              meet the exponential demands in terms of volume , computational
-              power and information security challenges. Orion stellar offers a
-              range of digital infrastructure services and managed value added
-              services to unburden these challenges such that businesses could
-              focus on their core business and innovation in their forward march
-              to become a digital enterprise.
+              A joint venture between SAPD ( St. Anthony’s property developers)
+              and Dialog Broad band Pvt Ltd in the business of best in class
+              digital infrastructure solutions . Orionstellar brings Sri Lanka’s
+              first high density and carrier neutral data center located at
+              Orion city, the Sri Lanka’s largest IT park located at Colombo 09
+              . This is the only Tier 3 certified DC in the Colombo city and is
+              poised to offer an array of digital infrastructure solutions and
+              value-added managed services to the enterprises in the region.
             </p>
           </div>
-        </div>
-        <div className="service-card-section">
-          <div>
-            <CardButton
-              title="enterprise"
-              contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
-              image="/images/enterprise.png"
-            />
-            <CardButton
-              title="start up"
-              contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
+        </Parallax>
+
+        <div className="container service">
+          <div style={{ display: "flex" }}>
+            <img src="/images/services.png" alt="services" />
+            <div className="content">
+              <h1>Services</h1>
+              <p>
+                In the era of 4th industrial revolution and Digital Economy the
+                Digital infrastructure is in the middle of business strategy and
+                CIOs are challenged continuously to scale up the IT systems to
+                meet the exponential demands in terms of volume , computational
+                power and information security challenges. Orion stellar offers
+                a range of digital infrastructure services and managed value
+                added services to unburden these challenges such that businesses
+                could focus on their core business and innovation in their
+                forward march to become a digital enterprise.
+              </p>
+            </div>
+          </div>
+          <div className="service-card-section">
+            <div>
+              <CardButton
+                title="enterprise"
+                contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
+                image="/images/enterprise.png"
+              />
+              <CardButton
+                title="start up"
+                contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
               OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop."
-              image="/images/startup.png"
-              marginLeft="60px"
+                image="/images/startup.png"
+                marginLeft="60px"
+              />
+            </div>
+            <CircleButton title="More Services" />
+          </div>
+          <div className="env-section">
+            <div className="content">
+              <img
+                className="logo"
+                src="/images/logo-white.svg"
+                alt="orion sella logo"
+              />
+              <h1>Environmental</h1>
+              <h2>Sustainability</h2>
+              <ul>
+                <li>
+                  IT consumes 3% of the power off the grid globally and the
+                  power demand keep increasing hence the need for power
+                  efficient datacenters has become a necessity in terms of
+                  environmental protection.{" "}
+                </li>
+                <li>
+                  Orion stellar data center has the most optimum Power Usage
+                  Efficiency (PUE) in the country.
+                </li>
+                <li>
+                  Lighting control system that could give 50% of energy saving
+                </li>
+                <li>
+                  LEED silver certified green building housing the datacenter
+                </li>
+              </ul>
+              <img src="/images/cert-leed.png" alt="leed certification" />
+            </div>
+            <img src="/images/environment.png" alt="environment" />
+          </div>
+          <BackTitle title="Uniqueness" />
+          <div className="card-section">
+            <InfoCard
+              image="/images/card1.png"
+              title="Sri Lanka’s First High Density Data Center."
+              description={
+                <ul>
+                  <li>15Kw+ per Rack</li>
+                  <li>Design PUE at 1.4</li>
+                  <li>Best Power Efficiency</li>
+                </ul>
+              }
+            />
+            <InfoCard
+              image="/images/card2.png"
+              title="Sri Lanka’s First Carrier Neutral Data Center."
+              description={
+                <ul>
+                  <li>2x MMRs</li>
+                  <li>Both SLT, Dialog available with fiber rings</li>
+                  <li>SD-WAN Enabled</li>
+                </ul>
+              }
+            />
+            <InfoCard
+              image="/images/card3.png"
+              title="Superior Rack Space per Footprint"
+              description={
+                <ul>
+                  <li>50U Vs 42U in other data centers</li>
+                  <li>Cost optimization</li>
+                </ul>
+              }
+            />
+            <InfoCard
+              image="/images/card4.png"
+              title="Fine Energy Metering Granularity"
+              description={
+                <ul>
+                  <li>Able to meter power usage at U Level</li>
+                  <li>“Pay as you go“ model</li>
+                </ul>
+              }
+            />
+            <InfoCard
+              image="/images/card5.png"
+              title="Colombo’s only Tier 3 Certified Data Center."
+              description={
+                <ul>
+                  <li>Only Rated 3 commercial data center in Colombo</li>
+                </ul>
+              }
+            />
+            <InfoCard
+              image="/images/card6.png"
+              title="Strategic Location Advantage"
+              description={
+                <ul>
+                  <li>Access to Business Hubs & IT parks</li>
+                  <li>Ports & Administrative District</li>
+                </ul>
+              }
             />
           </div>
-          <CircleButton title="More Services" />
-        </div>
-        <div className="env-section">
-          <div className="content">
-            <img
-              className="logo"
-              src="/images/logo-white.svg"
-              alt="orion sella logo"
-            />
-            <h1>Environmental</h1>
-            <h2>Sustainability</h2>
-            <ul>
-              <li>
-                IT consumes 3% of the power off the grid globally and the power
-                demand keep increasing hence the need for power efficient
-                datacenters has become a necessity in terms of environmental
-                protection.{" "}
-              </li>
-              <li>
-                Orion stellar data center has the most optimum Power Usage
-                Efficiency (PUE) in the country.
-              </li>
-              <li>
-                Lighting control system that could give 50% of energy saving
-              </li>
-              <li>
-                LEED silver certified green building housing the datacenter
-              </li>
-            </ul>
-            <img src="/images/cert-leed.png" alt="leed certification" />
-          </div>
-          <img src="/images/environment.png" alt="environment" />
-        </div>
-        <BackTitle title="Uniqueness" />
-        <div className="card-section">
-          <InfoCard
-            image="/images/card1.png"
-            title="Sri Lanka’s First High Density Data Center."
-            description={
-              <ul>
-                <li>15Kw+ per Rack</li>
-                <li>Design PUE at 1.4</li>
-                <li>Best Power Efficiency</li>
-              </ul>
-            }
-          />
-          <InfoCard
-            image="/images/card2.png"
-            title="Sri Lanka’s First Carrier Neutral Data Center."
-            description={
-              <ul>
-                <li>2x MMRs</li>
-                <li>Both SLT, Dialog available with fiber rings</li>
-                <li>SD-WAN Enabled</li>
-              </ul>
-            }
-          />
-          <InfoCard
-            image="/images/card3.png"
-            title="Superior Rack Space per Footprint"
-            description={
-              <ul>
-                <li>50U Vs 42U in other data centers</li>
-                <li>Cost optimization</li>
-              </ul>
-            }
-          />
-          <InfoCard
-            image="/images/card4.png"
-            title="Fine Energy Metering Granularity"
-            description={
-              <ul>
-                <li>Able to meter power usage at U Level</li>
-                <li>“Pay as you go“ model</li>
-              </ul>
-            }
-          />
-          <InfoCard
-            image="/images/card5.png"
-            title="Colombo’s only Tier 3 Certified Data Center."
-            description={
-              <ul>
-                <li>Only Rated 3 commercial data center in Colombo</li>
-              </ul>
-            }
-          />
-          <InfoCard
-            image="/images/card6.png"
-            title="Strategic Location Advantage"
-            description={
-              <ul>
-                <li>Access to Business Hubs & IT parks</li>
-                <li>Ports & Administrative District</li>
-              </ul>
-            }
-          />
-        </div>
 
-        <div className="sub-btn">
-          <h5 className="sub-btn-title">More Details</h5>
-          <div className="btn-wrap">
-            <div className="first-btn">What is a Meet-Me Room?</div>
-            <div className="middle-btn">
-              Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
+          <div className="sub-btn">
+            <h5 className="sub-btn-title">More Details</h5>
+            <div className="btn-wrap">
+              <ActiveLink
+                href="posts/meet-me"
+                children={
+                  <div className="first-btn">What is a Meet-Me Room?</div>
+                }
+              />
+              <ActiveLink
+                href="posts/wan-cost"
+                children={
+                  <div className="middle-btn">
+                    Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
+                  </div>
+                }
+              />
+            </div>
+          </div>
+
+          <div className="data-center-tour-section">
+            <BackTitle
+              title="Data Center Tour"
+              subtitle="Virtual Tour"
+              size="23"
+            />
+            <img src="/images/datacenter.png" alt="datacenter" />
+            {/* <PanoramaView image="/images/pano-image.jpg"/> */}
+            <div className="message">
+              <div className="iso-message">
+                We welcome you to experience our State of the Art data center
+                located at Orion city the largest IT park in the county. You
+                will learn about the best in class technologies used in the DC
+                built and operation and management using Schneider Eco structure
+                DCIM platform . We can demonstrate how multilayered physical
+                security systems are in operation to ensure the Physical
+                security as per ISO 2700:2013 framework.
+              </div>
+              <img
+                className="cer-image"
+                src="/images/cert-iso.png"
+                alt="iso certification"
+              />
+            </div>
+          </div>
+
+          <div className="book-tour-section">
+            <BackTitle
+              title="Data Center Tour"
+              subtitle="Book A Tour"
+              size="23"
+            />
+            <div className="calendar">
+              <BookingView />
+            </div>
+          </div>
+
+          <div className="partner-section">
+            <div className="title">
+              <h5>Strategic partners</h5>
+            </div>
+            <div className="logos">
+              <img src="/images/logos/schneider.png" alt="schneider" />
+              <img src="/images/logos/cat.png" alt="cat" />
+              <img src="/images/logos/socomec.png" alt="socomec" />
+              <img src="/images/logos/apc.png" alt="apc" />
+              <img src="/images/logos/cisco.png" alt="cisco" />
+            </div>
+            <div className="logos">
+              <img src="/images/logos/corning.png" alt="corning" />
+              <img src="/images/logos/siemens.png" alt="siemens" />
+              <img src="/images/logos/hisharp.png" alt="hisharp" />
+              <img src="/images/logos/paessler.png" alt="paessler" />
+              <img src="/images/logos/css.png" alt="css" />
             </div>
           </div>
         </div>
-
-        <div className="data-center-tour-section">
-          <BackTitle
-            title="Data Center Tour"
-            subtitle="Virtual Tour"
-            size="23"
-          />
-          <img src="/images/datacenter.png" alt="datacenter" />
-          {/* <PanoramaView image="/images/pano-image.jpg"/> */}
-          <div className="message">
-            <div className="iso-message">
-              We welcome you to experience our State of the Art data center
-              located at Orion city the largest IT park in the county. You will
-              learn about the best in class technologies used in the DC built
-              and operation and management using Schneider Eco structure DCIM
-              platform . We can demonstrate how multilayered physical security
-              systems are in operation to ensure the Physical security as per
-              ISO 2700:2013 framework.
-            </div>
-            <img
-              className="cer-image"
-              src="/images/cert-iso.png"
-              alt="iso certification"
-            />
-          </div>
-        </div>
-
-        <div className="book-tour-section">
-          <BackTitle
-            title="Data Center Tour"
-            subtitle="Book A Tour"
-            size="23"
-          />
-          <div className="calendar">
-            <BookingView />
-          </div>
-        </div>
-
-        <div className="partner-section">
-          <div className="title">
-            <h5>Strategic partners</h5>
-          </div>
-          <div className="logos">
-            <img src="/images/logos/schneider.png" alt="schneider" />
-            <img src="/images/logos/cat.png" alt="cat" />
-            <img src="/images/logos/socomec.png" alt="socomec" />
-            <img src="/images/logos/apc.png" alt="apc" />
-            <img src="/images/logos/cisco.png" alt="cisco" />
-          </div>
-          <div className="logos">
-            <img src="/images/logos/corning.png" alt="corning" />
-            <img src="/images/logos/siemens.png" alt="siemens" />
-            <img src="/images/logos/hisharp.png" alt="hisharp" />
-            <img src="/images/logos/paessler.png" alt="paessler" />
-            <img src="/images/logos/css.png" alt="css" />
-          </div>
-        </div>
-
         <Footer />
       </div>
       <style jsx>{`
+        .back-wall {
+          background: linear-gradient(
+            125.54deg,
+            #0f1d31 30.98%,
+            rgba(62, 9, 114, 0.86) 163.03%
+          );
+        }
         .container {
           width: 100%;
         }
@@ -385,11 +404,6 @@ export default function Index() {
         }
         .service {
           display: flex;
-          background: linear-gradient(
-            125.54deg,
-            #0f1d31 30.98%,
-            rgba(62, 9, 114, 0.86) 163.03%
-          );
           flex-wrap: wrap;
         }
         .service h1 {
@@ -492,7 +506,7 @@ export default function Index() {
           line-height: 24px;
           padding: 10px 20px 10px 93px;
           background: black;
-          cursor: pointer;
+          color: #ffffff;
         }
         .sub-btn .middle-btn {
           font-weight: normal;
@@ -500,7 +514,7 @@ export default function Index() {
           line-height: 24px;
           padding: 10px 20px 10px 20px;
           background: black;
-          cursor: pointer;
+          color: #ffffff;
         }
         .data-center-tour-section .message {
           margin-left: 252px;

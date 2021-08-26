@@ -108,6 +108,7 @@ export default function Footer() {
           width: -webkit-fill-available;
           height: 460px;
           padding: 64px;
+          padding-bottom: 0;
           margin: 72px;
           position: absolute;
 
