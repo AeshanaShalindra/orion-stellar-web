@@ -331,85 +331,149 @@ export default function Index() {
                   <h5>1U - 70kWh</h5>
                 </div>
                 <div className="row">
-                  <h4>Unlimited Bandwith</h4>
-                  <h5>1Gbit</h5>
+                  <h4>Unlimited Bandwith Includes</h4>
+                  <h5>2 x 1 Gbit Port 10 Mbps</h5>
                 </div>
                 <div className="row">
-                  <h4>Static IP</h4>
+                  <h4>Secure Out of band Access</h4>
+                  <h5>Unlimited 2 Mbps VI AN</h5>
+                </div>
+                <div className="row">
+                  <h4>Express Power Charges</h4>
+                  <h5>Rs. 44.55 per kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>DDo5 Protection</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>Single Static IP</h4>
                   <h5>Included</h5>
                 </div>
                 <div className="row">
                   <h4>24/7 Support</h4>
                   <h5>Included</h5>
                 </div>
+                <div className="row">
+                  <h4>Remote Hands</h4>
+                  <h5>Included</h5>
+                </div>
               </div>
-              <div className="price">LKR XXX</div>
+              <div className="price">LKR Monthly</div>
             </div>
             <div className="price-card">
-              <div className="title">Single Unit Appliance</div>
+              <div className="title">Dual Unit Appliance</div>
               <div className="content">
                 <div className="row">
                   <h4>Rack Unit</h4>
-                  <h5>1U - 70kWh</h5>
+                  <h5>2U - 70kWh</h5>
                 </div>
                 <div className="row">
-                  <h4>Unlimited Bandwith</h4>
-                  <h5>1Gbit</h5>
+                  <h4>Unlimited Bandwith Includes</h4>
+                  <h5>2 x 1 Gbit Port 10 Mbps</h5>
                 </div>
                 <div className="row">
-                  <h4>Static IP</h4>
+                  <h4>Secure Out of band Access</h4>
+                  <h5>Unlimited 2 Mbps VI AN</h5>
+                </div>
+                <div className="row">
+                  <h4>Express Power Charges</h4>
+                  <h5>Rs. 44.55 per kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>DDo5 Protection</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>Single Static IP</h4>
                   <h5>Included</h5>
                 </div>
                 <div className="row">
                   <h4>24/7 Support</h4>
                   <h5>Included</h5>
                 </div>
+                <div className="row">
+                  <h4>Remote Hands</h4>
+                  <h5>Included</h5>
+                </div>
               </div>
-              <div className="price">LKR XXX</div>
+              <div className="price">LKR Monthly</div>
             </div>
             <div className="price-card">
-              <div className="title">Single Unit Appliance</div>
+              <div className="title">Dual Unit Appliance</div>
               <div className="content">
                 <div className="row">
                   <h4>Rack Unit</h4>
-                  <h5>1U - 70kWh</h5>
+                  <h5>4U - 280kWh</h5>
                 </div>
                 <div className="row">
-                  <h4>Unlimited Bandwith</h4>
-                  <h5>1Gbit</h5>
+                  <h4>Unlimited Bandwith Includes</h4>
+                  <h5>2 x 1 Gbit Port 10 Mbps</h5>
                 </div>
                 <div className="row">
-                  <h4>Static IP</h4>
+                  <h4>Secure Out of band Access</h4>
+                  <h5>Unlimited 2 Mbps VI AN</h5>
+                </div>
+                <div className="row">
+                  <h4>Express Power Charges</h4>
+                  <h5>Rs. 44.55 per kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>DDo5 Protection</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>Single Static IP</h4>
                   <h5>Included</h5>
                 </div>
                 <div className="row">
                   <h4>24/7 Support</h4>
                   <h5>Included</h5>
                 </div>
+                <div className="row">
+                  <h4>Remote Hands</h4>
+                  <h5>Included</h5>
+                </div>
               </div>
-              <div className="price">LKR XXX</div>
+              <div className="price">LKR Monthly</div>
             </div>
             <div className="price-card">
-              <div className="title">Single Unit Appliance</div>
+              <div className="title">Quarter Rack Appliance</div>
               <div className="content">
                 <div className="row">
                   <h4>Rack Unit</h4>
-                  <h5>1U - 70kWh</h5>
+                  <h5>13U - 910kWh</h5>
                 </div>
                 <div className="row">
-                  <h4>Unlimited Bandwith</h4>
-                  <h5>1Gbit</h5>
+                  <h4>Unlimited Bandwith Includes</h4>
+                  <h5>2 x 1 Gbit Port 10 Mbps</h5>
                 </div>
                 <div className="row">
-                  <h4>Static IP</h4>
+                  <h4>Secure Out of band Access</h4>
+                  <h5>Unlimited 2 Mbps VI AN</h5>
+                </div>
+                <div className="row">
+                  <h4>Express Power Charges</h4>
+                  <h5>Rs. 44.55 per kWh</h5>
+                </div>
+                <div className="row">
+                  <h4>DDo5 Protection</h4>
+                  <h5>Included</h5>
+                </div>
+                <div className="row">
+                  <h4>Single Static IP</h4>
                   <h5>Included</h5>
                 </div>
                 <div className="row">
                   <h4>24/7 Support</h4>
                   <h5>Included</h5>
                 </div>
+                <div className="row">
+                  <h4>Remote Hands</h4>
+                  <h5>Included</h5>
+                </div>
               </div>
-              <div className="price">LKR XXX</div>
+              <div className="price">LKR Monthly</div>
             </div>
           </div>
         </div>
@@ -843,6 +907,7 @@ export default function Index() {
         }
 
         .grid-4 .circle {
+          display:none;
           width: 123px;
     height: 122px;
     position: absolute;
@@ -880,15 +945,13 @@ export default function Index() {
           align-items: center;
         }
         .price-card {
-          width: 362px;
-          /* height: 1150px; */
+          width: 375px;
           left: 148px;
           top: 11690px;
-
           background: #0a1422;
           mix-blend-mode: normal;
           backdrop-filter: blur(4px);
-          border-radius: 5px;
+          border-radius: 8px;
         }
         .price-card .title {
           font-weight: bold;
@@ -925,6 +988,8 @@ export default function Index() {
           display: flex;
           justify-content: center;
           align-items: center;
+          border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
         }
 
         @media (min-width: 769px) {
