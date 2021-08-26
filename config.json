@@ -3,15 +3,8 @@
   "site_title": "Orion Stella",
   "site_description": "Digital transformation for you",
   "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
-    }
+    "orion-stellar",
+    "cloud-services"
   ],
   "posts_per_page": 5,
   "twitter_account": "@my-account",
