@@ -6,9 +6,10 @@ type Props = {
   subtitle?: string;
   size?: string;
   bottom?: number;
+  color?: string;
 };
 
-export default function BackTitle({ title, subtitle, size, bottom }: Props) {
+export default function BackTitle({ title, subtitle, size, bottom, color }: Props) {
   return (
     <>
       <div>
@@ -28,7 +29,7 @@ export default function BackTitle({ title, subtitle, size, bottom }: Props) {
           font-weight: 900;
           font-size: ${size || 32}vh;
           line-height: 483px;
-          color: rgba(0, 0, 0, 0.3);
+          color: ${color || '#0000004d'};
           margin-bottom: -${bottom || 99}px;
           margin-top: -163px;
         }

@@ -72,7 +72,7 @@ export default function Index() {
                 ></textarea>
 
                 <div className="submit-btn">SEND</div>
-              </div>              
+              </div>
             </div>
           </div>
 
@@ -115,11 +115,23 @@ export default function Index() {
               </div>
 
               <div className="mail-info">
-              <h6>Drop us a mail</h6>
-              <h5>sales@orionstellar.com</h5>
+                <h6>Drop us a mail</h6>
+                <h5>sales@orionstellar.com</h5>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="container location">
+          <BackTitle title="Location" color="#242424" />
+          {/* <img className="map" src="/images/map.png" alt="map" /> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2057.6710644900227!2d79.87926154606609!3d6.941058973837002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594e8faf9825%3A0xb72be2890f0c7e0f!2sOrionStellar%20%7C%20Digital%20Realty%20(Pvt)%20Ltd!5e1!3m2!1sen!2slk!4v1630002407583!5m2!1sen!2slk"
+            width="100%"
+            height="649"
+            className="g-map"
+            loading="lazy"
+          ></iframe>
         </div>
         <Footer />
       </div>
@@ -156,11 +168,7 @@ export default function Index() {
           top: 267px;
         }
         .contents {
-          background: linear-gradient(
-            156.5deg,
-            #000000 32.35%,
-            #ffffff 248.34%
-          );
+          background: linear-gradient(115deg, #000000 32.35%, #c1c1c1 248.34%);
         }
         .center-all {
           display: flex;
@@ -194,13 +202,14 @@ export default function Index() {
         }
         .info-form .form-wrap {
           width: 728px;
-          height: 2272px;
+          height: 1924px;
           background: linear-gradient(
             131.77deg,
             rgba(255, 255, 255, 0.4234) 10.66%,
             rgba(255, 255, 255, 0.1508) 95.86%
           );
-          backdrop-filter: blur(30px);
+          backdrop-filter: blur(5px);
+          z-index: 10;
         }
         .form-wrap h2 {
           font-style: normal;
@@ -267,13 +276,30 @@ export default function Index() {
           -webkit-text-fill-color: transparent;
           cursor: pointer;
         }
-        .mail-info{
-          margin-top:319px;
+        .mail-info {
+          margin-top: 319px;
         }
-        .mail-info h5{
-          margin-top:0;
+        .mail-info h5 {
+          margin-top: 0;
           font-weight: normal;
-font-size: 35px;
+          font-size: 35px;
+        }
+        .container.location {
+          margin-top: -500px;
+        }
+        .location .map {
+          width: 100%;
+          margin-top: -176px;
+        }
+        .location .g-map {
+          width: 100%;
+          height: 649px;
+          border: none;
+        }
+        .location .action-btn {
+          margin-left: 160px;
+          margin-top: -376px;
+          z-index: 20;
         }
         @media (min-width: 769px) {
           h1 {
