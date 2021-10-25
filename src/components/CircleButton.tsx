@@ -19,6 +19,7 @@ export default function CircleButton({ title, dark }: Props) {
           justify-content: center;
           align-items: center;
 
+          max-width: 185px;
           width: 185px;
           height: 185px;
 

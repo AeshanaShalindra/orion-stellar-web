@@ -28,49 +28,13 @@ export default function Index() {
               <div className="title-container">
                 <h1>Sri Lanka’s First</h1>
                 <h1>
-                  <strong>High Density</strong> Data Center
+                  <strong>High Density</strong> & Carrier Neutral<br/> Data Center
                 </h1>
                 <h5>Nimble | Connected | Sustainable</h5>
               </div>
               <CircleButton title="Virtual Tour" dark={true} />
             </div>
-          </Parallax>
-          <div className="main-row last">
-            <div style={{ display: "flex" }}>
-              <div className="row-tag">
-                <div className="row-tag-icon">
-                  <img src="/images/star.svg" alt="star" />
-                  <img src="/images/star.svg" alt="star" />
-                  <img src="/images/star.svg" alt="star" />
-                </div>
-                <h6>TIA 03 Certified</h6>
-              </div>
-              <div className="row-tag">
-                <div className="row-tag-icon">
-                  <img src="/images/location.svg" alt="pin" />
-                </div>
-                <h6>Strategically located</h6>
-              </div>
-              <div className="row-tag">
-                <div className="row-tag-icon">
-                  <img src="/images/money.svg" alt="location" />
-                </div>
-                <h6>Value Added</h6>
-              </div>
-            </div>
-            <div className="cer-list">
-              <img
-                className="cer-image"
-                src="/images/cert-ansi.png"
-                alt="ansi certification"
-              />
-              <img
-                className="cer-image"
-                src="/images/cert-iso.png"
-                alt="iso certification"
-              />
-            </div>
-          </div>
+          </Parallax>         
         </div>
 
         <Parallax className="middle-banner" y={[-20, 20]}>
@@ -173,7 +137,7 @@ export default function Index() {
               title="Sri Lanka’s First Carrier Neutral Data Center."
               description={
                 <ul>
-                  <li>2x MMRs</li>
+                  <li>2x Meet-me Rooms</li>
                   <li>Both SLT, Dialog available with fiber rings</li>
                   <li>SD-WAN Enabled</li>
                 </ul>
@@ -220,7 +184,7 @@ export default function Index() {
             />
           </div>
 
-          <div className="sub-btn">
+          {/* <div className="sub-btn">
             <h5 className="sub-btn-title">More Details</h5>
             <div className="btn-wrap">
               <ActiveLink
@@ -238,7 +202,7 @@ export default function Index() {
                 }
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="data-center-tour-section">
             <BackTitle
@@ -251,7 +215,7 @@ export default function Index() {
             <div className="message">
               <div className="iso-message">
                 We welcome you to experience our State of the Art data center
-                located at Orion city the largest IT park in the county. You
+                located at Orion city the largest IT park in the country.<br/><br/> You
                 will learn about the best in class technologies used in the DC
                 built and operation and management using Schneider Eco structure
                 DCIM platform . We can demonstrate how multilayered physical
@@ -325,15 +289,14 @@ export default function Index() {
           justify-content: space-between;
           flex: 1 1 auto;
           padding: 0 130px;
-        }
-        .main-row:last-child {
-          margin-bottom: 100px;
+          margin-bottom: 400px;
         }
         .title-container h1 {
+          flex: 3;
           font-family: "SegoeUI", sans-serif;
           font-style: normal;
           font-weight: normal;
-          font-size: 95px;
+          font-size: 84px;
         }
         .row-tag {
           margin-right: 58px;
@@ -568,7 +531,24 @@ export default function Index() {
           height: fit-content;
         }
 
-        @media (min-width: 769px) {
+        /* Extra small devices (phones, 600px and down) */
+        @media (max-width: 600px) {
+          .main-row {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          flex: 1 1 auto;
+          padding: 0 130px;
+        }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media (min-width: 600px) {
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media (min-width: 768px) {
           h1 {
             font-size: 3rem;
           }
@@ -576,6 +556,15 @@ export default function Index() {
             font-size: 2.25rem;
           }
         }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media (min-width: 992px) {
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+        }
+
       `}</style>
     </Layout>
   );

@@ -214,7 +214,7 @@ export default function Index() {
             <ProfileCard
               image="/images/team/Rajendra.png"
               title="Chairman"
-              name="Rajendra Theagarah"
+              name="Rajendra Theagarajah"
               workTitle="Chairman"
               workLogo="/images/logos/degital-realty.png"
               description="Rajendra is a banking veteran, technologist, and business transformation leader. Rajendra started his career as a Chartered Accountant and is a member of the Chartered Institute of Management Accountants (UK).
