@@ -19,17 +19,17 @@ export default function Index() {
       <div className="back-wall">
         <div className="container cover">
           <NavBar />
-          <div className="subtitle-circle"></div>
-          <p className="heading-subtitle">
-            Enterprises seeking to thrive in a digital economy in which they can
-            both innovate and bring products and services to market faster, thus
-            staying ahead of their competition — treat IT infrastructure as a
-            strategic and enabling asset.
-          </p>
           <h1 className="heading">Enterprise</h1>
         </div>
         <div className="container service">
           <div className="challenges">
+            <p className="heading-subtitle">
+              <div className="subtitle-circle"></div>
+              Enterprises seeking to thrive in a digital economy in which they
+              can both innovate and bring products and services to market
+              faster, thus staying ahead of their competition — treat IT
+              infrastructure as a strategic and enabling asset.
+            </p>
             <p className="title">
               Therefore, enterprises are confronted with new business challenges
               such as
@@ -293,12 +293,14 @@ export default function Index() {
           <div className="grid-4">
             <img src="/images/startup-back.png" alt="startup background" />
             <div className="main-title">Start-Ups</div>
-            <div className="circle"></div>
             <div className="startup-message">
+              <div className="black-circle"></div>
               If you are a startup, or with a SME set up, we believe that
               OrionStellar can be your trusted technology partner since we
               understand the start-up business format and the business
-              requirements. <br />
+              requirements.
+              <br />
+              <br />
               Our genes are mostly liked with startups since our top management
               believe in startups, support the startup culture and has been the
               pioneers in creating the flourishing startup culture in the
@@ -308,7 +310,7 @@ export default function Index() {
               large number of starts ups, is our sister company. Our chairman,
               Mr. Jeevan Gnanam has been the visionary behind the country’s IT
               startup culture. Hence, we know the heartbeat of startups and we
-              are dedicated to serve your start up or SME business set up.{" "}
+              are dedicated to serve your start up or SME business set up.
               <br />
               <br />
               We have introduced customized service packages that Include
@@ -318,7 +320,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="root-sub-title">
+          {/* <div className="root-sub-title">
             OrionStellar Colocation services bundle for Startups and SMEs
           </div>
 
@@ -478,7 +480,7 @@ export default function Index() {
                 <div className="price">LKR Monthly</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <Footer />
       </div>
@@ -525,37 +527,31 @@ export default function Index() {
 
           color: #ffffff;
         }
+        .service {
+          display: flex;
+          flex-wrap: wrap;
+        }
         .heading-subtitle {
-          position: absolute;
-          width: 572px;
-          height: 157px;
-          left: 182px;
-          top: 530px;
-
+          width: 50vw;
           font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
           line-height: 24px;
-
+          margin-top: 64px;
+          margin-left: 200px;
           color: #ffffff;
         }
-        .subtitle-circle {
-          position: absolute;
+        .heading-subtitle .subtitle-circle {
           width: 123px;
           height: 122px;
-          left: 130px;
-          top: 495px;
-
           background: #000000;
           border-radius: 100px;
-        }
-        .service {
-          display: flex;
-          flex-wrap: wrap;
+          margin-bottom: -6vh;
+          margin-left: -3vw;
         }
         .challenges .title {
-          margin-top: 144px;
+          margin-top: 64px;
           margin-bottom: 57px;
           margin-left: 200px;
           font-style: normal;
@@ -900,13 +896,22 @@ export default function Index() {
 
         .grid-4 .startup-message {
           width: 1049px;
-          margin-left: 160px;
+          margin-left: 280px;
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
           line-height: 24px;
           color: #ffffff;
           z-index: 10;
+        }
+
+        .startup-message .black-circle {
+          width: 123px;
+          height: 122px;
+          background: #000000;
+          border-radius: 100px;
+          margin-bottom: -6vh;
+          margin-left: -3vw;
         }
 
         .grid-4 .circle {

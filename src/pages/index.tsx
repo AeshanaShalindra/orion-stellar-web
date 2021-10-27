@@ -253,6 +253,25 @@ export default function Index() {
               <img src="/images/logos/cisco.png" alt="cisco" />
             </div>
             <div className="logos">
+              {/* <img src="/images/logos/corning.png" alt="corning" /> */}
+              <img src="/images/logos/siemens.png" alt="siemens" />
+              <img src="/images/logos/hisharp.png" alt="hisharp" />
+              <img src="/images/logos/paessler.png" alt="paessler" />
+              <img src="/images/logos/css.png" alt="css" />
+            </div>
+          </div>
+          <div className="partner-section infrastructure">
+            <div className="title">
+              <h5>Our Infrastructure partners</h5>
+            </div>
+            {/* <div className="logos">
+              <img src="/images/logos/schneider.png" alt="schneider" />
+              <img src="/images/logos/cat.png" alt="cat" />
+              <img src="/images/logos/socomec.png" alt="socomec" />
+              <img src="/images/logos/apc.png" alt="apc" />
+              <img src="/images/logos/cisco.png" alt="cisco" />
+            </div> */}
+            <div className="logos">
               <img src="/images/logos/corning.png" alt="corning" />
               <img src="/images/logos/siemens.png" alt="siemens" />
               <img src="/images/logos/hisharp.png" alt="hisharp" />
@@ -508,6 +527,9 @@ export default function Index() {
           align-items: center;
           justify-content: space-around;
           margin-bottom: 100px;
+        }
+        .partner-section.infrastructure .title {
+          width: 724px;
         }
         .partner-section .title h5 {
           font-family: "SegoeUI";

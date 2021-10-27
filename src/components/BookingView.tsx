@@ -3,16 +3,16 @@ import Calendar from "react-calendar";
 import CircleButton from "./CircleButton";
 
 export default function BookingView() {
-  const [value, onChange] = useState(new Date());
+  const [ value, onChange ] = useState(new Date());
 
   useEffect(() => {
     console.log(`>>>`, value);
-  }, [value]);
+  }, [ value ]);
 
   return (
     <>
       <div className="content">
-        {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */}
+        {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */ }
         <div className="request-form">
           <input type="text" name="name" id="name" placeholder="Name" />
           <input type="text" name="email" id="email" placeholder="Email" />
@@ -27,8 +27,8 @@ export default function BookingView() {
             name="message"
             id="message"
             placeholder="Issue/Message"
-            cols={30}
-            rows={5}
+            cols={ 30 }
+            rows={ 5 }
           ></textarea>
         </div>
         <div className="info">
@@ -44,12 +44,12 @@ export default function BookingView() {
             <li>We look forward to meeting you.</li>
           </ul>
           <div className="btn-wrap">
-          <CircleButton title="SEND BOOKING REQUEST" />
+            <CircleButton title="SEND BOOKING REQUEST" />
           </div>
         </div>
       </div>
-      {/* <div className="send-btn">SEND BOOKING REQUEST</div> */}
-      <style jsx>{`
+      {/* <div className="send-btn">SEND BOOKING REQUEST</div> */ }
+      <style jsx>{ `
         .content {
           display: flex;
           justify-content: space-around;
@@ -104,7 +104,7 @@ export default function BookingView() {
         .btn-wrap{
           display: flex;
           justify-content: center;
-          margin-top: 24px;
+          margin-top: 84px;
         }
       `}</style>
     </>

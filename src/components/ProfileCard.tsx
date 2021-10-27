@@ -5,6 +5,7 @@ type Props = {
   workTitle: string;
   workLogo: string;
   description: string;
+  extraDes?: string;
 };
 export default function ProfileCard({
   image,
@@ -13,6 +14,7 @@ export default function ProfileCard({
   workTitle,
   workLogo,
   description,
+  extraDes,
 }: Props) {
   return (
     <>
@@ -24,6 +26,7 @@ export default function ProfileCard({
           {/* <small>{workTitle}</small>
           <img className="work-logo" src={workLogo} alt="work place" /> */}
           <p>{description}</p>
+          <p>{extraDes}</p>
         </div>
       </div>
       <style jsx>{`
