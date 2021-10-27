@@ -54,7 +54,9 @@ export default function Index() {
 
           <div className="brand-back">
             <div className="tour-button">
+              <a href="/#tour">
               <CircleButton title="Virtual Tour" dark={true} />
+              </a>
             </div>
             <h2 className="main-title brand">
               Our Brand

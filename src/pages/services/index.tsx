@@ -126,7 +126,9 @@ export default function Index() {
               </p>
             </div> */}
             <div className="row">
+              <a href="/colocation">
               <img src="images/colo1.png" alt="" className="image1" />
+              </a>
               <img src="images/colo2.png" alt="" className="image2" />
               <h5 className="row-2 description">
                 DedicateD cages with multi-factor access Control
@@ -291,7 +293,7 @@ export default function Index() {
           </p>
         </div> */}
 
-          <div className="grid-4">
+          <div id="start-up" className="grid-4">
             <img src="/images/startup-back.png" alt="startup background" />
             <div className="main-title">Start-Ups</div>
             <div className="startup-message">

@@ -28,13 +28,16 @@ export default function Index() {
               <div className="title-container">
                 <h1>Sri Lanka’s First</h1>
                 <h1>
-                  <strong>High Density</strong> & Carrier Neutral<br/> Data Center
+                  <strong>High Density</strong> & Carrier Neutral
+                  <br /> Data Center
                 </h1>
                 <h5>Nimble | Connected | Sustainable</h5>
               </div>
-              <CircleButton title="Virtual Tour" dark={true} />
+              <a href="#tour">
+                <CircleButton title="Virtual Tour" dark={true} />
+              </a>
             </div>
-          </Parallax>         
+          </Parallax>
         </div>
 
         <Parallax className="middle-banner" y={[-20, 20]}>
@@ -73,20 +76,25 @@ export default function Index() {
           </div>
           <div className="service-card-section">
             <div>
+              <a href="/services"></a>
               <CardButton
                 title="enterprise"
                 contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
                 image="/images/enterprise.png"
               />
-              <CardButton
-                title="start up"
-                contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
+              <a href="/services#start-up">
+                <CardButton
+                  title="start up"
+                  contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
               OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop."
-                image="/images/startup.png"
-                marginLeft="60px"
-              />
+                  image="/images/startup.png"
+                  marginLeft="60px"
+                />
+              </a>
             </div>
-            <CircleButton title="More Services" />
+            <a href="/services">
+              <CircleButton title="More Services" />
+            </a>
           </div>
           <div className="env-section">
             <div className="content">
@@ -184,27 +192,7 @@ export default function Index() {
             />
           </div>
 
-          {/* <div className="sub-btn">
-            <h5 className="sub-btn-title">More Details</h5>
-            <div className="btn-wrap">
-              <ActiveLink
-                href="posts/meet-me"
-                children={
-                  <div className="first-btn">What is a Meet-Me Room?</div>
-                }
-              />
-              <ActiveLink
-                href="posts/wan-cost"
-                children={
-                  <div className="middle-btn">
-                    Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
-                  </div>
-                }
-              />
-            </div>
-          </div> */}
-
-          <div className="data-center-tour-section">
+          <div id="tour" className="data-center-tour-section">
             <BackTitle
               title="Data Center Tour"
               subtitle="Virtual Tour"
@@ -215,12 +203,13 @@ export default function Index() {
             <div className="message">
               <div className="iso-message">
                 We welcome you to experience our State of the Art data center
-                located at Orion city the largest IT park in the country.<br/><br/> You
-                will learn about the best in class technologies used in the DC
-                built and operation and management using Schneider Eco structure
-                DCIM platform . We can demonstrate how multilayered physical
-                security systems are in operation to ensure the Physical
-                security as per ISO 2700:2013 framework.
+                located at Orion city the largest IT park in the country.
+                <br />
+                <br /> You will learn about the best in class technologies used
+                in the DC built and operation and management using Schneider Eco
+                structure DCIM platform . We can demonstrate how multilayered
+                physical security systems are in operation to ensure the
+                Physical security as per ISO 2700:2013 framework.
               </div>
               <img
                 className="cer-image"
@@ -556,13 +545,13 @@ export default function Index() {
         /* Extra small devices (phones, 600px and down) */
         @media (max-width: 600px) {
           .main-row {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          flex: 1 1 auto;
-          padding: 0 130px;
-        }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1 1 auto;
+            padding: 0 130px;
+          }
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -586,7 +575,6 @@ export default function Index() {
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media (min-width: 1200px) {
         }
-
       `}</style>
     </Layout>
   );
