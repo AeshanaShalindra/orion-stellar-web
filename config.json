@@ -1,16 +1,13 @@
 {
   "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Orion Stella",
+  "site_title": "Orion Stellar",
   "site_description": "Digital transformation for you",
   "site_keywords": [
     {
-      "keyword": "Next.js"
+      "keyword": "Orion Stellar"
     },
     {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
+      "keyword": "Data Center"
     }
   ],
   "posts_per_page": 5,
