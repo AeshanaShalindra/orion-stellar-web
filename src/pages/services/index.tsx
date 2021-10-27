@@ -19,6 +19,9 @@ export default function Index() {
       <div className="back-wall">
         <div className="container cover">
           <NavBar />
+          <div className="pre-subtitle">
+            Digital infrastructure solutions for{" "}
+          </div>
           <h1 className="heading">Enterprise</h1>
         </div>
         <div className="container service">
@@ -33,7 +36,7 @@ export default function Index() {
             Therefore, enterprises are confronted with new business challenges
             such as
           </p>
-          
+
           <div className="challenges">
             <div className="box-row">
               <div className="box box-first">
@@ -127,17 +130,23 @@ export default function Index() {
             </div> */}
             <div className="row">
               <a href="/colocation">
-              <img src="images/colo1.png" alt="" className="image1" />
+                <img src="images/colo1.png" alt="" className="image1" />
               </a>
               <img src="images/colo2.png" alt="" className="image2" />
-              <h5 className="row-2 description">
-                DedicateD cages with multi-factor access Control
-              </h5>
+              <div className="row-2 description">
+                <h2>Managed</h2>
+                <h1>
+                  Value-Added
+                  <br /> Services
+                </h1>
+                <h2>for Enterprises.</h2>
+              </div>
             </div>
             <div className="row">
-              <h5 className="row-3 description">
-                U Level Rack Level or Cage-level hosting
-              </h5>
+              <div className="row-3 description">
+                <h2>Managed</h2>
+                <h1>Services</h1>
+              </div>
               <img src="images/colo3.png" alt="" className="image3" />
               <img src="images/colo4.png" alt="" className="image4" />
             </div>
@@ -515,6 +524,19 @@ export default function Index() {
           font-size: 100px;
           color: #ffffff;
         }
+        .pre-subtitle {
+          position: absolute;
+          width: 1616px;
+          height: 122px;
+          left: 131px;
+          top: 585px;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 96px;
+          color: #ffffff;
+        }
         .heading {
           position: absolute;
           width: 1616px;
@@ -568,7 +590,7 @@ export default function Index() {
           display: flex;
         }
         .challenges .box-row .box {
-          height: 199px;          
+          height: 199px;
           background: #000000;
           display: flex;
           align-items: center;
@@ -731,15 +753,19 @@ export default function Index() {
           width: 345px;
           height: 255px;
           left: 1355px;
-          top: 3044.46px;
+          top: 2957px;
           margin: 0;
-
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 127.69%;
-
-          letter-spacing: 0.29em;
-          text-transform: uppercase;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: bold;
+        }
+        .description h1 {
+          margin: 0;
+          font-size: 52px !important;
+        }
+        .description h2 {
+          margin: 0;
+          font-size: 36px !important;
         }
         .grid .row-3.description {
           position: absolute;
@@ -747,14 +773,7 @@ export default function Index() {
           height: 254px;
           left: 137px;
           top: 3430.46px;
-
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 127.69%;
           text-align: right;
-
-          letter-spacing: 0.29em;
-          text-transform: uppercase;
         }
         .message {
           width: 1057px;
