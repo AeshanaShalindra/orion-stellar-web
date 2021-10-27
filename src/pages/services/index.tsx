@@ -19,21 +19,22 @@ export default function Index() {
       <div className="back-wall">
         <div className="container cover">
           <NavBar />
-          <div className="subtitle-circle"></div>
+          <h1 className="heading">Enterprise</h1>
+        </div>
+        <div className="container service">
           <p className="heading-subtitle">
+            <div className="subtitle-circle"></div>
             Enterprises seeking to thrive in a digital economy in which they can
             both innovate and bring products and services to market faster, thus
             staying ahead of their competition — treat IT infrastructure as a
             strategic and enabling asset.
           </p>
-          <h1 className="heading">Enterprise</h1>
-        </div>
-        <div className="container service">
+          <p className="title">
+            Therefore, enterprises are confronted with new business challenges
+            such as
+          </p>
+          
           <div className="challenges">
-            <p className="title">
-              Therefore, enterprises are confronted with new business challenges
-              such as
-            </p>
             <div className="box-row">
               <div className="box box-first">
                 <p className="msg">
@@ -110,7 +111,7 @@ export default function Index() {
 
           <div className="grid">
             <div className="line"></div>
-            <div className="row">
+            {/* <div className="row">
               <h2 className="title">Colocation</h2>
               <p className="sub-title">
                 Services designed to meet different business segments with
@@ -123,7 +124,7 @@ export default function Index() {
                 vel tortor velit sem. Sit orci eget elit porta non posuere id
                 elementum integer. Neque ornare eu et blandit.
               </p>
-            </div>
+            </div> */}
             <div className="row">
               <img src="images/colo1.png" alt="" className="image1" />
               <img src="images/colo2.png" alt="" className="image2" />
@@ -293,12 +294,14 @@ export default function Index() {
           <div className="grid-4">
             <img src="/images/startup-back.png" alt="startup background" />
             <div className="main-title">Start-Ups</div>
-            <div className="circle"></div>
             <div className="startup-message">
+              <div className="black-circle"></div>
               If you are a startup, or with a SME set up, we believe that
               OrionStellar can be your trusted technology partner since we
               understand the start-up business format and the business
-              requirements. <br />
+              requirements.
+              <br />
+              <br />
               Our genes are mostly liked with startups since our top management
               believe in startups, support the startup culture and has been the
               pioneers in creating the flourishing startup culture in the
@@ -308,7 +311,7 @@ export default function Index() {
               large number of starts ups, is our sister company. Our chairman,
               Mr. Jeevan Gnanam has been the visionary behind the country’s IT
               startup culture. Hence, we know the heartbeat of startups and we
-              are dedicated to serve your start up or SME business set up.{" "}
+              are dedicated to serve your start up or SME business set up.
               <br />
               <br />
               We have introduced customized service packages that Include
@@ -318,7 +321,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="root-sub-title">
+          {/* <div className="root-sub-title">
             OrionStellar Colocation services bundle for Startups and SMEs
           </div>
 
@@ -478,7 +481,7 @@ export default function Index() {
                 <div className="price">LKR Monthly</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <Footer />
       </div>
@@ -525,37 +528,31 @@ export default function Index() {
 
           color: #ffffff;
         }
+        .service {
+          display: flex;
+          flex-wrap: wrap;
+        }
         .heading-subtitle {
-          position: absolute;
-          width: 572px;
-          height: 157px;
-          left: 182px;
-          top: 530px;
-
+          width: 50vw;
           font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
           line-height: 24px;
-
+          margin-top: 64px;
+          margin-left: 200px;
           color: #ffffff;
         }
-        .subtitle-circle {
-          position: absolute;
+        .heading-subtitle .subtitle-circle {
           width: 123px;
           height: 122px;
-          left: 130px;
-          top: 495px;
-
           background: #000000;
           border-radius: 100px;
+          margin-bottom: -6vh;
+          margin-left: -3vw;
         }
-        .service {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .challenges .title {
-          margin-top: 144px;
+        .service .title {
+          margin-top: 64px;
           margin-bottom: 57px;
           margin-left: 200px;
           font-style: normal;
@@ -569,9 +566,8 @@ export default function Index() {
           display: flex;
         }
         .challenges .box-row .box {
-          height: 199px;
+          height: 199px;          
           background: #000000;
-          backdrop-filter: blur(30px);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -649,18 +645,18 @@ export default function Index() {
           line-height: 32px;
         }
         .grid {
-          margin-top: 114px;
-          height: 1200px;
+          margin-top: 24px;
+          height: 97vh;
         }
         .grid .line {
-          position: absolute;
-          width: 1166px;
+          width: 1000px;
           height: 0px;
-          left: 491px;
-          top: 3095px;
-
           border: 1px solid #ffffff;
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+          margin-top: 56vh;
+          margin-left: 32vw;
         }
         .grid .row .title {
           position: absolute;
@@ -900,13 +896,22 @@ export default function Index() {
 
         .grid-4 .startup-message {
           width: 1049px;
-          margin-left: 160px;
+          margin-left: 280px;
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
           line-height: 24px;
           color: #ffffff;
           z-index: 10;
+        }
+
+        .startup-message .black-circle {
+          width: 123px;
+          height: 122px;
+          background: #000000;
+          border-radius: 100px;
+          margin-bottom: -6vh;
+          margin-left: -3vw;
         }
 
         .grid-4 .circle {
