@@ -41,42 +41,49 @@ export default function Index() {
             </div>
             <div className="grid-item3">
               <div className="grid-text">
-              Dedicated cages with biometric access control for large enterprises specially for BFIS
+                Dedicated cages with biometric access control for large
+                enterprises specially for BFIS
               </div>
             </div>
             <div className="grid-item4">
               <div className="grid-text">
-              Individual racks with biometric or lockable doors
+                Individual racks with biometric or lockable doors
               </div>
             </div>
             <div className="grid-item5">
               <img src="images/col13.png" alt="" className="grid-image" />
             </div>
             <div className="grid-item6">
-            <img src="images/col14.png" alt="" className="grid-image" />
+              <img src="images/col14.png" alt="" className="grid-image" />
             </div>
           </div>
         </div>
 
- <div className="sub-btn">
-            <h5 className="sub-btn-title">More Details</h5>
-            <div className="btn-wrap">
-              <ActiveLink
-                href="posts/meet-me"
-                children={
-                  <div className="first-btn">What is a Meet-Me Room?</div>
-                }
-              />
-              <ActiveLink
-                href="posts/wan-cost"
-                children={
-                  <div className="middle-btn">
-                    Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
-                  </div>
-                }
-              />
-            </div>
+        <div className="sub-btn">
+          <h5 className="sub-btn-title">More Details</h5>
+          <div className="btn-wrap">
+            <ActiveLink
+              href="posts/co-location-hosting"
+              children={
+                <div className="first-btn">What is Co-Location Hosting?</div>
+              }
+            />
+            <ActiveLink
+              href="posts/meet-me"
+              children={
+                <div className="middle-btn">What is a Meet-Me Room?</div>
+              }
+            />
+            <ActiveLink
+              href="posts/wan-cost"
+              children={
+                <div className="middle-btn">
+                  Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
+                </div>
+              }
+            />
           </div>
+        </div>
 
         <Footer />
       </div>
