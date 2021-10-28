@@ -18,8 +18,12 @@ export default function CardButton({
         {contents && <div className="content">{contents}</div>}
       </button>
       <style jsx>{`
-      .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+        .grow {
+          transition: all 0.2s ease-in-out;
+        }
+        .grow:hover {
+          transform: scale(1.1);
+        }
         .button {
           /* width: 632px; */
           height: 650px;

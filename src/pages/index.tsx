@@ -213,14 +213,15 @@ export default function Index() {
             </div>
             <div className="message">
               <div className="iso-message">
-                We welcome you to experience our State of the Art data center
-                located at Orion city the largest IT park in the country.
+                We welcome you to experience our State-of-the-Art data center
+                located at Orion city, the largest IT park in the county .
                 <br />
-                <br /> You will learn about the best in class technologies used
-                in the DC built and operation and management using Schneider Eco
-                structure DCIM platform . We can demonstrate how multilayered
+                <br />
+                You will learn about the best-in-class technologies used in the
+                DC built and operation and management using Schneider Eco
+                structure DCIM platform. We can demonstrate how multilayered
                 physical security systems are in operation to ensure the
-                Physical security as per ISO 2700:2013 framework.
+                physical security as per ISO 2700:2013 framework.
               </div>
               <img
                 className="cer-image"
@@ -572,19 +573,17 @@ export default function Index() {
         }
 
         @media screen and (max-width: 480px) {
-         .container .cover{
-           display: none;
-         }
+          .container .cover {
+            display: none;
+          }
         }
         @media screen and (max-width: 768px) {
-         
         }
         @media screen and (max-width: 1024px) {
           .middle-banner {
             display: none;
           }
         }
-
       `}</style>
     </Layout>
   );

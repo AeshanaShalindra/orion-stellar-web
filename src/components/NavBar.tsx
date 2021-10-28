@@ -174,7 +174,7 @@ export default function NavBar() {
           padding-right: 2vw;
         }
         .line {
-          border: 1px solid rgba(255, 255, 255, 0.6);
+          background-color: white;
           margin-top: 24px;
           width: 100%;
         }
