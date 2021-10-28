@@ -76,7 +76,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="center-all info-form">
+          <div id="sales" className="center-all info-form">
             <h4 className="form-title">Sales & business inquiries</h4>
             <div className="center-all form-wrap">
               <h2>+94 112 645 386</h2>
@@ -122,7 +122,7 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="container location">
+        <div id="findus" className="container location">
           <BackTitle title="Location" color="#242424" />
           {/* <img className="map" src="/images/map.png" alt="map" /> */}
           <iframe

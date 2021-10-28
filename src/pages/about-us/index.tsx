@@ -18,7 +18,7 @@ export default function Index() {
       <div className="back-wall">
         <div className="container cover">
           <NavBar />
-          <div className="company-back">
+          <div id="company" className="company-back">
             <h2 className="main-title company">Our Company</h2>
             <p>
               Orionstellar is a newly established digital infrastructure
@@ -52,7 +52,7 @@ export default function Index() {
             </ul>
           </div>
 
-          <div className="brand-back">
+          <div id="brand" className="brand-back">
             <div className="tour-button">
               <a href="/#tour">
               <CircleButton title="Virtual Tour" dark={true} />
@@ -75,7 +75,7 @@ export default function Index() {
               are around us. We would ideally help our client companies to raise
               their bars to reach the heights.
             </p>
-            <div className="attributes">
+            <div  id="mtp" className="attributes">
               <h2 className="main-title mtp">Our MTP</h2>
               <h3 className="sub-title mtp">
                 (Massive Transformative Purpose)
@@ -93,7 +93,7 @@ export default function Index() {
           <img src="/images/cop-val.png" alt="cooperate" />
         </div>
 
-        <div className="container service">
+        <div id="co-value" className="container service">
           <h2 className="main-title value">Our Corporate Values</h2>
           <ul className="cop-value">
             <li>Technology inclusion and equal opportunities</li>
@@ -208,11 +208,12 @@ export default function Index() {
         </div> */}
 
           <BackTitle
+         
             title="Leadership"
             subtitle="Thought Leaders"
             bottom={40}
           />
-          <div className="leader-section">
+          <div  id="leaders" className="leader-section">
             <ProfileCard
               image="/images/team/Rajendra.png"
               title="Chairman"
@@ -272,7 +273,7 @@ export default function Index() {
           </div>
 
           <BackTitle title="Team" />
-          <img className="team-image" src="/images/team.png" alt="team" />
+          <img id="team" className="team-image" src="/images/team.png" alt="team" />
 
           <div className="top-image">
             Our highly trained support team are based locally at our Data Centre
