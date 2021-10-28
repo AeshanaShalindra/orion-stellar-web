@@ -12,14 +12,16 @@ export default function CardButton({
 }: Props) {
   return (
     <>
-      <button type="button" className="button">
+      <button type="button" className="button grow">
         <h5>{title}</h5>
         <img src={image} alt={title} />
         {contents && <div className="content">{contents}</div>}
       </button>
       <style jsx>{`
+      .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
         .button {
-          width: 632px;
+          /* width: 632px; */
           height: 650px;
           transition: transform 0.2s;
           cursor: pointer;
@@ -28,9 +30,9 @@ export default function CardButton({
           margin-left: ${marginLeft || 0};
         }
         button:active,
-        button:hover {
-          transform: scale(1.05);
-        }
+        /* button:hover {
+          transform: scale(0.95);
+        } */
         img {
           width: 100%;
           height: 100%;

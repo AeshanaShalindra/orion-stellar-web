@@ -57,8 +57,8 @@ export default function Index() {
           </div>
         </Parallax>
 
-        <div className="container service">
-          <div style={{ display: "flex" }}>
+        <div className="container">
+          <div className="service">
             <img src="/images/services.png" alt="services" />
             <div className="content">
               <h1>Services</h1>
@@ -75,25 +75,24 @@ export default function Index() {
               </p>
             </div>
           </div>
+
           <div className="service-card-section">
-            <div>
-              <a href="/services"></a>
+            <a className="card" href="/services">
               <CardButton
                 title="enterprise"
                 contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
                 image="/images/enterprise.png"
               />
-              <a href="/services#start-up">
-                <CardButton
-                  title="start up"
-                  contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
+            </a>
+            <a className="card" href="/services#start-up">
+              <CardButton
+                title="start up"
+                contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
               OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop."
-                  image="/images/startup.png"
-                  marginLeft="60px"
-                />
-              </a>
-            </div>
-            <a href="/services">
+                image="/images/startup.png"
+              />
+            </a>
+            <a className="btn" href="/services">
               <CircleButton title="More Services" />
             </a>
           </div>
@@ -135,6 +134,7 @@ export default function Index() {
               <img src="/images/environment.png" alt="environment" />
             </div>
           </div>
+
           <BackTitle title="Uniqueness" />
           <div className="content-wrap">
             <div className="card-section">
@@ -210,25 +210,24 @@ export default function Index() {
             />
             <div className="content-wrap">
               <img src="/images/datacenter.png" alt="datacenter" />
-              {/* <PanoramaView image="/images/pano-image.jpg"/> */}
-                </div>
-              <div className="message">
-                <div className="iso-message">
-                  We welcome you to experience our State of the Art data center
-                  located at Orion city the largest IT park in the country.
-                  <br />
-                  <br /> You will learn about the best in class technologies
-                  used in the DC built and operation and management using
-                  Schneider Eco structure DCIM platform . We can demonstrate how
-                  multilayered physical security systems are in operation to
-                  ensure the Physical security as per ISO 2700:2013 framework.
-                </div>
-                <img
-                  className="cer-image"
-                  src="/images/cert-iso.png"
-                  alt="iso certification"
-                />
+            </div>
+            <div className="message">
+              <div className="iso-message">
+                We welcome you to experience our State of the Art data center
+                located at Orion city the largest IT park in the country.
+                <br />
+                <br /> You will learn about the best in class technologies used
+                in the DC built and operation and management using Schneider Eco
+                structure DCIM platform . We can demonstrate how multilayered
+                physical security systems are in operation to ensure the
+                Physical security as per ISO 2700:2013 framework.
               </div>
+              <img
+                className="cer-image"
+                src="/images/cert-iso.png"
+                alt="iso certification"
+              />
+            </div>
           </div>
 
           <div className="book-tour-section">
@@ -338,12 +337,10 @@ export default function Index() {
           margin-left: 40px;
         }
         .middle-banner {
-          position: absolute;
-          /* left: 306px;
-          top: 973px; */
-          margin-left: 306px;
+          margin-left: 15vw;
           margin-top: -133px;
-          width: 1050px;
+          margin-bottom: -133px;
+          width: 60vw;
           height: 160px;
 
           display: flex;
@@ -368,8 +365,19 @@ export default function Index() {
           line-height: 24px;
         }
         .service {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-gap: 12px;
+          justify-items: center;
+          align-items: center;
+        }
+        .service img {
+          grid-column: 1 / span 3;
+          width: 100%;
+        }
+        .service .content {
+          grid-column: 4 / span 2;
+          margin: 0 100px;
         }
         .service h1 {
           font-family: "SegoeUI";
@@ -386,15 +394,20 @@ export default function Index() {
           line-height: 32px;
           margin-top: 40px;
         }
-        .service .content {
-          padding: 200px 120px 10px 120px;
-        }
-        .service .service-card-section {
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
+        .service-card-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-gap: 48px;
+          justify-items: center;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
-          margin-top: -91px;
+          margin: 0 84px;
+        }
+        .service-card-section .card {
+          grid-column: span 2;
+          width: 100%;
         }
         .env-section {
           display: grid;
@@ -558,39 +571,20 @@ export default function Index() {
           height: fit-content;
         }
 
-        /* Extra small devices (phones, 600px and down) */
-        @media (max-width: 600px) {
-          .main-row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            flex: 1 1 auto;
-            padding: 0 130px;
+        @media screen and (max-width: 480px) {
+         .container .cover{
+           display: none;
+         }
+        }
+        @media screen and (max-width: 768px) {
+         
+        }
+        @media screen and (max-width: 1024px) {
+          .middle-banner {
+            display: none;
           }
         }
 
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media (min-width: 600px) {
-        }
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media (min-width: 768px) {
-          h1 {
-            font-size: 3rem;
-          }
-          h2 {
-            font-size: 2.25rem;
-          }
-        }
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media (min-width: 992px) {
-        }
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media (min-width: 1200px) {
-        }
       `}</style>
     </Layout>
   );
