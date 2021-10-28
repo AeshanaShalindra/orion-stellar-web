@@ -105,7 +105,7 @@ export default function Footer() {
           margin: 72px 72px 0 72px;
         }
         .footer-wrap {
-          width: -webkit-fill-available;
+          width: 85%;
           height: 460px;
           padding: 64px;
           padding-bottom: 0;

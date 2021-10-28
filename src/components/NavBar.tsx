@@ -171,15 +171,16 @@ export default function NavBar() {
           display: flex;
           align-items: flex-start;
           justify-content: flex-end;
+          padding-right: 2vw;
         }
         .line {
           border: 1px solid rgba(255, 255, 255, 0.6);
           margin-top: 24px;
-          width: -webkit-fill-available;
+          width: 100%;
         }
         .scroll.nav-row {
           position: fixed;
-          width: -webkit-fill-available;
+          width: 100%;
           padding: 0 40px;
           font-family: "SegoeUI", sans-serif;
           font-style: normal;

@@ -22,7 +22,7 @@ export default function InfoCard({ title, image, description }: Props) {
           border: none;
           padding: 0;
           border-radius: 5px;
-          margin-bottom: 70px;
+          /* margin-bottom: 70px; */
           display: flex;
           flex-direction: column;
         }

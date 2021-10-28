@@ -3,16 +3,16 @@ import Calendar from "react-calendar";
 import CircleButton from "./CircleButton";
 
 export default function BookingView() {
-  const [ value, onChange ] = useState(new Date());
+  const [value, onChange] = useState(new Date());
 
   useEffect(() => {
     console.log(`>>>`, value);
-  }, [ value ]);
+  }, [value]);
 
   return (
     <>
       <div className="content">
-        {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */ }
+        {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */}
         <div className="request-form">
           <input type="text" name="name" id="name" placeholder="Name" />
           <input type="text" name="email" id="email" placeholder="Email" />
@@ -27,8 +27,8 @@ export default function BookingView() {
             name="message"
             id="message"
             placeholder="Issue/Message"
-            cols={ 30 }
-            rows={ 5 }
+            cols={30}
+            rows={5}
           ></textarea>
         </div>
         <div className="info">
@@ -48,8 +48,8 @@ export default function BookingView() {
           </div>
         </div>
       </div>
-      {/* <div className="send-btn">SEND BOOKING REQUEST</div> */ }
-      <style jsx>{ `
+      {/* <div className="send-btn">SEND BOOKING REQUEST</div> */}
+      <style jsx>{`
         .content {
           display: flex;
           justify-content: space-around;
@@ -94,14 +94,17 @@ export default function BookingView() {
           flex: 1;
           font-family: Segoe UI;
           font-style: normal;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 36px;
           line-height: 117.51%;
           color: #ffffff;
           margin-left: 50px;
           margin-right: 100px;
         }
-        .btn-wrap{
+        .info li{
+          margin-bottom: 24px;
+        }
+        .btn-wrap {
           display: flex;
           justify-content: center;
           margin-top: 84px;
