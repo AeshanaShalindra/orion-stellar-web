@@ -797,15 +797,15 @@ export default function Index() {
           margin-top: 124px;
         }
         .deliverables .card-section {
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 48px;
+          justify-items: center;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
-          margin-top: -124px !important;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
+          margin: 0 84px;
         }
 
         .grid-2 {
