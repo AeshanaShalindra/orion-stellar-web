@@ -130,7 +130,7 @@ export default function Index() {
             </div> */}
             <div className="row">
               <a href="/colocation">
-                <img src="images/colo1.png" alt="" className="image1" />
+                <img src="images/colo1.png" alt="" className="image1 grow" />
               </a>
               <img src="images/colo2.png" alt="" className="image2" />
               <div className="row-2 description">
@@ -148,7 +148,7 @@ export default function Index() {
                 <h1>Services</h1>
               </div>
               <img src="images/colo3.png" alt="" className="image3" />
-              <img src="images/colo4.png" alt="" className="image4" />
+              <img src="images/colo4.png" alt="" className="image4 grow" />
             </div>
           </div>
 
@@ -497,6 +497,12 @@ export default function Index() {
         <Footer />
       </div>
       <style jsx>{`
+      .grow {
+          transition: all 0.2s ease-in-out;
+        }
+        .grow:hover {
+          transform: scale(1.05);
+        }
         .back-wall {
           background: linear-gradient(
             100deg,
