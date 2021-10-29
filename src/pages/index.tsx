@@ -665,9 +665,13 @@ export default function Index() {
           .service-card-section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 17px;
+            margin: 0 24px;
           }
+
           .service-card-section .btn {
-            grid-column: span 4 !important;
+            margin-top:36px;
+            grid-column: 2 / span 2 !important;
           }
           .card-section {
             grid-template-columns: 1fr;
