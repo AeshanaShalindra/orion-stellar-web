@@ -39,6 +39,9 @@ export default function Index() {
             </div>
           </Parallax>
         </div>
+          <a className="tour-btn-small" href="#tour">
+            <CircleButton title="Virtual Tour" dark={true}  size="104px"/>
+          </a>
 
         <Parallax className="middle-banner" y={[-20, 20]}>
           <div className="middle-banner">
@@ -609,6 +612,10 @@ export default function Index() {
           height: fit-content;
         }
 
+        .tour-btn-small {
+          display: none;
+        }
+
         @media screen and (max-width: 480px) {
         }
         @media screen and (max-width: 768px) {
@@ -617,14 +624,28 @@ export default function Index() {
           .middle-banner {
             display: none;
           }
-          .main-row.first .tour-btn {
+          .cover {
+            height: 90vh;
+            max-height: 800px;
+          }
+          .cover .main-row.first .tour-btn {
             display: none;
           }
+          .tour-btn-small {
+            display: block;
+    margin-left: 68vw;
+    margin-top: -55px;
+    margin-bottom: -38px;
+          }
+          .main-row.first {
+            padding: 0 10vw;
+            margin-bottom: 0;
+          }
           .main-row.first .title-container h1 {
-            font-size: 74px;
+            font-size: 6vw;
           }
           .main-row.first .title-container h5 {
-            font-size: 18px;
+            font-size: 2vw;
           }
           .small-banner {
             display: flex;

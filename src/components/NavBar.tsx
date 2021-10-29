@@ -32,6 +32,7 @@ export default function NavBar() {
   }, [goingUp]);
 
   const subTitleFontSize = (width * 2) / 100 > 21 ? 21 : (width * 1.5) / 100;
+  const mobileSubTitleFontSize = (width * 2) / 100 > 21 ? 21 : (width * 0.5) / 100;
 
   return (
     <>
@@ -94,7 +95,7 @@ export default function NavBar() {
                 <img src="/images/logo-white.svg" alt="orion sella logo" />
                 <h6
                   style={{
-                    fontSize: "26px",
+                    fontSize: "18px",
                     letterSpacing: "0.14em",
                     marginTop: "12px",
                     fontFamily: "SegoeUI",
@@ -166,6 +167,9 @@ export default function NavBar() {
         </div>
       </div>
       <style jsx>{`
+        .mobile-nav-row {
+          display: none;
+        }
         .nav-row {
           display: flex;
           justify-content: space-between;
@@ -245,13 +249,21 @@ export default function NavBar() {
             display: none;
           }
           .mobile-nav-row {
+            display: block;
             margin: 10vw;
           }
           .mobile-nav-row .logo-con {
             display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .mobile-nav-row .logo-con img {
+            width: 70vw;
+            max-width: 500px;
+          }
+          .mobile-nav-row .logo-con h6 {
+           font-size: ${mobileSubTitleFontSize + "px"} 
           }
         }
         @media screen and (max-width: 1500px) {
