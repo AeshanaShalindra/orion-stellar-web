@@ -57,7 +57,7 @@ export default function BackTitle({
 
         @media screen and (max-width: 1024px) {
           .back-title {
-            font-size: 10vh;
+            font-size: 8vh;
             line-height: 483px;
           }
         }
