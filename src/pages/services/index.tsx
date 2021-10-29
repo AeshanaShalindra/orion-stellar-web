@@ -794,7 +794,7 @@ export default function Index() {
         }
 
         .deliverables {
-          margin-top: 124px;
+          margin-top: 200px;
         }
         .deliverables .card-section {
           display: grid;
