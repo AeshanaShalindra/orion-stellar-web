@@ -39,9 +39,9 @@ export default function Index() {
             </div>
           </Parallax>
         </div>
-          <a className="tour-btn-small" href="#tour">
-            <CircleButton title="Virtual Tour" dark={true}  size="104px"/>
-          </a>
+        <a className="tour-btn-small" href="#tour">
+          <CircleButton title="Virtual Tour" dark={true} size="104px" />
+        </a>
 
         <Parallax className="middle-banner" y={[-20, 20]}>
           <div className="middle-banner">
@@ -633,19 +633,19 @@ export default function Index() {
           }
           .tour-btn-small {
             display: block;
-    margin-left: 68vw;
-    margin-top: -55px;
-    margin-bottom: -38px;
+            margin-left: 68vw;
+            margin-top: -55px;
+            margin-bottom: -38px;
           }
           .main-row.first {
             padding: 0 10vw;
             margin-bottom: 0;
           }
           .main-row.first .title-container h1 {
-            font-size: 6vw;
+            font-size: 10vw;
           }
           .main-row.first .title-container h5 {
-            font-size: 2vw;
+            font-size: 3vw;
           }
           .small-banner {
             display: flex;
@@ -665,6 +665,25 @@ export default function Index() {
           .service-card-section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+          .service-card-section .btn {
+            grid-column: span 4 !important;
+          }
+          .card-section {
+            grid-template-columns: 1fr;
+            grid-gap: 64px;
+          }
+          .env-section {
+            display: none;
+          }
+          .book-tour-section {
+            display: none;
+          }
+          .partner-section {
+            display: none;
+          }
+          #tour {
+            display: none;
           }
         }
 

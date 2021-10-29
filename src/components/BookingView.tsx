@@ -109,6 +109,9 @@ export default function BookingView() {
           justify-content: center;
           margin-top: 84px;
         }
+
+        @media screen and (max-width: 1024px) {
+        }
       `}</style>
     </>
   );

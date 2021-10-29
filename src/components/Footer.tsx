@@ -260,6 +260,10 @@ export default function Footer() {
           }
         }
         @media screen and (max-width: 1024px) {
+          .footer {
+            padding: 64px 24px 0;
+    margin: 53px 24px 0;
+          }
           .footer .link-group {
             grid-column: span 6;
           }
@@ -276,6 +280,10 @@ export default function Footer() {
           .social-links {
             display: none;
           }
+          .footer .end h6 {
+          font-weight: 400;
+          font-size: 12px;
+        }
         }
         @media screen and (max-width: 1500px) {
           .footer .form {

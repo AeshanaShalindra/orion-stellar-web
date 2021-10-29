@@ -241,8 +241,12 @@ export default function NavBar() {
           margin-top: 6px !important;
         }
         @media screen and (max-width: 480px) {
+
         }
         @media screen and (max-width: 768px) {
+          .scroll{
+            display:none !important;
+          }
         }
         @media screen and (max-width: 1024px) {
           .nav-row {
