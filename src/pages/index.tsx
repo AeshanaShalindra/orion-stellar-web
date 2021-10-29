@@ -33,7 +33,7 @@ export default function Index() {
                 </h1>
                 <h5>Nimble | Connected | Sustainable</h5>
               </div>
-              <a href="#tour">
+              <a className="tour-btn" href="#tour">
                 <CircleButton title="Virtual Tour" dark={true} />
               </a>
             </div>
@@ -42,7 +42,11 @@ export default function Index() {
 
         <Parallax className="middle-banner" y={[-20, 20]}>
           <div className="middle-banner">
-            <img src="/images/logo-white.svg" alt="orion sella logo" />
+            <img
+              id="cardLogo"
+              src="/images/logo-white.svg"
+              alt="orion sella logo"
+            />
             <p>
               OrionStellar—A joint venture between SAPD (St. Anthony’s Property
               Developers) and Dialog Broadband Pvt Ltd in the business of
@@ -56,6 +60,24 @@ export default function Index() {
             </p>
           </div>
         </Parallax>
+
+        <div className="small-banner">
+          <img
+            id="cardLogo"
+            src="/images/logo-white.svg"
+            alt="orion sella logo"
+          />
+          <p>
+            A joint venture between SAPD (St. Anthony’s Property Developers) and
+            Dialog Broadband Pvt Ltd in the business of best-in-class digital
+            infrastructure solutions. OrionStellar brings Sri Lankas first high
+            density and carrier neutral data center located at Orion city,
+            Colombo 09, Sri Lanka. This will be the only (TIA Rated 03
+            certified) commercial data center. OrionStellar is poised to offer
+            an array of digital infrastructure solutions and value-added managed
+            services to the enterprises in the region.
+          </p>
+        </div>
 
         <div className="container">
           <div className="service">
@@ -365,6 +387,21 @@ export default function Index() {
           font-size: 18px;
           line-height: 24px;
         }
+        .middle-banner #cardLogo {
+          width: 30%;
+        }
+        .small-banner {
+          display: none;
+        }
+        .small-banner img {
+          width: 45vw;
+          margin-bottom: 32px;
+        }
+        .small-banner p {
+          font-weight: 350;
+          font-size: 16px;
+          line-height: 24px;
+        }
         .service {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -573,15 +610,67 @@ export default function Index() {
         }
 
         @media screen and (max-width: 480px) {
-          .container .cover {
-            display: none;
-          }
         }
         @media screen and (max-width: 768px) {
         }
         @media screen and (max-width: 1024px) {
           .middle-banner {
             display: none;
+          }
+          .main-row.first .tour-btn {
+            display: none;
+          }
+          .main-row.first .title-container h1 {
+            font-size: 74px;
+          }
+          .main-row.first .title-container h5 {
+            font-size: 18px;
+          }
+          .small-banner {
+            display: flex;
+            flex-direction: column;
+            padding: 10vw 10vw;
+          }
+          .service img {
+            grid-column: span 4 !important;
+            width: 100%;
+            max-width: unset;
+          }
+          .service .content {
+            grid-column: span 4 !important;
+            text-align: center;
+            margin: -98px 10vw 10vw !important;
+          }
+          .service-card-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+        }
+
+        @media screen and (max-width: 1500px) {
+          .service {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 12px;
+            justify-items: center;
+            align-items: center;
+          }
+          .service img {
+            grid-column: span 2;
+          }
+          .service .content {
+            grid-column: span 2;
+            margin: 148px 100px 84px;
+            text-align: center;
+          }
+          .service h1 {
+            font-size: 100px;
+            line-height: 124px;
+          }
+          .service p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 16px;
           }
         }
       `}</style>

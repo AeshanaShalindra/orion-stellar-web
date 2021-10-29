@@ -1,9 +1,11 @@
 import { useRouter } from "next/router";
 import { useRef, useState, useEffect } from "react";
 import ActiveLink from "../components/ActiveLink";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 import NavButton from "./NavButton";
 
 export default function NavBar() {
+  const { height, width } = useWindowDimensions();
   const { asPath } = useRouter();
   const prevScrollY = useRef(0);
   const [goingUp, setGoingUp] = useState(false);
@@ -21,7 +23,6 @@ export default function NavBar() {
       }
 
       prevScrollY.current = currentScrollY;
-      console.log(goingUp, currentScrollY);
       setShowFixedBar(goingUp && currentScrollY > 106);
     };
 
@@ -30,6 +31,8 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [goingUp]);
 
+  const subTitleFontSize = (width * 2) / 100 > 21 ? 21 : (width * 1.5) / 100;
+
   return (
     <>
       <div className="nav-row">
@@ -37,11 +40,11 @@ export default function NavBar() {
           <ActiveLink
             href={"/"}
             children={
-              <>
+              <div className="logo-con">
                 <img src="/images/logo-white.svg" alt="orion sella logo" />
                 <h6
                   style={{
-                    fontSize: "20px",
+                    fontSize: subTitleFontSize + "px",
                     letterSpacing: "0.14em",
                     marginTop: "12px",
                     fontFamily: "SegoeUI",
@@ -50,7 +53,7 @@ export default function NavBar() {
                 >
                   Accelerating Enterprise Digitalization
                 </h6>
-              </>
+              </div>
             }
           />
         </div>
@@ -80,6 +83,29 @@ export default function NavBar() {
           </div>
 
           <hr className="line" />
+        </div>
+      </div>
+      <div className="mobile-nav-row">
+        <div className="logo">
+          <ActiveLink
+            href={"/"}
+            children={
+              <div className="logo-con">
+                <img src="/images/logo-white.svg" alt="orion sella logo" />
+                <h6
+                  style={{
+                    fontSize: "26px",
+                    letterSpacing: "0.14em",
+                    marginTop: "12px",
+                    fontFamily: "SegoeUI",
+                    color: "#ffffff",
+                  }}
+                >
+                  Accelerating Enterprise Digitalization
+                </h6>
+              </div>
+            }
+          />
         </div>
       </div>
       <div className="scroll nav-row">
@@ -162,6 +188,9 @@ export default function NavBar() {
           margin-top: 48px;
           flex: 2;
         }
+        .nav-row .logo img {
+          max-width: 30vw;
+        }
         .nav-row .link-list {
           display: flex;
           flex-direction: column;
@@ -206,6 +235,26 @@ export default function NavBar() {
           font-size: 13.6px !important;
           letter-spacing: 0.14em;
           margin-top: 6px !important;
+        }
+        @media screen and (max-width: 480px) {
+        }
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 1024px) {
+          .nav-row {
+            display: none;
+          }
+          .mobile-nav-row {
+            margin: 10vw;
+          }
+          .mobile-nav-row .logo-con {
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+          }
+        }
+        @media screen and (max-width: 1500px) {
         }
       `}</style>
     </>

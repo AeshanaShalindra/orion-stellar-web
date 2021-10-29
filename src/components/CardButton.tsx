@@ -25,8 +25,7 @@ export default function CardButton({
           transform: scale(1.1);
         }
         .button {
-          /* width: 632px; */
-          height: 650px;
+          max-height: 650px;
           transition: transform 0.2s;
           cursor: pointer;
           border: none;
@@ -89,6 +88,25 @@ export default function CardButton({
           }
           to {
             opacity: 1;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+        }
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 1095px) {
+          h5{
+            font-size: 14px;
+          }
+          .content{
+          display:none !important;
+          }
+        }
+        @media screen and (max-width: 1500px) {
+          .content{
+            font-size: 14px;
+    line-height: 19px;
           }
         }
       `}</style>
