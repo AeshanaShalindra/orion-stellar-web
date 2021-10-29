@@ -71,7 +71,7 @@ export default function Index() {
                   rows={5}
                 ></textarea>
 
-                <div className="submit-btn">SEND</div>
+                <div className="submit-btn grow">SEND</div>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function Index() {
                   rows={5}
                 ></textarea>
 
-                <div className="submit-btn">SEND</div>
+                <div className="submit-btn grow">SEND</div>
               </div>
 
               <div className="mail-info">
@@ -139,6 +139,12 @@ export default function Index() {
         <Footer />
       </div>
       <style jsx>{`
+      .grow {
+          transition: all 0.2s ease-in-out;
+        }
+        .grow:hover {
+          transform: scale(1.05);
+        }
         .container {
           /* width: 100%; */
         }
