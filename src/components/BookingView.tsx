@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Calendar from "react-calendar";
+import React, {  } from "react";
 import CircleButton from "./CircleButton";
 
 export default function BookingView() {
@@ -18,9 +17,8 @@ export default function BookingView() {
         event.preventDefault(); // don't redirect the page
 
         let myForm = document.getElementById("bookingForm") as HTMLFormElement;
-        let formData = new FormData(myForm) as URLSearchParams;
         let request = {
-          "form-name": "Booking",
+          "form-name": "Booking Request",
           name: event.target.name.value,
           email: event.target.email.value,
           company: event.target.company.value,
@@ -44,13 +42,12 @@ export default function BookingView() {
         <>
             <form
                 id="bookingForm"
-                name="Booking"
+                name="Booking Request"
                 method="POST"
                 data-netlify="true"
                 onSubmit={bookingRequest}
             >
                 <div className="content">
-                    {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */}
                     <div className="request-form">
                         <input
                             type="text"
