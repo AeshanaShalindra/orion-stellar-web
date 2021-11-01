@@ -150,7 +150,7 @@ export default function Index() {
         }
         .cover {
           background-repeat: no-repeat;
-          background-image: url("/images/cover4.png");
+          background-image: url("/images/cover4.jpg");
           height: 1108px;
           display: flex;
           flex-direction: column;

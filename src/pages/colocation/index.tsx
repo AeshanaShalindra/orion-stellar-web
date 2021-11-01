@@ -34,10 +34,10 @@ export default function Index() {
           <div className="service-grid-line"></div>
           <div className="service-grid-container">
             <div className="grid-item1">
-              <img src="images/col11.png" alt="" className="grid-image" />
+              <img src="images/colocation/1.jpg" alt="" className="grid-image" />
             </div>
             <div className="grid-item2">
-              <img src="images/col12.png" alt="" className="grid-image" />
+              <img src="images/colocation/2.jpg" alt="" className="grid-image" />
             </div>
             <div className="grid-item3">
               <div className="grid-text">
@@ -51,10 +51,18 @@ export default function Index() {
               </div>
             </div>
             <div className="grid-item5">
-              <img src="images/col13.png" alt="" className="grid-image" />
+              <img src="images/colocation/3.jpg" alt="" className="grid-image" />
             </div>
             <div className="grid-item6">
-              <img src="images/col14.png" alt="" className="grid-image" />
+              <img src="images/colocation/4.jpg" alt="" className="grid-image" />
+            </div>
+          </div>
+        </div>
+
+        <div className="quote">
+          <div className="wrapper">
+            <div className="text">
+              We complement our infrastructure offering with an array of managed value-added services including “Remote Pair of Hands”.
             </div>
           </div>
         </div>
@@ -88,6 +96,24 @@ export default function Index() {
         <Footer />
       </div>
       <style jsx>{`
+      .quote{
+        display: flex;
+    justify-content: center;
+      }
+      .quote .wrapper{
+        width: 50vw;
+    background-color: black;
+    padding: 36px;
+      }
+      .quote .text{
+        font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: white;
+
+      }
         .back-wall {
           background: linear-gradient(
             100deg,
