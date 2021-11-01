@@ -42,18 +42,7 @@ export default function NavBar() {
             href={"/"}
             children={
               <div className="logo-con">
-                <img src="/images/logo-white.svg" alt="orion sella logo" />
-                <h6
-                  style={{
-                    fontSize: subTitleFontSize + "px",
-                    letterSpacing: "0.14em",
-                    marginTop: "12px",
-                    fontFamily: "SegoeUI",
-                    color: "#ffffff",
-                  }}
-                >
-                  Accelerating Enterprise Digitalization
-                </h6>
+                <img src="/images/logo.svg" alt="orion sella logo" />
               </div>
             }
           />
@@ -92,18 +81,7 @@ export default function NavBar() {
             href={"/"}
             children={
               <div className="logo-con">
-                <img src="/images/logo-white.svg" alt="orion sella logo" />
-                <h6
-                  style={{
-                    fontSize: "18px",
-                    letterSpacing: "0.14em",
-                    marginTop: "12px",
-                    fontFamily: "SegoeUI",
-                    color: "#ffffff",
-                  }}
-                >
-                  Accelerating Enterprise Digitalization
-                </h6>
+                <img src="/images/logo.svg" alt="orion sella logo" />
               </div>
             }
           />
@@ -115,18 +93,7 @@ export default function NavBar() {
             href={"/"}
             children={
               <>
-                <img src="/images/logo-white.svg" alt="orion sella logo" />
-                <h6
-                  style={{
-                    fontSize: "20px",
-                    letterSpacing: "0.14em",
-                    marginTop: "12px",
-                    fontFamily: "SegoeUI",
-                    color: "#ffffff",
-                  }}
-                >
-                  Accelerating Enterprise Digitalization
-                </h6>
+                <img src="/images/logo.svg" alt="orion sella logo" />
               </>
             }
           />
