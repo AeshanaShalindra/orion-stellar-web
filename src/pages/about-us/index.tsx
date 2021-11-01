@@ -273,7 +273,7 @@ export default function Index() {
           </div>
 
           <BackTitle title="Team" />
-          <img id="team" className="team-image" src="/images/team.png" alt="team" />
+          <img id="team" className="team-image" src="/images/team.jpg" alt="team" />
 
           <div className="top-image">
             Our highly trained support team are based locally at our Data Centre
@@ -326,7 +326,7 @@ export default function Index() {
         }
         .cover {
           background-repeat: no-repeat;
-          background-image: url("/images/cover2.png");
+          background-image: url("/images/aboutus-cover.jpg");
           height: 1108px;
           display: flex;
           flex-direction: column;

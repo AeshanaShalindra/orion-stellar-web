@@ -132,7 +132,7 @@ export default function Index() {
               <a href="/colocation">
                 <img src="images/colo1.png" alt="" className="image1 grow" />
               </a>
-              <img src="images/colo2.png" alt="" className="image2" />
+              <img src="images/service/0.jpg" alt="" className="image2" />
               <div className="row-2 description">
                 <h2>Managed</h2>
                 <h1>
@@ -147,8 +147,8 @@ export default function Index() {
                 <h2>Managed</h2>
                 <h1>Services</h1>
               </div>
-              <img src="images/colo3.png" alt="" className="image3" />
-              <img src="images/colo4.png" alt="" className="image4 grow" />
+              <img src="images/service/1.jpg" alt="" className="image3" />
+              <img src="images/service/2.jpg" alt="" className="image4 grow" />
             </div>
           </div>
 
@@ -205,7 +205,7 @@ export default function Index() {
             <BackTitle title="Deliverables" />
             <div className="card-section">
               <InfoCard
-                image="/images/card7.png"
+                image="/images/service/3.jpg"
                 title="Up to 40%
               Energy Saving"
                 description={
@@ -216,7 +216,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card8.png"
+                image="/images/service/4.jpg"
                 title="19% More Rack Space"
                 description={
                   <ul>
@@ -238,7 +238,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card10.png"
+           image="/images/service/6.jpg"
                 title="Bundled offers for
               Startups & amp; SMEs"
                 description={
@@ -249,7 +249,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card11.png"
+             image="/images/service/7.jpg"
                 title="Travel & amp; 
               Real Estate
                Saving"
@@ -263,7 +263,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card12.png"
+            image="/images/service/8.jpg"
                 title="Accelerate Enterprise
               Digitalization"
                 description={
