@@ -160,23 +160,23 @@ export default function Index() {
                     grid-column: 4 / span 2;
                     display: flex;
                 }
-                .grid-item-2.span-3 img{
+                .grid-item-2.span-3 img {
                     width: 100%;
                 }
                 .text {
-                  font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    -webkit-letter-spacing: 0.29em;
-    -moz-letter-spacing: 0.29em;
-    -ms-letter-spacing: 0.29em;
-    letter-spacing: 0.29em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    padding: 36px;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    -webkit-letter-spacing: 0.29em;
+                    -moz-letter-spacing: 0.29em;
+                    -ms-letter-spacing: 0.29em;
+                    letter-spacing: 0.29em;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    background-color: black;
+                    padding: 36px;
                 }
 
                 @media (min-width: 769px) {

@@ -356,7 +356,7 @@ export default function Index() {
                 }
                 .cover {
                     background-repeat: no-repeat;
-                    background-image: url("/images/aboutus-cover.jpg");
+                    background-image: url("/images/about/cover.jpg");
                     height: 1108px;
                     display: flex;
                     flex-direction: column;

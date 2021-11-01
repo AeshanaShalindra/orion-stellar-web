@@ -132,7 +132,9 @@ export default function Index() {
               <a href="/colocation">
                 <img src="images/colo1.png" alt="" className="image1 grow" />
               </a>
-              <img src="images/service/0.jpg" alt="" className="image2" />
+              <a href="/value-added-services">
+              <img src="images/service/0.jpg" alt="" className="image2 grow" />
+              </a>
               <div className="row-2 description">
                 <h2>Managed</h2>
                 <h1>
