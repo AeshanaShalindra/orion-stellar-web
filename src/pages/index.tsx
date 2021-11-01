@@ -106,7 +106,7 @@ export default function Index() {
               <CardButton
                 title="enterprise"
                 contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
-                image="/images/home/3.jpg"
+                image="/images/enterprise.png"
               />
             </a>
             <a className="card" href="/services#start-up">
@@ -374,12 +374,7 @@ export default function Index() {
           justify-content: space-around;
           padding: 48px 72px;
 
-          background: linear-gradient(
-            105.26deg,
-            rgba(146, 137, 200, 0.57) -4.86%,
-            rgba(255, 255, 255, 0) 108.25%,
-            rgba(255, 255, 255, 0.28) 108.25%
-          );
+          background: linear-gradient(105.26deg, rgba(192, 192, 192, 0.57) -4.86%, rgba(255, 255, 255, 0) 108.25%, rgba(255, 255, 255, 0.28) 108.25%);
           backdrop-filter: blur(40px);
         }
         .middle-banner p {
@@ -444,7 +439,7 @@ export default function Index() {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          margin: 0 84px;
+          margin: 24px 84px;
         }
         .service-card-section .card {
           grid-column: span 2;
