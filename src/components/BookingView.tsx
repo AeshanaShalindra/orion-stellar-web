@@ -19,17 +19,19 @@ export default function BookingView() {
 
         let myForm = document.getElementById("bookingForm") as HTMLFormElement;
         let formData = new FormData(myForm) as URLSearchParams;
-        fetch("/", {
+        let request = {
+          "form-name": "Booking",
+          name: event.target.name.value,
+          email: event.target.email.value,
+          company: event.target.company.value,
+          nic: event.target.nic.value,
+          message: event.target.message.value,
+      };
+
+        fetch("/?" + encode(request), {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({
-                "form-name": "contact",
-                name: event.target.name.value,
-                email: event.target.name.email,
-                company: event.target.name.company,
-                nic: event.target.name.nic,
-                message: event.target.name.message,
-            }),
+            body: encode(request),
         })
             .then(() => console.log("Form successfully submitted"))
             .catch((error) => alert(error))
@@ -42,7 +44,7 @@ export default function BookingView() {
         <>
             <form
                 id="bookingForm"
-                name="Booking Request"
+                name="Booking"
                 method="POST"
                 data-netlify="true"
                 onSubmit={bookingRequest}
