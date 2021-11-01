@@ -84,7 +84,7 @@ export default function Index() {
 
         <div className="container">
           <div className="service">
-            <img src="/images/services.png" alt="services" />
+            <img src="/images/home/2.jpg" alt="services" />
             <div className="content">
               <h1>Services</h1>
               <p>
@@ -106,7 +106,7 @@ export default function Index() {
               <CardButton
                 title="enterprise"
                 contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
-                image="/images/enterprise.png"
+                image="/images/home/3.jpg"
               />
             </a>
             <a className="card" href="/services#start-up">
@@ -164,7 +164,7 @@ export default function Index() {
           <div className="content-wrap">
             <div className="card-section">
               <InfoCard
-                image="/images/card1.png"
+                image="/images/home/4.jpg"
                 title="Sri Lanka’s First High Density Data Center."
                 description={
                   <ul>
@@ -175,7 +175,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card2.png"
+                image="/images/home/5.jpg"
                 title="Sri Lanka’s First Carrier Neutral Data Center."
                 description={
                   <ul>
@@ -186,7 +186,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card3.png"
+                image="/images/home/6.jpg"
                 title="Superior Rack Space per Footprint"
                 description={
                   <ul>
@@ -196,7 +196,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card4.png"
+                image="/images/home/7.jpg"
                 title="Fine Energy Metering Granularity"
                 description={
                   <ul>
@@ -206,7 +206,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card5.png"
+                image="/images/home/8.jpg"
                 title="Colombo’s only Tier 3 Certified Data Center."
                 description={
                   <ul>
@@ -215,7 +215,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-                image="/images/card6.png"
+                image="/images/home/9.jpg"
                 title="Strategic Location Advantage"
                 description={
                   <ul>
@@ -304,7 +304,7 @@ export default function Index() {
         .cover {
           background-repeat: no-repeat;
           background-size: cover;
-          background-image: url("/images/cover1.png");
+          background-image: url("/images/home/1.jpg");
           height: 1100px;
           display: flex;
           flex-direction: column;
