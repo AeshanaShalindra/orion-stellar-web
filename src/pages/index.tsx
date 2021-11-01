@@ -118,7 +118,7 @@ export default function Index() {
               />
             </a>
             <a className="btn" href="/services">
-              <CircleButton title="More Services" />
+              <CircleButton title="Services" />
             </a>
           </div>
           <div className="env-section">
@@ -167,7 +167,7 @@ export default function Index() {
                 image="/images/home/4.jpg"
                 title="Sri Lanka’s First High Density Data Center."
                 description={
-                  <ul>
+                  <ul className="info-des">
                     <li>15Kw+ per Rack</li>
                     <li>Design PUE at 1.4</li>
                     <li>Best Power Efficiency</li>
@@ -178,7 +178,7 @@ export default function Index() {
                 image="/images/home/5.jpg"
                 title="Sri Lanka’s First Carrier Neutral Data Center."
                 description={
-                  <ul>
+                  <ul className="info-des">
                     <li>2x Meet-me Rooms</li>
                     <li>Both SLT, Dialog available with fiber rings</li>
                     <li>SD-WAN Enabled</li>
@@ -187,11 +187,11 @@ export default function Index() {
               />
               <InfoCard
                 image="/images/home/6.jpg"
-                title="Superior Rack Space per Footprint"
+                title="More Data Center Rack Space"
                 description={
-                  <ul>
+                  <ul className="info-des">
                     <li>50U Vs 42U in other data centers</li>
-                    <li>Cost optimization</li>
+                    <li>Space optimization</li>
                   </ul>
                 }
               />
@@ -199,7 +199,7 @@ export default function Index() {
                 image="/images/home/7.jpg"
                 title="Fine Energy Metering Granularity"
                 description={
-                  <ul>
+                  <ul className="info-des">
                     <li>Able to meter power usage at U Level</li>
                     <li>“Pay as you go“ model</li>
                   </ul>
@@ -207,20 +207,20 @@ export default function Index() {
               />
               <InfoCard
                 image="/images/home/8.jpg"
-                title="Colombo’s only Tier 3 Certified Data Center."
+                title="Colombo’s only Tier 3 Rated Data Center With the access to"
                 description={
-                  <ul>
-                    <li>Only Rated 3 commercial data center in Colombo</li>
+                  <ul className="info-des">
+                    <li>Business Hubs</li>
+                    <li>IT Parks</li>
                   </ul>
                 }
               />
               <InfoCard
                 image="/images/home/9.jpg"
-                title="Strategic Location Advantage"
+                title="SME, Start Up Co-Location Bundle with an array of Value-Added services"
                 description={
                   <ul>
-                    <li>Access to Business Hubs & IT parks</li>
-                    <li>Ports & Administrative District</li>
+                    <li>With SDWAN capability to have high speed access</li>
                   </ul>
                 }
               />
@@ -444,6 +444,9 @@ export default function Index() {
         .service-card-section .card {
           grid-column: span 2;
           width: 100%;
+        }
+        .info-des li{
+          margin-bottom:8px;
         }
         .env-section {
           display: grid;

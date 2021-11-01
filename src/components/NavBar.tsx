@@ -67,7 +67,7 @@ export default function NavBar() {
             <ActiveLink
               href="/contact"
               children={
-                <NavButton title="Contact" active={asPath === "/contact"} />
+                <NavButton title="Contact Us" active={asPath === "/contact"} />
               }
             />
           </div>
@@ -200,7 +200,7 @@ export default function NavBar() {
           height: 80px;
         }
         .scroll.nav-row .logo img {
-          height: 24px;
+          height: 36px;
         }
         .scroll.nav-row .logo h6 {
           font-size: 13.6px !important;

@@ -44,12 +44,15 @@ export default function InfoCard({ title, image, description }: Props) {
           font-family: "SegoeUI";
           font-style: normal;
           font-weight: bold;
-          font-size: 35px;
+          font-size: 32px;
           line-height: 115.51%;
           margin-bottom: 12px;
         }
         .desc {
           margin-top: 23px;
+        }
+        .desc li{
+          margin-bottom: 8px;
         }
         p {
           font-family: "SegoeUI";
