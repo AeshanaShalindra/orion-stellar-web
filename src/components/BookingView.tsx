@@ -9,9 +9,32 @@ export default function BookingView() {
         console.log(`>>>`, value);
     }, [value]);
 
+    const bookingRequest = async (event) => {
+        event.preventDefault(); // don't redirect the page
+
+        let myForm = document.getElementById("bookingForm") as HTMLFormElement;
+        let formData = new FormData(myForm) as URLSearchParams;
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => console.log("Form successfully submitted"))
+            .catch((error) => alert(error))
+            .finally(() => {
+                myForm.reset();
+            });
+    };
+
     return (
         <>
-            <form name="booking-request" method="POST" data-netlify="true">
+            <form
+                id="bookingForm"
+                name="Booking Request"
+                method="POST"
+                data-netlify="true"
+                onSubmit={bookingRequest}
+            >
                 <div className="content">
                     {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */}
                     <div className="request-form">

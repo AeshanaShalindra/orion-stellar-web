@@ -267,16 +267,16 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="partner-section">
+          {/* <div className="partner-section">
             <div className="title">
               <h5>Strategic partners</h5>
             </div>
             <div className="logos">
-              {/* <img src="/images/logos/schneider.png" alt="schneider" />
+              <img src="/images/logos/schneider.png" alt="schneider" />
               <img src="/images/logos/cat.png" alt="cat" />
               <img src="/images/logos/socomec.png" alt="socomec" />
               <img src="/images/logos/apc.png" alt="apc" />
-              <img src="/images/logos/cisco.png" alt="cisco" /> */}
+              <img src="/images/logos/cisco.png" alt="cisco" />
             </div>
           </div>
           <div className="partner-section infrastructure">
@@ -286,7 +286,7 @@ export default function Index() {
             <div className="logos">
               <img src="/images/logos/corning.png" alt="corning" />
             </div>
-          </div>
+          </div> */}
         </div>
         <Footer />
       </div>
