@@ -21,14 +21,14 @@ export default function InfoCard({ title, image, description }: Props) {
           transform: scale(1.05);
         }
         .button {
-          width: 490px;
+          max-width: 450px;
+          width: 100%;
           height: 650px;
           transition: transform 0.2s;
           cursor: pointer;
           border: none;
           padding: 0;
           border-radius: 5px;
-          /* margin-bottom: 70px; */
           display: flex;
           flex-direction: column;
         }
@@ -37,8 +37,8 @@ export default function InfoCard({ title, image, description }: Props) {
           text-align: left;
         }
         img {
-          width: 490px;
-          height: 395px;
+          width: 100%;
+          height: auto;
         }
         h5 {
           font-family: "SegoeUI";
