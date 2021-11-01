@@ -1,5 +1,7 @@
 import Head from "next/head";
-// import Navigation from "./Navigation";
+import React from "react";
+import Config from './../lib/config'
+import Soon from './../pages/soon'
 
 type Props = {
   children: React.ReactNode;
@@ -24,10 +26,11 @@ export default function Layout({ children }: Props) {
         />
         <meta name="theme-color" content="#fff" />
       </Head>
-      {/* <nav>
-        <Navigation />
-      </nav> */}
-      <main>{children}</main>
+
+      <main>
+        {Config.published && children}
+        {!Config.published && (<Soon />)}
+      </main>
       <style jsx>{`
           @font-face {
             font-family: "SegoeUI";
