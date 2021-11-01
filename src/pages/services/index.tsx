@@ -148,7 +148,9 @@ export default function Index() {
                 <h1>Services</h1>
               </div>
               <img src="images/service/1.jpg" alt="" className="image3" />
+              <a href="/service-delivery">
               <img src="images/service/2.jpg" alt="" className="image4 grow" />
+              </a>
             </div>
           </div>
 
