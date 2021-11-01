@@ -6,7 +6,7 @@ type Props = {
 export default function NavButton({ title, active, scroll }: Props) {
   return (
     <div className={"container " + (active ? "active" : "")}>
-      <div className="title">{title}</div>
+      <p className="title">{title}</p>
       <style jsx>{` 
         .container {
           width: 140px;

@@ -9,7 +9,13 @@ type Props = {
   color?: string;
 };
 
-export default function BackTitle({ title, subtitle, size, bottom, color }: Props) {
+export default function BackTitle({
+  title,
+  subtitle,
+  size,
+  bottom,
+  color,
+}: Props) {
   return (
     <>
       <div>
@@ -17,9 +23,9 @@ export default function BackTitle({ title, subtitle, size, bottom, color }: Prop
           <span className="back-title">{title}</span>
         </Parallax>
         <div className="sub-title-wrap">
-        <Parallax y={[-5, 15]}>
-          <span className="sub-title">{subtitle}</span>
-        </Parallax>
+          <Parallax y={[-5, 15]}>
+            <span className="sub-title">{subtitle}</span>
+          </Parallax>
         </div>
       </div>
       <style jsx>{`
@@ -29,7 +35,7 @@ export default function BackTitle({ title, subtitle, size, bottom, color }: Prop
           font-weight: 900;
           font-size: ${size || 32}vh;
           line-height: 483px;
-          color: ${color || '#0000004d'};
+          color: ${color || "#0000004d"};
           margin-bottom: -${bottom || 99}px;
           margin-top: -163px;
         }
@@ -47,6 +53,13 @@ export default function BackTitle({ title, subtitle, size, bottom, color }: Prop
           letter-spacing: 0.53em;
           text-transform: uppercase;
           color: #ffffff;
+        }
+
+        @media screen and (max-width: 1024px) {
+          .back-title {
+            font-size: 8vh;
+            line-height: 483px;
+          }
         }
       `}</style>
     </>

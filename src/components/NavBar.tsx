@@ -1,9 +1,11 @@
 import { useRouter } from "next/router";
 import { useRef, useState, useEffect } from "react";
 import ActiveLink from "../components/ActiveLink";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 import NavButton from "./NavButton";
 
 export default function NavBar() {
+  const { height, width } = useWindowDimensions();
   const { asPath } = useRouter();
   const prevScrollY = useRef(0);
   const [goingUp, setGoingUp] = useState(false);
@@ -21,7 +23,6 @@ export default function NavBar() {
       }
 
       prevScrollY.current = currentScrollY;
-      console.log(goingUp, currentScrollY);
       setShowFixedBar(goingUp && currentScrollY > 106);
     };
 
@@ -30,6 +31,9 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [goingUp]);
 
+  const subTitleFontSize = (width * 2) / 100 > 21 ? 21 : (width * 1.5) / 100;
+  const mobileSubTitleFontSize = (width * 2) / 100 > 21 ? 21 : (width * 0.5) / 100;
+
   return (
     <>
       <div className="nav-row">
@@ -37,20 +41,9 @@ export default function NavBar() {
           <ActiveLink
             href={"/"}
             children={
-              <>
-                <img src="/images/logo-white.svg" alt="orion sella logo" />
-                <h6
-                  style={{
-                    fontSize: "20px",
-                    letterSpacing: "0.14em",
-                    marginTop: "12px",
-                    fontFamily: "SegoeUI",
-                    color: "#ffffff",
-                  }}
-                >
-                  Accelerating Enterprise Digitalization
-                </h6>
-              </>
+              <div className="logo-con">
+                <img src="/images/logo.svg" alt="orion sella logo" />
+              </div>
             }
           />
         </div>
@@ -82,24 +75,25 @@ export default function NavBar() {
           <hr className="line" />
         </div>
       </div>
+      <div className="mobile-nav-row">
+        <div className="logo">
+          <ActiveLink
+            href={"/"}
+            children={
+              <div className="logo-con">
+                <img src="/images/logo.svg" alt="orion sella logo" />
+              </div>
+            }
+          />
+        </div>
+      </div>
       <div className="scroll nav-row">
         <div className="logo">
           <ActiveLink
             href={"/"}
             children={
               <>
-                <img src="/images/logo-white.svg" alt="orion sella logo" />
-                <h6
-                  style={{
-                    fontSize: "20px",
-                    letterSpacing: "0.14em",
-                    marginTop: "12px",
-                    fontFamily: "SegoeUI",
-                    color: "#ffffff",
-                  }}
-                >
-                  Accelerating Enterprise Digitalization
-                </h6>
+                <img src="/images/logo.svg" alt="orion sella logo" />
               </>
             }
           />
@@ -140,6 +134,9 @@ export default function NavBar() {
         </div>
       </div>
       <style jsx>{`
+        .mobile-nav-row {
+          display: none;
+        }
         .nav-row {
           display: flex;
           justify-content: space-between;
@@ -162,6 +159,9 @@ export default function NavBar() {
           margin-top: 48px;
           flex: 2;
         }
+        .nav-row .logo img {
+          max-width: 30vw;
+        }
         .nav-row .link-list {
           display: flex;
           flex-direction: column;
@@ -171,15 +171,16 @@ export default function NavBar() {
           display: flex;
           align-items: flex-start;
           justify-content: flex-end;
+          padding-right: 2vw;
         }
         .line {
-          border: 1px solid rgba(255, 255, 255, 0.6);
+          background-color: white;
           margin-top: 24px;
-          width: -webkit-fill-available;
+          width: 100%;
         }
         .scroll.nav-row {
           position: fixed;
-          width: -webkit-fill-available;
+          width: 100%;
           padding: 0 40px;
           font-family: "SegoeUI", sans-serif;
           font-style: normal;
@@ -205,6 +206,38 @@ export default function NavBar() {
           font-size: 13.6px !important;
           letter-spacing: 0.14em;
           margin-top: 6px !important;
+        }
+        @media screen and (max-width: 480px) {
+
+        }
+        @media screen and (max-width: 768px) {
+          .scroll{
+            display:none !important;
+          }
+        }
+        @media screen and (max-width: 1024px) {
+          .nav-row {
+            display: none;
+          }
+          .mobile-nav-row {
+            display: block;
+            margin: 10vw;
+          }
+          .mobile-nav-row .logo-con {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .mobile-nav-row .logo-con img {
+            width: 70vw;
+            max-width: 500px;
+          }
+          .mobile-nav-row .logo-con h6 {
+           font-size: ${mobileSubTitleFontSize + "px"} 
+          }
+        }
+        @media screen and (max-width: 1500px) {
         }
       `}</style>
     </>

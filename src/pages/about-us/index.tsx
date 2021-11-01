@@ -18,8 +18,8 @@ export default function Index() {
       <div className="back-wall">
         <div className="container cover">
           <NavBar />
-          <h2 className="main-title company">Company</h2>
-          <div className="company-back">
+          <div id="company" className="company-back">
+            <h2 className="main-title company">Our Company</h2>
             <p>
               Orionstellar is a newly established digital infrastructure
               services brand from digital realty pvt limited, jointly held by
@@ -43,28 +43,31 @@ export default function Index() {
                 <b>global standards</b>
               </li>
               <li>
-                Lean and mean organization structure with a start up thinking
+                <b>Lean and mean</b> organization structure with a start up
+                thinking
               </li>
-              <li>A focus in B2B markets in Sri Lanka and the region.</li>
+              <li>
+                <b>A focus in B2B markets</b> in Sri Lanka and the region.
+              </li>
             </ul>
           </div>
 
-          <div className="brand-back">
+          <div id="brand" className="brand-back">
             <div className="tour-button">
+              <a href="/#tour">
               <CircleButton title="Virtual Tour" dark={true} />
+              </a>
             </div>
-            <h2 className="main-title brand">Brand</h2>
+            <h2 className="main-title brand">
+              Our Brand
+              <br />
+              Story
+            </h2>
             <p>
               The origin of our brand name “OrionStellar” is linked to the main
               brand “Orion city” which is the country’s largest IT park. The
               second part of the name ‘Stellar” stands for the higher standards
-              and star performance we are striving for. OrionStellar wordmark
-              logo is simple yet with an elegant touch that summarizes how well
-              we simplifies and uplifts the industry performance. Our main logo
-              colors are shades of grey and blue which have been again inspired
-              from the main colors of the mother brand “Orion City” which are
-              grey, blue, and green. These shades of grey and blue affirm with a
-              masculine & professional outlook.
+              and star performance we are striving for.
               <br />
               <br />
               Our brand story is all about the high performance, high standards
@@ -72,7 +75,7 @@ export default function Index() {
               are around us. We would ideally help our client companies to raise
               their bars to reach the heights.
             </p>
-            <div className="attributes">
+            <div  id="mtp" className="attributes">
               <h2 className="main-title mtp">Our MTP</h2>
               <h3 className="sub-title mtp">
                 (Massive Transformative Purpose)
@@ -90,12 +93,11 @@ export default function Index() {
           <img src="/images/cop-val.png" alt="cooperate" />
         </div>
 
-        <div className="container service">
+        <div id="co-value" className="container service">
           <h2 className="main-title value">Our Corporate Values</h2>
           <ul className="cop-value">
-            <li>Uncompromised integrity</li>
             <li>Technology inclusion and equal opportunities</li>
-            <li>power data in decision making (data driven enterprise)</li>
+            <li>power of data in decision making</li>
             <li>continuous improvement to meet global standards</li>
             <li>commitment to environmental sustainability</li>
           </ul>
@@ -206,19 +208,20 @@ export default function Index() {
         </div> */}
 
           <BackTitle
+         
             title="Leadership"
             subtitle="Thought Leaders"
             bottom={40}
           />
-          <div className="leader-section">
+          <div  id="leaders" className="leader-section">
             <ProfileCard
               image="/images/team/Rajendra.png"
               title="Chairman"
-              name="Rajendra Theagarah"
+              name="Rajendra Theagarajah"
               workTitle="Chairman"
               workLogo="/images/logos/degital-realty.png"
-              description="Rajendra is a banking veteran, technologist, and business transformation leader. Rajendra started his career as a Chartered Accountant and is a member of the Chartered Institute of Management Accountants (UK).
-            Mr. Theagarajah holds an MBA from Cranfield School of Management. He has over 37yrs of international experience in the Banking sector and is the recipient of multiple awards of recognition for his service and excellence in managing Sri Lankan banks."
+              description="Rajendra is a banking veteran, technologist, and business transformation leader. Rajendra started his career as a Chartered Accountant and is a member of the Chartered Institute of Management Accountants (UK)."
+              extraDes="Mr. Theagarajah holds an MBA from Cranfield School of Management. He has over 37yrs of international experience in the Banking sector and is the recipient of multiple awards of recognition for his service and excellence in managing Sri Lankan banks. "
             />
             <ProfileCard
               image="/images/team/Eric.png"
@@ -226,8 +229,8 @@ export default function Index() {
               name="Eric Selvadurai"
               workTitle="Managing Director"
               workLogo="/images/logos/accelya.png"
-              description="Eric brings over 30yrs of Business Process Management experience. His last appointment was with WNS Global Services where he held several senior management positions. 
-            As Global Operations Director, he was responsible for building the Global Delivery and Support structure to enable significant growth; as CEO of the Enterprise Business, he created the F&A practice and the Shipping Logistics & Infrastructure division as Managing Director of Europe and South Africa region he was responsible for strategic deals and operations."
+              description="Eric brings over 30yrs of Business Process Management experience. His last appointment was with WNS Global Services where he held several senior management positions."
+              extraDes="As Global Operations Director, he was responsible for building the Global Delivery and Support structure to enable significant growth; as CEO of the Enterprise Business, he created the F&A practice and the shipping logistics & Infrastructure division as  the Managing Director of Europe and South Africa region he was responsible for strategic deals and operations."
             />
             <ProfileCard
               image="/images/team/Supun.png"
@@ -235,8 +238,8 @@ export default function Index() {
               name="Supun Weerasinghe"
               workTitle="GCEO"
               workLogo="/images/logos/dialog.png"
-              description="Supun serves as Group Chief Executive and board member for Dialog Axiata. 
-            Mr. Weerasinghe started his career in telecommunications at Dialog Axiata and has held multiple roles, such as Head of Strategy and CEO of the Mobile Business before being appointed as Group Chief Operating Officer of Dialog Axiata in 2010."
+              description="Supun serves as Group Chief Executive and board member for Dialog Axiata. "
+              extraDes="Mr. Weerasinghe started his career in telecommunications at Dialog Axiata and has held multiple roles, such as Head of Strategy and CEO of the Mobile Business before being appointed as Group Chief Operating Officer of Dialog Axiata in 2010."
             />
             <ProfileCard
               image="/images/team/Pradeep.png"
@@ -244,8 +247,8 @@ export default function Index() {
               name="Pradeep De Almeida"
               workTitle="Group Chief Technology Officer"
               workLogo="/images/logos/dialog.png"
-              description="Supun serves as Group Chief Executive and board member for Dialog Axiata. 
-            Mr. Weerasinghe started his career in telecommunications at Dialog Axiata and has held multiple roles, such as Head of Strategy and CEO of the Mobile Business before being appointed as Group Chief Operating Officer of Dialog Axiata in 2010."
+              description="Pradeep leads the Technology function for Dialog Group. He also chairs the Technical Expert Working Group across South Asian Region."
+              extraDes="Pradeep joined Dialog in 1996 and holds a Bachelor of Science in  Electronic  and Telecommunication Engineering  from  the University  of  Moratuwa,   Sri Lanka."
             />
             <ProfileCard
               image="/images/team/Jeevan.png"
@@ -253,10 +256,8 @@ export default function Index() {
               name="Jeevan Gnanam"
               workTitle="Managing Director"
               workLogo="/images/logos/degital-realty.png"
-              description="Jeevan is the visionary behind Sri Lanka’s first operational IT Park – Orion City. 
-            Jeevan serves as the CEO of Anton. 
-            His venture SAKS (SA Knowledge Services) was incorporated in 2012. His AI company, Veracity AI is recognized as a game changer across multiple industries. 
-            He is also the president of SLASSCOM along with being a founder of the Lanka Angel Network and Hatch an innovative coworking space and accelerator."
+              description="Jeevan is the visionary behind Sri Lanka’s first operational IT Park – Orion City and the cofounder of Hatch works, a coworking accelerator which won many international awards."
+              extraDes="His venture SAKS (Knowledge services) and his AI company, Veracity AI is recognized as a game changer across multiple industries. He is a past president of SLASSCOM, the national chamber of IT/BMP industry of Sri Lanka."
             />
             <ProfileCard
               image="/images/team/Nalaka.png"
@@ -265,22 +266,30 @@ export default function Index() {
               workTitle="Chief operations officer"
               workLogo="/images/logos/degital-realty.png"
               description="Nalaka brings over 20yrs of experience in enterprise solutions business with over 10yrs experience in data center business.
-            He launched Sri Lankas first Tier 3 certified DC and served as General manager for data center & cloud business at Dialog Axiata PLC.
-           Nalaka holds a BSc in Engineering and an MBA from University of Colombo.
+            He launched Sri Lankas first Tier 3 certified DC and served as General manager for data center & cloud business at Dialog Axiata PLC."
+              extraDes="Nalaka holds a BSc in Engineering and an MBA from University of Colombo.
            He also holds Diploma in Management accounting from CIMA UK"
             />
           </div>
 
           <BackTitle title="Team" />
-          <img className="team-image" src="/images/team.png" alt="team" />
+          <img id="team" className="team-image" src="/images/team.jpg" alt="team" />
+
+          <div className="top-image">
+            Our highly trained support team are based locally at our Data Centre
+            for faster response times and are available 24/7. Our team ensures
+            that we provide the best possible support for all our customers.
+          </div>
 
           <div className="team-details">
-            We foster a culture of “Think big ,start small and move faster”. We
-            value the diversity in the workplace to bring out the best out of
-            the talent. Our highly trained customer support teams and technical
-            teams, fully equipped with the state of the art tools are focusing
-            on best in class service delivery .Our delivery assurance would
-            ensure seamless onboarding of customers to our data center. <br />
+            <div className="black-circle"></div>
+            We foster a culture of{" "}
+            <b>“Think big ,start small and move faster”</b>. We value the
+            diversity in the workplace to bring out the best out of the talent.
+            Our highly trained customer support teams and technical teams, fully
+            equipped with the state of the art tools are focusing on best in
+            class service delivery .Our delivery assurance would ensure seamless
+            onboarding of customers to our data center. <br /> <br />
             Our sales and marketing team will focus on customer life cycle
             management adding value to our clients throughout the journey.
             Senior management team is always available for client consultations,
@@ -288,7 +297,7 @@ export default function Index() {
             OrionStellar.
           </div>
 
-          <div className="learn-back">
+          {/* <div className="learn-back">
             <h2 className="main-title learn">Learn more about us!</h2>
             <div>
               <h3>Have a casual chat with our COO</h3>
@@ -300,7 +309,7 @@ export default function Index() {
               <h4 className="contact">+94 77 3335100</h4>
             </div>
             <img className="coo" src="/images/team/Nalaka.png" alt="nalaka" />
-          </div>
+          </div> */}
         </div>
         <Footer />
       </div>
@@ -317,7 +326,7 @@ export default function Index() {
         }
         .cover {
           background-repeat: no-repeat;
-          background-image: url("/images/cover2.png");
+          background-image: url("/images/aboutus-cover.jpg");
           height: 1108px;
           display: flex;
           flex-direction: column;
@@ -328,35 +337,38 @@ export default function Index() {
           font-weight: bold;
           font-size: 100px;
           color: #ffffff;
+          margin-bottom: 24px;
         }
         .main-title.company {
-          position: absolute;
-          width: 667px;
-          height: 200px;
-          left: 160px;
-          top: 191px;
-          font-size: 130px !important;
+          /* position: absolute; */
+          /* width: 667px;
+          height: 200px; */
+          /* left: 160px;
+          top: 191px; */
+          font-size: 100px !important;
+          margin: 0;
+          margin-bottom: 24px;
           z-index: 1;
         }
         .company-back {
           position: absolute;
-          width: 679px;
-          height: 396px;
+          width: 50vw;
+          /* height: 396px; */
           left: 0;
           top: 403px;
           background: #000000;
           z-index: 0;
+          padding: 56px 80px 64px 160px;
         }
         .company-back p {
-          width: 338px;
-          height: 157px;
+          width: 720px;
           font-family: "SegoeUI";
           font-style: normal;
           font-weight: 350;
           font-size: 18px;
           line-height: 24px;
           color: #ffffff;
-          margin: 100px 278px;
+          /* margin: 100px 278px; */
         }
         .mtp-wrap {
           position: absolute;
@@ -368,11 +380,15 @@ export default function Index() {
         .mtp-wrap ul li {
           font-family: "SegoeUI";
           font-style: normal;
-          font-size: 22px;
-          line-height: 28px;
+          font-size: 20px;
+          line-height: 24px;
           letter-spacing: 0.125em;
           text-transform: uppercase;
           color: #ffffff;
+          margin-bottom: 8px;
+        }
+        b {
+          font-weight: 800;
         }
         .main-title.mtp {
           margin: 0;
@@ -544,6 +560,10 @@ export default function Index() {
           color: #ffffff;
         }
 
+        .cop-value li {
+          margin-bottom: 8px;
+        }
+
         .value-back {
           width: 100%;
           height: 458px;
@@ -710,7 +730,7 @@ export default function Index() {
           width: 100%;
         }
         .team-details {
-          width: 1060px;
+          width: 1088px;
           font-style: normal;
           font-weight: normal;
           font-size: 24px;
@@ -718,6 +738,27 @@ export default function Index() {
           color: #ffffff;
           margin-left: 180px;
           margin-top: 160px;
+          position: relative;
+          margin-top: 0;
+        }
+        .team-details .black-circle {
+          width: 123px;
+          height: 122px;
+          border-radius: 100%;
+          margin-left: -3vw;
+          margin-bottom: -6vh;
+          background: #000000;
+        }
+        .top-image {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 32px;
+          color: #ffffff;
+          width: 571px;
+          position: relative;
+          top: -20vh;
+          right: -60vw;
         }
         .learn-back {
           width: 100%;

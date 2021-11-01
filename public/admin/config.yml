@@ -41,6 +41,10 @@ collections:
           - label: "GitHub account"
             name: "github_account"
             widget: "string"
+          - label: "Published"
+            name: "published"
+            widget: "boolean"
+            default: true
 
   - name: "meta"
     label: "Meta"

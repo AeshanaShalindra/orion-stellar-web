@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Calendar from "react-calendar";
+import CircleButton from "./CircleButton";
 
 export default function BookingView() {
   const [value, onChange] = useState(new Date());
@@ -11,19 +12,8 @@ export default function BookingView() {
   return (
     <>
       <div className="content">
-        <Calendar styles={true} onChange={onChange} minDate={new Date()} />
+        {/* <Calendar styles={true} onChange={onChange} minDate={new Date()} /> */}
         <div className="request-form">
-          <ul>
-            <li>Select a date and time and provide us your basic details.</li>
-            <li>
-              We will contact you & we’ll send you a confirmation of your
-              appointment.
-            </li>
-            <li>
-              Be sure to bring your NIC /Driver’s License or valid Passport.
-            </li>
-            <li>We look forward to meeting you.</li>
-          </ul>
           <input type="text" name="name" id="name" placeholder="Name" />
           <input type="text" name="email" id="email" placeholder="Email" />
           <input
@@ -41,20 +31,39 @@ export default function BookingView() {
             rows={5}
           ></textarea>
         </div>
+        <div className="info">
+          <ul>
+            <li>
+              If you are interested in visiting our data center, we would be
+              happy to take you around in a guided tour.
+            </li>
+            <li>
+              Please let us know your details and we will contact you soon with
+              the details of your visit and appointment confirmation.
+            </li>
+            <li>We look forward to meeting you.</li>
+          </ul>
+          <div className="btn-wrap">
+            <CircleButton title="SEND BOOKING REQUEST" />
+          </div>
+        </div>
       </div>
-      <div className="send-btn">SEND BOOKING REQUEST</div>
-      <style jsx>{`        
+      {/* <div className="send-btn">SEND BOOKING REQUEST</div> */}
+      <style jsx>{`
         .content {
           display: flex;
           justify-content: space-around;
         }
         .request-form {
+          flex: 1;
           font-weight: 350;
           font-size: 18px;
           line-height: 24px;
           color: #ffffff;
           display: flex;
           flex-direction: column;
+          margin-left: 200px;
+          margin-right: 50px;
         }
         .request-form input {
           height: 63.62px;
@@ -73,13 +82,35 @@ export default function BookingView() {
           margin-top: 78px;
           cursor: pointer;
           display: flex;
-    justify-content: center;
+          justify-content: center;
           font-weight: bold;
           font-size: 64px;
           line-height: 85px;
           background: -webkit-linear-gradient(#055476, #72c4de);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+        .info {
+          flex: 1;
+          font-family: Segoe UI;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 117.51%;
+          color: #ffffff;
+          margin-left: 50px;
+          margin-right: 100px;
+        }
+        .info li{
+          margin-bottom: 24px;
+        }
+        .btn-wrap {
+          display: flex;
+          justify-content: center;
+          margin-top: 84px;
+        }
+
+        @media screen and (max-width: 1024px) {
         }
       `}</style>
     </>

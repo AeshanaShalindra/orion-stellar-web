@@ -2,8 +2,9 @@
 type Props = {
   title: string;
   dark?: boolean;
+  size?: string;
 };
-export default function CircleButton({ title, dark }: Props) {
+export default function CircleButton({ title, dark, size }: Props) {
   return (
     <>
       <button
@@ -19,9 +20,9 @@ export default function CircleButton({ title, dark }: Props) {
           justify-content: center;
           align-items: center;
 
-          width: 185px;
-          height: 185px;
-
+          max-width: 185px;
+          width: ${size || "185px"};
+          height: ${size || "185px"};
           background-color: ${dark ? "#000" : "#fff"};
           border-radius: 1000px;
           transition: transform 0.5s; 

@@ -6,7 +6,7 @@ type Props = {
 export default function InfoCard({ title, image, description }: Props) {
   return (
     <>
-      <button type="button" className="button">
+      <button type="button" className="button grow">
         <img src={image} alt={title} />
         <div className="text">
           <h5>{title}</h5>
@@ -14,6 +14,12 @@ export default function InfoCard({ title, image, description }: Props) {
         </div>
       </button>
       <style jsx>{`
+        .grow {
+          transition: all 0.2s ease-in-out;
+        }
+        .grow:hover {
+          transform: scale(1.05);
+        }
         .button {
           width: 490px;
           height: 650px;
@@ -22,7 +28,7 @@ export default function InfoCard({ title, image, description }: Props) {
           border: none;
           padding: 0;
           border-radius: 5px;
-          margin-bottom: 70px;
+          /* margin-bottom: 70px; */
           display: flex;
           flex-direction: column;
         }

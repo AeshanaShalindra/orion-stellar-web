@@ -71,12 +71,12 @@ export default function Index() {
                   rows={5}
                 ></textarea>
 
-                <div className="submit-btn">SEND</div>
+                <div className="submit-btn grow">SEND</div>
               </div>
             </div>
           </div>
 
-          <div className="center-all info-form">
+          <div id="sales" className="center-all info-form">
             <h4 className="form-title">Sales & business inquiries</h4>
             <div className="center-all form-wrap">
               <h2>+94 112 645 386</h2>
@@ -111,7 +111,7 @@ export default function Index() {
                   rows={5}
                 ></textarea>
 
-                <div className="submit-btn">SEND</div>
+                <div className="submit-btn grow">SEND</div>
               </div>
 
               <div className="mail-info">
@@ -122,20 +122,29 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="container location">
+        <div id="findus" className="container location">
           <BackTitle title="Location" color="#242424" />
           {/* <img className="map" src="/images/map.png" alt="map" /> */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2057.6710644900227!2d79.87926154606609!3d6.941058973837002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594e8faf9825%3A0xb72be2890f0c7e0f!2sOrionStellar%20%7C%20Digital%20Realty%20(Pvt)%20Ltd!5e1!3m2!1sen!2slk!4v1630002407583!5m2!1sen!2slk"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.292290325746!2d79.8794512!3d6.9415165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb72be2890f0c7e0f!2sOrionStellar%20%7C%20Digital%20Realty%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1635330542736!5m2!1sen!2slk"
             width="100%"
             height="649"
             className="g-map"
             loading="lazy"
           ></iframe>
+          {/* <div className="find-btn">
+            <CircleButton title="Find Us" />
+          </div> */}
         </div>
         <Footer />
       </div>
       <style jsx>{`
+      .grow {
+          transition: all 0.2s ease-in-out;
+        }
+        .grow:hover {
+          transform: scale(1.05);
+        }
         .container {
           /* width: 100%; */
         }
@@ -296,7 +305,7 @@ export default function Index() {
           height: 649px;
           border: none;
         }
-        .location .action-btn {
+       .location .action-btn {
           margin-left: 160px;
           margin-top: -376px;
           z-index: 20;

@@ -28,104 +28,101 @@ export default function Index() {
               <div className="title-container">
                 <h1>Sri Lanka’s First</h1>
                 <h1>
-                  <strong>High Density</strong> Data Center
+                  <strong>High Density</strong> & Carrier Neutral
+                  <br /> Data Center
                 </h1>
                 <h5>Nimble | Connected | Sustainable</h5>
               </div>
-              <CircleButton title="Virtual Tour" dark={true} />
+              <a className="tour-btn" href="#tour">
+                <CircleButton title="Virtual Tour" dark={true} />
+              </a>
             </div>
           </Parallax>
-          <div className="main-row last">
-            <div style={{ display: "flex" }}>
-              <div className="row-tag">
-                <div className="row-tag-icon">
-                  <img src="/images/star.svg" alt="star" />
-                  <img src="/images/star.svg" alt="star" />
-                  <img src="/images/star.svg" alt="star" />
-                </div>
-                <h6>TIA 03 Certified</h6>
-              </div>
-              <div className="row-tag">
-                <div className="row-tag-icon">
-                  <img src="/images/location.svg" alt="pin" />
-                </div>
-                <h6>Strategically located</h6>
-              </div>
-              <div className="row-tag">
-                <div className="row-tag-icon">
-                  <img src="/images/money.svg" alt="location" />
-                </div>
-                <h6>Value Added</h6>
-              </div>
-            </div>
-            <div className="cer-list">
-              <img
-                className="cer-image"
-                src="/images/cert-ansi.png"
-                alt="ansi certification"
-              />
-              <img
-                className="cer-image"
-                src="/images/cert-iso.png"
-                alt="iso certification"
-              />
-            </div>
-          </div>
         </div>
+        <a className="tour-btn-small" href="#tour">
+          <CircleButton title="Virtual Tour" dark={true} size="104px" />
+        </a>
 
         <Parallax className="middle-banner" y={[-20, 20]}>
           <div className="middle-banner">
-            <img src="/images/logo-white.svg" alt="orion sella logo" />
+            <img
+              id="cardLogo"
+              src="/images/logo-white.svg"
+              alt="orion sella logo"
+            />
             <p>
-              A joint venture between SAPD ( St. Anthony’s property developers)
-              and Dialog Broad band Pvt Ltd in the business of best in class
-              digital infrastructure solutions . Orionstellar brings Sri Lanka’s
-              first high density and carrier neutral data center located at
-              Orion city, the Sri Lanka’s largest IT park located at Colombo 09
-              . This is the only Tier 3 certified DC in the Colombo city and is
-              poised to offer an array of digital infrastructure solutions and
-              value-added managed services to the enterprises in the region.
+              OrionStellar—A joint venture between SAPD (St. Anthony’s Property
+              Developers) and Dialog Broadband Pvt Ltd in the business of
+              best-in-class digital infrastructure solutions. OrionStellar
+              brings Sri Lankas first high density and carrier neutral data
+              center located at Orion city, Colombo 09, Sri Lanka. This will be
+              the only (TIA Rated 03 certified) commercial data center.
+              OrionStellar is poised to offer an array of digital infrastructure
+              solutions and value-added managed services to the enterprises in
+              the region.
             </p>
           </div>
         </Parallax>
 
-        <div className="container service">
-          <div style={{ display: "flex" }}>
-            <img src="/images/services.png" alt="services" />
+        <div className="small-banner">
+          <img
+            id="cardLogo"
+            src="/images/logo-white.svg"
+            alt="orion sella logo"
+          />
+          <p>
+            A joint venture between SAPD (St. Anthony’s Property Developers) and
+            Dialog Broadband Pvt Ltd in the business of best-in-class digital
+            infrastructure solutions. OrionStellar brings Sri Lankas first high
+            density and carrier neutral data center located at Orion city,
+            Colombo 09, Sri Lanka. This will be the only (TIA Rated 03
+            certified) commercial data center. OrionStellar is poised to offer
+            an array of digital infrastructure solutions and value-added managed
+            services to the enterprises in the region.
+          </p>
+        </div>
+
+        <div className="container">
+          <div className="service">
+            <img src="/images/home/2.jpg" alt="services" />
             <div className="content">
               <h1>Services</h1>
               <p>
-                In the era of 4th industrial revolution and Digital Economy the
+                In the era of 4th industrial revolution and digital economy, the
                 Digital infrastructure is in the middle of business strategy and
                 CIOs are challenged continuously to scale up the IT systems to
-                meet the exponential demands in terms of volume , computational
-                power and information security challenges. Orion stellar offers
-                a range of digital infrastructure services and managed value
-                added services to unburden these challenges such that businesses
-                could focus on their core business and innovation in their
-                forward march to become a digital enterprise.
+                meet the exponential demands in terms of volume, computational
+                power and information security challenges. OrionStellar offers a
+                range of digital infrastructure services and managed value-added
+                services to unburden these challenges such that businesses could
+                focus on their core business and innovation in their forward
+                march to become a digital enterprise.
               </p>
             </div>
           </div>
+
           <div className="service-card-section">
-            <div>
+            <a className="card" href="/services">
               <CardButton
                 title="enterprise"
                 contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
-                image="/images/enterprise.png"
+                image="/images/home/3.jpg"
               />
+            </a>
+            <a className="card" href="/services#start-up">
               <CardButton
                 title="start up"
                 contents="In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
               OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop."
                 image="/images/startup.png"
-                marginLeft="60px"
               />
-            </div>
-            <CircleButton title="More Services" />
+            </a>
+            <a className="btn" href="/services">
+              <CircleButton title="More Services" />
+            </a>
           </div>
           <div className="env-section">
-            <div className="content">
+            <div className="txt-content">
               <img
                 className="logo"
                 src="/images/logo-white.svg"
@@ -151,112 +148,105 @@ export default function Index() {
                   LEED silver certified green building housing the datacenter
                 </li>
               </ul>
-              <img src="/images/cert-leed.png" alt="leed certification" />
+              <img
+                className="badge"
+                src="/images/cert-leed.png"
+                alt="leed certification"
+              />
             </div>
-            <img src="/images/environment.png" alt="environment" />
+            <div className="white-line"></div>
+            <div className="img-content">
+              <img src="/images/environment.png" alt="environment" />
+            </div>
           </div>
+
           <BackTitle title="Uniqueness" />
-          <div className="card-section">
-            <InfoCard
-              image="/images/card1.png"
-              title="Sri Lanka’s First High Density Data Center."
-              description={
-                <ul>
-                  <li>15Kw+ per Rack</li>
-                  <li>Design PUE at 1.4</li>
-                  <li>Best Power Efficiency</li>
-                </ul>
-              }
-            />
-            <InfoCard
-              image="/images/card2.png"
-              title="Sri Lanka’s First Carrier Neutral Data Center."
-              description={
-                <ul>
-                  <li>2x MMRs</li>
-                  <li>Both SLT, Dialog available with fiber rings</li>
-                  <li>SD-WAN Enabled</li>
-                </ul>
-              }
-            />
-            <InfoCard
-              image="/images/card3.png"
-              title="Superior Rack Space per Footprint"
-              description={
-                <ul>
-                  <li>50U Vs 42U in other data centers</li>
-                  <li>Cost optimization</li>
-                </ul>
-              }
-            />
-            <InfoCard
-              image="/images/card4.png"
-              title="Fine Energy Metering Granularity"
-              description={
-                <ul>
-                  <li>Able to meter power usage at U Level</li>
-                  <li>“Pay as you go“ model</li>
-                </ul>
-              }
-            />
-            <InfoCard
-              image="/images/card5.png"
-              title="Colombo’s only Tier 3 Certified Data Center."
-              description={
-                <ul>
-                  <li>Only Rated 3 commercial data center in Colombo</li>
-                </ul>
-              }
-            />
-            <InfoCard
-              image="/images/card6.png"
-              title="Strategic Location Advantage"
-              description={
-                <ul>
-                  <li>Access to Business Hubs & IT parks</li>
-                  <li>Ports & Administrative District</li>
-                </ul>
-              }
-            />
-          </div>
-
-          <div className="sub-btn">
-            <h5 className="sub-btn-title">More Details</h5>
-            <div className="btn-wrap">
-              <ActiveLink
-                href="posts/meet-me"
-                children={
-                  <div className="first-btn">What is a Meet-Me Room?</div>
+          <div className="content-wrap">
+            <div className="card-section">
+              <InfoCard
+                image="/images/home/4.jpg"
+                title="Sri Lanka’s First High Density Data Center."
+                description={
+                  <ul>
+                    <li>15Kw+ per Rack</li>
+                    <li>Design PUE at 1.4</li>
+                    <li>Best Power Efficiency</li>
+                  </ul>
                 }
               />
-              <ActiveLink
-                href="posts/wan-cost"
-                children={
-                  <div className="middle-btn">
-                    Why Carrier-Neutral Data Centers are Key to Reduce WAN Costs
-                  </div>
+              <InfoCard
+                image="/images/home/5.jpg"
+                title="Sri Lanka’s First Carrier Neutral Data Center."
+                description={
+                  <ul>
+                    <li>2x Meet-me Rooms</li>
+                    <li>Both SLT, Dialog available with fiber rings</li>
+                    <li>SD-WAN Enabled</li>
+                  </ul>
+                }
+              />
+              <InfoCard
+                image="/images/home/6.jpg"
+                title="Superior Rack Space per Footprint"
+                description={
+                  <ul>
+                    <li>50U Vs 42U in other data centers</li>
+                    <li>Cost optimization</li>
+                  </ul>
+                }
+              />
+              <InfoCard
+                image="/images/home/7.jpg"
+                title="Fine Energy Metering Granularity"
+                description={
+                  <ul>
+                    <li>Able to meter power usage at U Level</li>
+                    <li>“Pay as you go“ model</li>
+                  </ul>
+                }
+              />
+              <InfoCard
+                image="/images/home/8.jpg"
+                title="Colombo’s only Tier 3 Certified Data Center."
+                description={
+                  <ul>
+                    <li>Only Rated 3 commercial data center in Colombo</li>
+                  </ul>
+                }
+              />
+              <InfoCard
+                image="/images/home/9.jpg"
+                title="Strategic Location Advantage"
+                description={
+                  <ul>
+                    <li>Access to Business Hubs & IT parks</li>
+                    <li>Ports & Administrative District</li>
+                  </ul>
                 }
               />
             </div>
           </div>
 
-          <div className="data-center-tour-section">
+          <div id="tour" className="data-center-tour-section">
             <BackTitle
               title="Data Center Tour"
               subtitle="Virtual Tour"
               size="23"
             />
-            <img src="/images/datacenter.png" alt="datacenter" />
-            {/* <PanoramaView image="/images/pano-image.jpg"/> */}
+            <div className="content-wrap">
+              <img src="/images/datacenter.png" alt="datacenter" />
+            </div>
             <div className="message">
               <div className="iso-message">
-                We welcome you to experience our State of the Art data center
-                located at Orion city the largest IT park in the county. You
-                will learn about the best in class technologies used in the DC
-                built and operation and management using Schneider Eco structure
-                DCIM platform . We can demonstrate how multilayered physical
-                security systems are in operation to ensure the Physical
-                security as per ISO 2700:2013 framework.
+                We welcome you to experience our State-of-the-Art data center
+                located at Orion city, the largest IT park in the county .
+                <br />
+                <br />
+                You will learn about the best-in-class technologies used in the
+                DC built and operation and management using Schneider Eco
+                structure DCIM platform. We can demonstrate how multilayered
+                physical security systems are in operation to ensure the
+                physical security as per ISO 2700:2013 framework.
               </div>
               <img
                 className="cer-image"
@@ -282,18 +272,19 @@ export default function Index() {
               <h5>Strategic partners</h5>
             </div>
             <div className="logos">
-              <img src="/images/logos/schneider.png" alt="schneider" />
+              {/* <img src="/images/logos/schneider.png" alt="schneider" />
               <img src="/images/logos/cat.png" alt="cat" />
               <img src="/images/logos/socomec.png" alt="socomec" />
               <img src="/images/logos/apc.png" alt="apc" />
-              <img src="/images/logos/cisco.png" alt="cisco" />
+              <img src="/images/logos/cisco.png" alt="cisco" /> */}
+            </div>
+          </div>
+          <div className="partner-section infrastructure">
+            <div className="title">
+              <h5>Our Infrastructure partners</h5>
             </div>
             <div className="logos">
               <img src="/images/logos/corning.png" alt="corning" />
-              <img src="/images/logos/siemens.png" alt="siemens" />
-              <img src="/images/logos/hisharp.png" alt="hisharp" />
-              <img src="/images/logos/paessler.png" alt="paessler" />
-              <img src="/images/logos/css.png" alt="css" />
             </div>
           </div>
         </div>
@@ -313,7 +304,7 @@ export default function Index() {
         .cover {
           background-repeat: no-repeat;
           background-size: cover;
-          background-image: url("/images/cover1.png");
+          background-image: url("/images/home/1.jpg");
           height: 1100px;
           display: flex;
           flex-direction: column;
@@ -325,15 +316,14 @@ export default function Index() {
           justify-content: space-between;
           flex: 1 1 auto;
           padding: 0 130px;
-        }
-        .main-row:last-child {
-          margin-bottom: 100px;
+          margin-bottom: 400px;
         }
         .title-container h1 {
+          flex: 3;
           font-family: "SegoeUI", sans-serif;
           font-style: normal;
           font-weight: normal;
-          font-size: 95px;
+          font-size: 84px;
         }
         .row-tag {
           margin-right: 58px;
@@ -373,12 +363,10 @@ export default function Index() {
           margin-left: 40px;
         }
         .middle-banner {
-          position: absolute;
-          /* left: 306px;
-          top: 973px; */
-          margin-left: 306px;
+          margin-left: 15vw;
           margin-top: -133px;
-          width: 1050px;
+          margin-bottom: -133px;
+          width: 60vw;
           height: 160px;
 
           display: flex;
@@ -402,9 +390,35 @@ export default function Index() {
           font-size: 18px;
           line-height: 24px;
         }
+        .middle-banner #cardLogo {
+          width: 30%;
+        }
+        .small-banner {
+          display: none;
+        }
+        .small-banner img {
+          width: 45vw;
+          margin-bottom: 32px;
+        }
+        .small-banner p {
+          font-weight: 350;
+          font-size: 16px;
+          line-height: 24px;
+        }
         .service {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-gap: 12px;
+          justify-items: center;
+          align-items: center;
+        }
+        .service img {
+          grid-column: 1 / span 3;
+          width: 100%;
+        }
+        .service .content {
+          grid-column: 4 / span 2;
+          margin: 0 100px;
         }
         .service h1 {
           font-family: "SegoeUI";
@@ -421,22 +435,47 @@ export default function Index() {
           line-height: 32px;
           margin-top: 40px;
         }
-        .service .content {
-          padding: 200px 120px 10px 120px;
-        }
-        .service .service-card-section {
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
+        .service-card-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-gap: 48px;
+          justify-items: center;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
-          margin-top: -91px;
+          margin: 0 84px;
+        }
+        .service-card-section .card {
+          grid-column: span 2;
+          width: 100%;
         }
         .env-section {
-          display: flex;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 74px 1fr 1fr;
+          grid-gap: 12px;
+          justify-items: center;
           align-items: center;
+          margin-left: 104px;
+          margin-top: 104px;
         }
-        .env-section img {
-          height: fit-content;
+        .env-section .txt-content {
+          grid-column: 1 / span 3;
+        }
+        .env-section .white-line {
+          grid-column: 4 / span 1;
+          width: 608px;
+          height: 0px;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          transform: rotate(90deg);
+        }
+        .env-section .img-content {
+          grid-column: 5 / span 2;
+          width: 100%;
+        }
+        .env-section .txt-content .logo {
+          margin-left: 291px;
+          margin-bottom: -46px;
         }
         .env-section h1 {
           font-family: "SegoeUI";
@@ -464,24 +503,26 @@ export default function Index() {
           color: #ffffff;
           mix-blend-mode: normal;
         }
-        .env-section .content .logo {
-          position: relative;
-          left: 280px;
-          margin-bottom: -46px;
+        .env-section .txt-content .badge {
+          margin-top: -64px;
+          margin-left: 800px;
         }
-        .env-section .content img {
-          position: absolute;
-          left: 894px;
-          margin-top: -60px;
+        .env-section .img-content img {
+          width: 100%;
         }
-        .env-section img {
-          margin-top: 150px;
+        .content-wrap {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: row;
         }
         .card-section {
-          display: flex;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-          z-index: 5;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 84px;
+          justify-items: center;
+          align-items: start;
         }
         .sub-btn {
           font-style: normal;
@@ -546,6 +587,9 @@ export default function Index() {
           justify-content: space-around;
           margin-bottom: 100px;
         }
+        .partner-section.infrastructure .title {
+          width: 724px;
+        }
         .partner-section .title h5 {
           font-family: "SegoeUI";
           font-style: normal;
@@ -561,19 +605,116 @@ export default function Index() {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          justify-content: space-around;
+          justify-content: flex-start;
           align-items: center;
         }
         .partner-section .logos img {
           height: fit-content;
         }
 
-        @media (min-width: 769px) {
-          h1 {
-            font-size: 3rem;
+        .tour-btn-small {
+          display: none;
+        }
+
+        @media screen and (max-width: 480px) {
+        }
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 1024px) {
+          .middle-banner {
+            display: none;
           }
-          h2 {
-            font-size: 2.25rem;
+          .cover {
+            height: 90vh;
+            max-height: 800px;
+          }
+          .cover .main-row.first .tour-btn {
+            display: none;
+          }
+          .tour-btn-small {
+            display: block;
+            margin-left: 68vw;
+            margin-top: -55px;
+            margin-bottom: -38px;
+          }
+          .main-row.first {
+            padding: 0 10vw;
+            margin-bottom: 0;
+          }
+          .main-row.first .title-container h1 {
+            font-size: 10vw;
+          }
+          .main-row.first .title-container h5 {
+            font-size: 3vw;
+          }
+          .small-banner {
+            display: flex;
+            flex-direction: column;
+            padding: 10vw 10vw;
+          }
+          .service img {
+            grid-column: span 4 !important;
+            width: 100%;
+            max-width: unset;
+          }
+          .service .content {
+            grid-column: span 4 !important;
+            text-align: center;
+            margin: -98px 10vw 10vw !important;
+          }
+          .service-card-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 17px;
+            margin: 0 24px;
+          }
+
+          .service-card-section .btn {
+            margin-top:36px;
+            grid-column: 2 / span 2 !important;
+          }
+          .card-section {
+            grid-template-columns: 1fr;
+            grid-gap: 64px;
+          }
+          .env-section {
+            display: none;
+          }
+          .book-tour-section {
+            display: none;
+          }
+          .partner-section {
+            display: none;
+          }
+          #tour {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: 1500px) {
+          .service {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 12px;
+            justify-items: center;
+            align-items: center;
+          }
+          .service img {
+            grid-column: span 2;
+          }
+          .service .content {
+            grid-column: span 2;
+            margin: 148px 100px 84px;
+            text-align: center;
+          }
+          .service h1 {
+            font-size: 100px;
+            line-height: 124px;
+          }
+          .service p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 16px;
           }
         }
       `}</style>

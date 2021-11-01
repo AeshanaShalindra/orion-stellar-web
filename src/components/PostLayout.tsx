@@ -61,7 +61,6 @@ export default function PostLayout({
       <div className="contents">
         <div className="container cover">
           <NavBar />
-          <p>{image}</p>
           <h2 className="main-title">{title}</h2>
         </div>
         <div className="container description">
