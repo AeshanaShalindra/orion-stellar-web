@@ -13,14 +13,14 @@ import CircleButton from "../../components/CircleButton";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/"} />
-      <OpenGraphMeta url={"/"} />
-      <TwitterCardMeta url={"/"} />
+      <BasicMeta url={ "/" } />
+      <OpenGraphMeta url={ "/" } />
+      <TwitterCardMeta url={ "/" } />
       <div className="back-wall">
         <div className="container cover">
           <NavBar />
           <div className="pre-subtitle">
-            Digital infrastructure solutions for{" "}
+            Digital infrastructure solutions for{ " " }
           </div>
           <h1 className="heading">Enterprise</h1>
         </div>
@@ -238,7 +238,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-           image="/images/service/6.jpg"
+                image="/images/service/6.jpg"
                 title="Bundled offers for
               Startups & amp; SMEs"
                 description={
@@ -249,7 +249,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-             image="/images/service/7.jpg"
+                image="/images/service/7.jpg"
                 title="Travel & amp; 
               Real Estate
                Saving"
@@ -263,7 +263,7 @@ export default function Index() {
                 }
               />
               <InfoCard
-            image="/images/service/8.jpg"
+                image="/images/service/8.jpg"
                 title="Accelerate Enterprise
               Digitalization"
                 description={
@@ -496,7 +496,7 @@ export default function Index() {
         </div>
         <Footer />
       </div>
-      <style jsx>{`
+      <style jsx>{ `
       .grow {
           transition: all 0.2s ease-in-out;
         }
