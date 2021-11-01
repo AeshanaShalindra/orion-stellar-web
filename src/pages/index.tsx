@@ -689,6 +689,12 @@ export default function Index() {
           }
         }
 
+        @media (max-width: 1500px) {
+          #tour {
+            display: none;
+          }
+        }
+        
         @media screen and (max-width: 1500px) {
           .service {
             display: grid;

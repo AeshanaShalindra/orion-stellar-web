@@ -3,11 +3,16 @@ import Calendar from "react-calendar";
 import CircleButton from "./CircleButton";
 
 export default function BookingView() {
-    const [value, onChange] = useState(new Date());
-
-    useEffect(() => {
-        console.log(`>>>`, value);
-    }, [value]);
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(
+                (key) =>
+                    encodeURIComponent(key) +
+                    "=" +
+                    encodeURIComponent(data[key])
+            )
+            .join("&");
+    };
 
     const bookingRequest = async (event) => {
         event.preventDefault(); // don't redirect the page
@@ -17,7 +22,14 @@ export default function BookingView() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
+            body: encode({
+                "form-name": "contact",
+                name: event.target.name.value,
+                email: event.target.name.email,
+                company: event.target.name.company,
+                nic: event.target.name.nic,
+                message: event.target.name.message,
+            }),
         })
             .then(() => console.log("Form successfully submitted"))
             .catch((error) => alert(error))
@@ -152,6 +164,11 @@ export default function BookingView() {
                     display: flex;
                     justify-content: center;
                     margin-top: 84px;
+                }
+                .btn-wrap button {
+                    background-color: unset;
+                    border-color: unset;
+                    border: black;
                 }
 
                 @media screen and (max-width: 1024px) {
