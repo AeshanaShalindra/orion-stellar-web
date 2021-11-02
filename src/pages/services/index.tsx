@@ -156,7 +156,7 @@ export default function Index() {
                             </a>
                             <a href="/value-added-services">
                                 <img
-                                    src="images/colo2.png"
+                                   src="images/service/0.jpg"
                                     alt=""
                                     className="image2 grow"
                                 />
@@ -826,14 +826,16 @@ export default function Index() {
                     margin: 0;
                     font-family: Segoe UI;
                     font-style: normal;
-                    font-weight: bold;
+                    font-weight: 600;
                 }
                 .description h1 {
                     margin: 0;
+                    font-weight: 600;
                     font-size: 52px !important;
                 }
                 .description h2 {
                     margin: 0;
+                    font-weight: 600;
                     font-size: 36px !important;
                 }
                 .grid .row-3.description {
