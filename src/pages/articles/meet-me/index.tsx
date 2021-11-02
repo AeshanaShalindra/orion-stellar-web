@@ -25,7 +25,7 @@ export default function Index() {
           /* margin-top: 100px; */
         }
         .cover {
-          background-repeat: no-repeat;
+          background-repeat: round;
           background-image: url("/images/cover5.png");
           height: 1108px;
           display: flex;

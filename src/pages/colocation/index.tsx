@@ -150,7 +150,7 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/co-cover.png");
                     height: 80vh;
                     display: flex;

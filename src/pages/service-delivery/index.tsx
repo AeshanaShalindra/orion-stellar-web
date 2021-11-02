@@ -76,7 +76,7 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/sd-cover.png");
                     height: 80vh;
                     display: flex;
@@ -106,7 +106,7 @@ export default function Index() {
                     margin-right: 253px;
                 }
                 .osdc-wall {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/osdc.png");
                     height: 80vh;
                     display: flex;

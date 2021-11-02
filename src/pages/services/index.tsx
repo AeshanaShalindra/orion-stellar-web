@@ -156,7 +156,7 @@ export default function Index() {
                             </a>
                             <a href="/value-added-services">
                                 <img
-                                    src="images/service/0.jpg"
+                                    src="images/colo2.png"
                                     alt=""
                                     className="image2 grow"
                                 />
@@ -172,17 +172,22 @@ export default function Index() {
                         </div>
                         <div className="row">
                             <div className="row-3 description">
+                                <img
+                                    src="images/logo-white.svg"
+                                    alt=""
+                                    className="title-logo"
+                                />
                                 <h2>Managed</h2>
                                 <h1>Services</h1>
                             </div>
                             <img
-                                src="images/service/1.jpg"
+                                src="images/colo3.png"
                                 alt=""
-                                className="image3"
+                                className="image3 grow"
                             />
                             <a href="/service-delivery">
                                 <img
-                                    src="images/service/2.jpg"
+                                    src="images/service/2.png"
                                     alt=""
                                     className="image4 grow"
                                 />
@@ -240,89 +245,86 @@ export default function Index() {
         </div> */}
 
                     <div className="deliverables">
-                        <BackTitle title="Deliverables" />
+                        <BackTitle title="Deliverables" size="28"/>
                         <div className="card-section">
                             <InfoCard
-                                image="/images/service/3.jpg"
-                                title="Up to 40%
-              Energy Saving"
+                                image="/images/service/9.png"
+                                title="Energy savings of 40%"
                                 description={
-                                    <ul>
+                                    <ul className="info-des">
+                                        <li> Pay as you go usage </li>
                                         <li>
-                                            Unmatched efficiency with a 1.4 PUE
-                                            design
-                                        </li>
-                                        <li>Pay as You Go Usage</li>
-                                    </ul>
-                                }
-                            />
-                            <InfoCard
-                                image="/images/service/4.jpg"
-                                title="19% More Rack Space"
-                                description={
-                                    <ul>
-                                        <li>
-                                            Cost efficiency via optimized rack
-                                            utilization compared to other data
-                                            centers
+                                            Unmatched power Efficiency of 1.4
+                                            PUE
                                         </li>
                                     </ul>
                                 }
                             />
                             <InfoCard
-                                image="/images/card9.png"
-                                title="Carrier Neutral
-              Networking"
+                                image="/images/service/4.png"
+                                title="15% more rack space"
                                 description={
-                                    <ul>
+                                    <ul className="info-des">
                                         <li>
-                                            Better Redundancy & amp; cost
-                                            optimization
+                                            Cost efficiencies via optimized rack
+                                            utilization
+                                        </li>
+                                    </ul>
+                                }
+                            />
+                            <InfoCard
+                                image="/images/service/10.png"
+                                titleEl={
+                                    <span className="info-text">
+                                        Carrier neutral networking to give more network redundancy and cost benefits
+                                    </span>
+                                }
+                                description={
+                                    <ul className="info-des">
+                                        <li>
+                                            More network bandwidth options to
+                                            select
                                         </li>
                                     </ul>
                                 }
                             />
                             <InfoCard
                                 image="/images/service/6.jpg"
-                                title="Bundled offers for
-              Startups & amp; SMEs"
+                                title="Accelerate enterprise digitalization"
                                 description={
-                                    <ul>
+                                    <ul className="info-des">
                                         <li>
-                                            All the infrastructure needed to run
-                                            the business
+                                            With our high density racks up to
+                                            15Kw enabling new breed of
+                                            technologies
                                         </li>
-                                        <li>SD -WAN Enabled</li>
                                     </ul>
                                 }
                             />
                             <InfoCard
-                                image="/images/service/7.jpg"
-                                title="Travel & amp; 
-              Real Estate
-               Saving"
+                                image="/images/service/11.png"
+                                title="Savings in real estate & travel"
                                 description={
-                                    <ul>
+                                    <ul className="info-des">
                                         <li>
-                                            Run Production IT loads in a world
-                                            class data center right here in
-                                            Colombo
+                                            Ability to house production IT
+                                            systems in a world-class data center
                                         </li>
                                     </ul>
                                 }
                             />
                             <InfoCard
                                 image="/images/service/8.jpg"
-                                title="Accelerate Enterprise
-              Digitalization"
+                                title="SME, Start-up bundle"
                                 description={
-                                    <ul>
+                                    <ul className="info-des">
                                         <li>
-                                            Run high density IT loads
-                                            (~8-16kW/rack)
+                                            With SDWAN capability to have high
+                                            speed access
                                         </li>
                                         <li>
-                                            Enable new breed of technologies
+                                            Includes everything you need to
+                                            kick-off your business
                                         </li>
                                     </ul>
                                 }
@@ -578,7 +580,7 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/cover3.png");
                     height: 936px;
                     display: flex;
@@ -645,7 +647,6 @@ export default function Index() {
                 .service .title {
                     margin-top: 64px;
                     margin-bottom: 57px;
-                    margin-left: 200px;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 24px;
@@ -842,6 +843,10 @@ export default function Index() {
                     top: 3430.46px;
                     text-align: right;
                 }
+                .grid .row-3.description img {
+                    width: 249px;
+                    margin-bottom: 14px;
+                }
                 .message {
                     width: 1057px;
                     height: 156px;
@@ -873,6 +878,7 @@ export default function Index() {
                     -ms-flex-align: center;
                     align-items: center;
                     margin: 0 84px;
+                    width: 100%;
                 }
 
                 .grid-2 {
@@ -1086,6 +1092,14 @@ export default function Index() {
                     align-items: center;
                     border-bottom-left-radius: 8px;
                     border-bottom-right-radius: 8px;
+                }
+                .info-des li {
+                    margin-bottom: 8px;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+                .info-text {
+                    font-size: 28px;
                 }
 
                 @media (min-width: 769px) {

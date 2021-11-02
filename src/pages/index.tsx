@@ -369,7 +369,7 @@ export default function Index() {
                     width: 100%;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-size: cover;
                     background-image: url("/images/home/1.jpg");
                     height: 1100px;

@@ -251,7 +251,7 @@ export default function Index() {
                     /* width: 100%; */
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/cover4.jpg");
                     height: 1108px;
                     display: flex;
