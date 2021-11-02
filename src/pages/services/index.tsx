@@ -182,11 +182,13 @@ export default function Index() {
                                 <h2>Managed</h2>
                                 <h1>Services</h1>
                             </div>
-                            <img
-                                src="images/colo3.png"
-                                alt=""
-                                className="image3 grow"
-                            />
+                            <a href="/managed-services">
+                                <img
+                                    src="images/colo3.png"
+                                    alt=""
+                                    className="image3 grow"
+                                />
+                            </a>
                             <a href="/service-delivery">
                                 <img
                                     src="images/service/2.png"

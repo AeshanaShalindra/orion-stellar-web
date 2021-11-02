@@ -107,8 +107,8 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .cover {
-                    background-repeat: round;
-                    background-image: url("/images/cover9.png");
+                    background-repeat: no-repeat;
+                    background-image: url("/images/cover11.png");
                     height: 80vh;
                     display: flex;
                     flex-direction: column;
