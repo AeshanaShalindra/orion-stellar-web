@@ -116,6 +116,8 @@ export default function Index() {
                                 looking to take the lead in the new era of
                                 industrial 4.0 need a reliable industry leading
                                 partner to host their IT infrastructure.
+                            </p>
+                            <p>
                                 Colocation will be the preferred choice for most
                                 of the large enterprises to keep the control of
                                 their applications and data archives to meet
@@ -649,6 +651,7 @@ export default function Index() {
                 .service .title {
                     margin-top: 64px;
                     margin-bottom: 57px;
+                    margin-left: 200px;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 24px;
@@ -732,6 +735,7 @@ export default function Index() {
                     font-size: 60px;
                     line-height: 99.01%;
                     color: #ffffff;
+                    margin-left: 0 !important;
                 }
                 .solutions .no-box p {
                     font-weight: 350;
@@ -886,7 +890,8 @@ export default function Index() {
                     -webkit-box-align: center;
                     -ms-flex-align: center;
                     align-items: center;
-                    width: 100%;
+                    width: 90%;
+                    margin-left: 5%;
                 }
 
                 .grid-2 {

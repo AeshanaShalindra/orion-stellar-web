@@ -61,6 +61,9 @@ export default function BackTitle({
                 .no-parallax {
                     display: none;
                 }
+                .parallax {
+                    margin-top: -100px;
+                }
 
                 @media screen and (max-width: 1024px) {
                     .parallax {

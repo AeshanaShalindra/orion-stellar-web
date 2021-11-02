@@ -198,7 +198,7 @@ export default function Index() {
                         </div>
                     </div>
 
-                    <BackTitle title="Uniqueness" size="28"/>
+                    <BackTitle title="Uniqueness" size="24"/>
                     <div className="content-wrap">
                         <div className="card-section">
                             <InfoCard
@@ -793,6 +793,9 @@ export default function Index() {
                     }
                     .cover {
                         background-repeat: no-repeat;
+                    }
+                    .env-section{
+                        display:none;
                     }
                 }
 
