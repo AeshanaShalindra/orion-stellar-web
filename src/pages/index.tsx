@@ -100,6 +100,11 @@ export default function Index() {
                     <div className="service">
                         <img src="/images/home/2.jpg" alt="services" />
                         <div className="content">
+                            <img
+                                className="mini-logo"
+                                src="/images/logo-color.png"
+                                alt="orion sella logo"
+                            />
                             <h1>Services</h1>
                             <p>
                                 In the era of 4th industrial revolution and
@@ -155,13 +160,8 @@ export default function Index() {
                     </div>
                     <div className="env-section">
                         <div className="txt-content">
-                            <img
-                                className="logo"
-                                src="/images/logo-white.svg"
-                                alt="orion sella logo"
-                            />
-                            <h1>Environmental</h1>
-                            <h2>Sustainability</h2>
+                            <h1>Environmentally</h1>
+                            <h2>Sustainable</h2>
                             <ul>
                                 <li>
                                     IT consumes 3% of the power off the grid
@@ -490,6 +490,11 @@ export default function Index() {
                     grid-column: 4 / span 2;
                     margin: 0 100px;
                 }
+                .service .content .mini-logo {
+                    width: 224px;
+                    margin-left: 300px;
+                    margin-bottom: -41px;
+                }
                 .service h1 {
                     font-family: "SegoeUI";
                     font-style: normal;
@@ -531,7 +536,7 @@ export default function Index() {
                     margin-bottom: 40px;
                 }
                 .info-p {
-                    color:black;
+                    color: black;
                 }
                 .info-des li {
                     margin-bottom: 8px;
@@ -603,7 +608,7 @@ export default function Index() {
                     align-items: flex-start;
                     flex-direction: row;
                 }
-                .content-wrap img{
+                .content-wrap img {
                     width: 95%;
                 }
                 .card-section {
