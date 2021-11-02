@@ -197,6 +197,35 @@ export default function Index() {
                             />
                         </div>
                     </div>
+                    <div className="mobile env">
+                        <div className="full-grid">
+                            <img src="/images/home/m-ev.png" alt="" />
+                        </div>
+                        <div className="txt-content">
+                        <ul>
+                                <li>
+                                    IT consumes 3% of the power off the grid
+                                    globally and the power demand keep
+                                    increasing hence the need for power
+                                    efficient datacenters has become a necessity
+                                    in terms of environmental protection.{" "}
+                                </li>
+                                <li>
+                                    OrionStellar data center has the most
+                                    optimum Power Usage Efficiency (PUE) in the
+                                    country.
+                                </li>
+                                <li>
+                                    Lighting control system that could give 50%
+                                    of energy saving
+                                </li>
+                                <li>
+                                    LEED silver certified green building housing
+                                    the datacenter
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <BackTitle title="Uniqueness" size="24" />
                     <div className="content-wrap">
@@ -714,11 +743,31 @@ export default function Index() {
                     display: none;
                 }
 
+                .mobile.env .full-grid img {
+                    width: 100%;
+                    margin-top: 100px;
+                }
+                .env ul li {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #ffffff;
+                    mix-blend-mode: normal;
+                }
+                .mobile {
+                    display: none;
+                }
+
                 @media screen and (max-width: 480px) {
                 }
                 @media screen and (max-width: 768px) {
                 }
                 @media screen and (max-width: 1024px) {
+                    .mobile {
+                        display: block;
+                    }
                     .middle-banner {
                         display: none;
                     }
