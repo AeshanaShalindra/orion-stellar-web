@@ -15,6 +15,7 @@ import BookingView from "../components/BookingView";
 import ActiveLink from "../components/ActiveLink";
 import Config from "./../lib/config";
 import Soon from "./../pages/soon";
+// import ReactPlayer from 'react-player';
 
 export default function Index() {
     const page = (
@@ -296,10 +297,12 @@ export default function Index() {
                             subtitle="our data center tour"
                         />
                         <div className="content-wrap">
-                            <img
+                            {/* <img
                                 src="/images/datacenter.png"
                                 alt="datacenter"
-                            />
+                            /> */}
+                            {/* <ReactPlayer url="https://www.video-url.com" /> */}
+                            <iframe src="https://drive.google.com/file/d/1woXPdrXTAtaps6SDXCpluyYOIBbtd6ns/preview" width="640" height="480" allow="autoplay"></iframe>
                         </div>
                         <div className="message">
                             <div className="iso-message">

@@ -26,7 +26,7 @@ export default function Index() {
                     />
                     <h1>Managed Services</h1>
                 </div>
-                <div className="full-grid">
+                <div className="half-grid">
                     <img src="/images/ms/1.png" alt="" />
                 </div>
                 <div className="full-grid">
@@ -98,6 +98,9 @@ export default function Index() {
                 }
                 .full-grid {
                     margin-bottom: 100px;
+                }
+                .half-grid {
+                    margin-bottom: 86px;
                 }
 
                 @media (min-width: 769px) {
