@@ -19,6 +19,11 @@ export default function Index() {
                     <NavBar />
                 </div>
                 <div className="header">
+                <img
+                        id="cardLogo"
+                        src="/images/logo-white.svg"
+                        alt="orion sella logo"
+                    />
                     <h1>Service Delivery</h1>
                     <h2>Assurance</h2>
                 </div>
@@ -65,7 +70,11 @@ export default function Index() {
                     flex-direction: column;
                 }
                 .header {
-                    margin-top: -200px;
+                    margin-top: -156px;
+                }
+                .header img {
+                    margin-left: 311px;
+                    margin-bottom: -41px;
                 }
                 .header h1 {
                     font-family: "SegoeUI";

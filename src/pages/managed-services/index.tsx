@@ -19,6 +19,11 @@ export default function Index() {
                     <NavBar />
                 </div>
                 <div className="header">
+                    <img
+                        id="cardLogo"
+                        src="/images/logo-white.svg"
+                        alt="orion sella logo"
+                    />
                     <h1>Managed Services</h1>
                 </div>
                 <div className="full-grid">
@@ -48,7 +53,7 @@ export default function Index() {
                 <div className="full-grid">
                     <img src="/images/ms/9.png" alt="" />
                 </div>
-               
+
                 <Footer />
             </div>
             <style jsx>{`
@@ -73,7 +78,11 @@ export default function Index() {
                     flex-direction: column;
                 }
                 .header {
-                    margin-top: -200px;
+                    margin-top: -156px;
+                }
+                .header img {
+                    margin-left: 311px;
+                    margin-bottom: -41px;
                 }
                 .header h1 {
                     font-family: "SegoeUI";
@@ -84,10 +93,10 @@ export default function Index() {
                     text-align: center;
                     margin: 0;
                 }
-                .full-grid img{
-                    width:100%;
+                .full-grid img {
+                    width: 100%;
                 }
-                .full-grid{
+                .full-grid {
                     margin-bottom: 100px;
                 }
 
