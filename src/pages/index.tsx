@@ -30,7 +30,7 @@ export default function Index() {
                             <div className="title-container">
                                 <h1>Sri Lanka’s First</h1>
                                 <h1>
-                                    <strong>High Density & Carrier Neutral</strong>
+                                    <strong>High Density</strong> & <strong>Carrier Neutral</strong>
                                     <br /> Data Center
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
@@ -206,7 +206,7 @@ export default function Index() {
                                 titleEl={
                                     <span>
                                         Sri Lanka’s 1<sup>st</sup> High Density
-                                        Data Center.
+                                        Data Center
                                     </span>
                                 }
                                 description={
@@ -222,12 +222,12 @@ export default function Index() {
                                 titleEl={
                                     <span>
                                         Sri Lanka’s 1<sup>st</sup> Carrier
-                                        Neutral Data Center.
+                                        Neutral Data Center
                                     </span>
                                 }
                                 description={
                                     <ul className="info-des">
-                                        <li>2x Meet-me Rooms</li>
+                                        <li>2 Meet-me Rooms</li>
                                         <li>
                                             Both SLT, Dialog available with
                                             fiber rings
@@ -254,20 +254,20 @@ export default function Index() {
                                 description={
                                     <ul className="info-des">
                                         <li>
-                                            Able to meter power usage at U Level
+                                            Able to meter power usage at U level
                                         </li>
                                         <li>
-                                            <b>Pay as you go</b> model
+                                            <b>"Pay as you go"</b> model
                                         </li>
                                     </ul>
                                 }
                             />
                             <InfoCard
                                 image="/images/home/8.jpg"
-                                title="Colombo city’s only TIA 3 Rated Data Center"
+                                title="Colombo city’s only TIER 3 Rated Data Center"
                                 description={
                                     <>
-                                        <p className="info-p">With access,</p>
+                                        <p className="info-p">With access</p>
                                         <ul className="info-des">
                                             <li>Business Hubs</li>
                                             <li>IT Parks</li>
@@ -277,7 +277,7 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/9.jpg"
-                                title="SME, Start Up Co-Location Bundle with an array of Value-Added services"
+                                title="SME, Start Up Co-Location Packages with an array of Value-Added services"
                                 description={
                                     <ul>
                                         <li>

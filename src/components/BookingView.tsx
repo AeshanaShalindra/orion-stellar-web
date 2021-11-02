@@ -150,7 +150,7 @@ export default function BookingView() {
                     font-family: Segoe UI;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 36px;
+                    font-size: 24px;
                     line-height: 117.51%;
                     color: #ffffff;
                     margin-left: 50px;
