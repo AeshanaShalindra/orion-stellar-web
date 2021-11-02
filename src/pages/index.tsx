@@ -10,11 +10,10 @@ import Footer from "../components/Footer";
 import BackTitle from "../components/BackTitle";
 import NavBar from "../components/NavBar";
 import { Parallax } from "react-scroll-parallax";
-import PanoramaView from "../components/PanoramaView";
 import BookingView from "../components/BookingView";
-import ActiveLink from "../components/ActiveLink";
 import Config from "./../lib/config";
 import Soon from "./../pages/soon";
+import ReactPlayer from "react-player/lazy";
 
 export default function Index() {
     const page = (
@@ -30,8 +29,8 @@ export default function Index() {
                             <div className="title-container">
                                 <h1>Sri Lanka’s First</h1>
                                 <h1>
-                                    <strong>High Density</strong> & Carrier
-                                    Neutral
+                                    <strong>High Density</strong> &{" "}
+                                    <strong>Carrier Neutral</strong>
                                     <br /> Data Center
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
@@ -53,7 +52,7 @@ export default function Index() {
                     />
                 </a>
 
-                <Parallax className="middle-banner" y={[-20, 20]}>
+                {/* <Parallax className="middle-banner" y={[-20, 20]}>
                     <div className="middle-banner">
                         <img
                             id="cardLogo"
@@ -74,9 +73,9 @@ export default function Index() {
                             in the region.
                         </p>
                     </div>
-                </Parallax>
+                </Parallax> */}
 
-                <div className="small-banner">
+                {/* <div className="small-banner">
                     <img
                         id="cardLogo"
                         src="/images/logo-white.svg"
@@ -94,12 +93,17 @@ export default function Index() {
                         solutions and value-added managed services to the
                         enterprises in the region.
                     </p>
-                </div>
+                </div> */}
 
                 <div className="container">
                     <div className="service">
                         <img src="/images/home/2.jpg" alt="services" />
                         <div className="content">
+                            <img
+                                className="mini-logo"
+                                src="/images/logo-color.png"
+                                alt="orion sella logo"
+                            />
                             <h1>Services</h1>
                             <p>
                                 In the era of 4th industrial revolution and
@@ -155,13 +159,8 @@ export default function Index() {
                     </div>
                     <div className="env-section">
                         <div className="txt-content">
-                            <img
-                                className="logo"
-                                src="/images/logo-white.svg"
-                                alt="orion sella logo"
-                            />
-                            <h1>Environmental</h1>
-                            <h2>Sustainability</h2>
+                            <h1>Environmentally</h1>
+                            <h2>Sustainable</h2>
                             <ul>
                                 <li>
                                     IT consumes 3% of the power off the grid
@@ -198,13 +197,47 @@ export default function Index() {
                             />
                         </div>
                     </div>
+                    <div className="mobile env">
+                        <div className="full-grid">
+                            <img src="/images/home/m-ev.png" alt="" />
+                        </div>
+                        <div className="txt-content">
+                        <ul>
+                                <li>
+                                    IT consumes 3% of the power off the grid
+                                    globally and the power demand keep
+                                    increasing hence the need for power
+                                    efficient datacenters has become a necessity
+                                    in terms of environmental protection.{" "}
+                                </li>
+                                <li>
+                                    OrionStellar data center has the most
+                                    optimum Power Usage Efficiency (PUE) in the
+                                    country.
+                                </li>
+                                <li>
+                                    Lighting control system that could give 50%
+                                    of energy saving
+                                </li>
+                                <li>
+                                    LEED silver certified green building housing
+                                    the datacenter
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    <BackTitle title="Uniqueness" />
+                    <BackTitle title="Uniqueness" size="24" />
                     <div className="content-wrap">
                         <div className="card-section">
                             <InfoCard
                                 image="/images/home/4.jpg"
-                                title="Sri Lanka’s First High Density Data Center."
+                                titleEl={
+                                    <span>
+                                        Sri Lanka’s 1<sup>st</sup> High Density
+                                        Data Center
+                                    </span>
+                                }
                                 description={
                                     <ul className="info-des">
                                         <li>15kW+ per Rack</li>
@@ -215,10 +248,15 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/5.jpg"
-                                title="Sri Lanka’s First Carrier Neutral Data Center."
+                                titleEl={
+                                    <span>
+                                        Sri Lanka’s 1<sup>st</sup> Carrier
+                                        Neutral Data Center
+                                    </span>
+                                }
                                 description={
                                     <ul className="info-des">
-                                        <li>2x Meet-me Rooms</li>
+                                        <li>2 Meet-me Rooms</li>
                                         <li>
                                             Both SLT, Dialog available with
                                             fiber rings
@@ -229,7 +267,7 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/6.jpg"
-                                title="More Data Center Rack Space"
+                                title="Superior Rack Space per Footprint"
                                 description={
                                     <ul className="info-des">
                                         <li>
@@ -241,29 +279,34 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/7.jpg"
-                                title="Fine Energy Metering Granularity"
+                                title="Energy Metering at Granular Levels"
                                 description={
                                     <ul className="info-des">
                                         <li>
-                                            Able to meter power usage at U Level
+                                            Able to meter power usage at U level
                                         </li>
-                                        <li>“Pay as you go“ model</li>
+                                        <li>
+                                            <b>"Pay as you go"</b> model
+                                        </li>
                                     </ul>
                                 }
                             />
                             <InfoCard
                                 image="/images/home/8.jpg"
-                                title="Colombo’s only Tier 3 Rated Data Center With the access to"
+                                title="Colombo city’s only TIER 3 Rated Data Center"
                                 description={
-                                    <ul className="info-des">
-                                        <li>Business Hubs</li>
-                                        <li>IT Parks</li>
-                                    </ul>
+                                    <>
+                                        <p className="info-p">With access</p>
+                                        <ul className="info-des">
+                                            <li>Business Hubs</li>
+                                            <li>IT Parks</li>
+                                        </ul>
+                                    </>
                                 }
                             />
                             <InfoCard
                                 image="/images/home/9.jpg"
-                                title="SME, Start Up Co-Location Bundle with an array of Value-Added services"
+                                title="SME, Start Up Co-Location Packages with an array of Value-Added services"
                                 description={
                                     <ul>
                                         <li>
@@ -279,12 +322,17 @@ export default function Index() {
                     <div id="tour" className="data-center-tour-section">
                         <BackTitle
                             title="Data Center Tour"
-                            subtitle="Virtual Tour"
+                            subtitle="our data center tour"
                         />
                         <div className="content-wrap">
-                            <img
-                                src="/images/datacenter.png"
-                                alt="datacenter"
+                            <ReactPlayer
+                                url="/videos/intro.mkv"
+                                className="react-player"
+                                controls={true}
+                                playing={true}
+                                muted={true}
+                                width="80%"
+                                height="100%"
                             />
                         </div>
                         <div className="message">
@@ -355,7 +403,7 @@ export default function Index() {
                     width: 100%;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-size: cover;
                     background-image: url("/images/home/1.jpg");
                     height: 1100px;
@@ -464,6 +512,8 @@ export default function Index() {
                     grid-gap: 12px;
                     justify-items: center;
                     align-items: center;
+                    margin-top: 84px;
+                    margin-bottom: 84px;
                 }
                 .service img {
                     grid-column: 1 / span 3;
@@ -472,6 +522,11 @@ export default function Index() {
                 .service .content {
                     grid-column: 4 / span 2;
                     margin: 0 100px;
+                }
+                .service .content .mini-logo {
+                    width: 224px;
+                    margin-left: 300px;
+                    margin-bottom: -41px;
                 }
                 .service h1 {
                     font-family: "SegoeUI";
@@ -512,6 +567,9 @@ export default function Index() {
                     line-height: 24px;
                     margin-top: 20px;
                     margin-bottom: 40px;
+                }
+                .info-p {
+                    color: black;
                 }
                 .info-des li {
                     margin-bottom: 8px;
@@ -583,6 +641,9 @@ export default function Index() {
                     align-items: flex-start;
                     flex-direction: row;
                 }
+                .content-wrap img {
+                    width: 95%;
+                }
                 .card-section {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
@@ -636,7 +697,7 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .book-tour-section .calendar {
-                    margin-top: 400px;
+                    margin-top: 240px;
                 }
                 .partner-section {
                     width: 95%;
@@ -682,11 +743,31 @@ export default function Index() {
                     display: none;
                 }
 
+                .mobile.env .full-grid img {
+                    width: 100%;
+                    margin-top: 100px;
+                }
+                .env ul li {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #ffffff;
+                    mix-blend-mode: normal;
+                }
+                .mobile {
+                    display: none;
+                }
+
                 @media screen and (max-width: 480px) {
                 }
                 @media screen and (max-width: 768px) {
                 }
                 @media screen and (max-width: 1024px) {
+                    .mobile {
+                        display: block;
+                    }
                     .middle-banner {
                         display: none;
                     }
@@ -755,13 +836,26 @@ export default function Index() {
                     .partner-section {
                         display: none;
                     }
-                    #tour {
+                    /* #tour {
                         display: none;
-                    }
+                    } */
                 }
 
                 @media (max-width: 1500px) {
                     #tour {
+                        /* display: none; */
+                    }
+                    #tour .message {
+                        margin: 0 54px;
+                        margin-top: 74px;
+                    }
+                    #tour .message img {
+                        display: none;
+                    }
+                    .cover {
+                        background-repeat: no-repeat;
+                    }
+                    .env-section {
                         display: none;
                     }
                 }

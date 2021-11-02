@@ -97,7 +97,7 @@ export default function BookingView() {
                         </ul>
                         <div className="btn-wrap">
                             <button type="submit">
-                                <CircleButton title="SEND BOOKING REQUEST" />
+                                <CircleButton title="SEND BOOKING REQUEST" dark={true}/>
                             </button>
                         </div>
                     </div>
@@ -150,7 +150,7 @@ export default function BookingView() {
                     font-family: Segoe UI;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 36px;
+                    font-size: 24px;
                     line-height: 117.51%;
                     color: #ffffff;
                     margin-left: 50px;

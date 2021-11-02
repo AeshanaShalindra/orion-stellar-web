@@ -81,7 +81,7 @@ export default function PostLayout({
             color: white !important;
           }
           .cover {
-            background-repeat: no-repeat;
+            background-repeat: round;
             background-image: url(${image});
             height: 1108px;
             display: flex;

@@ -124,7 +124,7 @@ export default function NavBar() {
               href="/contact"
               children={
                 <NavButton
-                  title="Contact"
+                  title="Contact Us"
                   active={asPath === "/contact"}
                   scroll={true}
                 />

@@ -61,6 +61,9 @@ export default function BackTitle({
                 .no-parallax {
                     display: none;
                 }
+                .parallax {
+                    margin-top: -100px;
+                }
 
                 @media screen and (max-width: 1024px) {
                     .parallax {
@@ -69,17 +72,19 @@ export default function BackTitle({
                     .no-parallax {
                         display: flex;
                         flex-direction: column;
-                        margin-top: 160px;
-                        margin-bottom: 100px;
+                        margin-top: 200px;
+                        margin-bottom: 68px;
                     }
                     .back-title {
                         text-align: center;
-                        font-size: 16vw;
+                        font-size: 10vw;
                         line-height: 160px;
                     }
                     .sub-title {
                         font-size: 18px;
                         line-height: 94.01%;
+                        text-align: center;
+                        margin-top: 58px;
                     }
                 }
             `}</style>

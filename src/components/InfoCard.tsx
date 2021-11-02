@@ -1,15 +1,16 @@
 type Props = {
   image: string;
-  title: string;
+  title?: string;
+  titleEl?: JSX.Element;
   description: JSX.Element;
 };
-export default function InfoCard({ title, image, description }: Props) {
+export default function InfoCard({ title, image, titleEl, description }: Props) {
   return (
     <>
       <button type="button" className="button grow">
         <img src={image} alt={title} />
         <div className="text">
-          <h5>{title}</h5>
+          <h5>{title|| titleEl}</h5>
           <div className="desc">{description}</div>
         </div>
       </button>
@@ -47,6 +48,7 @@ export default function InfoCard({ title, image, description }: Props) {
           font-size: 32px;
           line-height: 115.51%;
           margin-bottom: 12px;
+          margin-top: 32px;
         }
         .desc {
           margin-top: 23px;

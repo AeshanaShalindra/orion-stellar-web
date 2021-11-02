@@ -19,6 +19,11 @@ export default function Index() {
                     <NavBar />
                 </div>
                 <div className="header">
+                <img
+                        id="cardLogo"
+                        src="/images/logo-white.svg"
+                        alt="orion sella logo"
+                    />
                     <h1>Service Delivery</h1>
                     <h2>Assurance</h2>
                 </div>
@@ -30,28 +35,10 @@ export default function Index() {
                     Our DCIM Provides ONE view of the entire Data center from IT
                     loads to supporting physical Infrastructure.
                 </div>
-                <div className="grid-5">
-                    <div className="grid-item-2">
-                        <img src="/images/sda/3.png" alt="" />
-                    </div>
-                    <div className="grid-item-1 text">
-                        Power, Cooling & Facility Infrastructure Monitoring &
-                        Management
-                    </div>
-                    <div className="grid-item-1">
-                        <img src="/images/sda/2.png" alt="" />
-                    </div>
-                    <div className="grid-item-1 text">
-                        Environmental Monitoring (Temperature & Humidity) and
-                    </div>
-
-                    <div className="grid-item-1 span-2 text">
-                        Fire Detection & Fire Suppression
-                    </div>
-                    <div className="grid-item-2 span-3">
-                        <img src="/images/sda/1.png" alt="" />
-                    </div>
+                <div className="full-grid">
+                    <img src="/images/sda/6.png" alt="" />
                 </div>
+
                 <div className="quote">
                     To ensure an effective monitoring and control at OSDC NOC
                     Further, DCIM is a strategic enablement to ensure Tier3
@@ -76,14 +63,18 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/sd-cover.png");
                     height: 80vh;
                     display: flex;
                     flex-direction: column;
                 }
                 .header {
-                    margin-top: -200px;
+                    margin-top: -156px;
+                }
+                .header img {
+                    margin-left: 311px;
+                    margin-bottom: -41px;
                 }
                 .header h1 {
                     font-family: "SegoeUI";
@@ -106,8 +97,8 @@ export default function Index() {
                     margin-right: 253px;
                 }
                 .osdc-wall {
-                    background-repeat: no-repeat;
-                    background-image: url("/images/osdc.png");
+                    background-repeat: round;
+                    background-image: url("/images/sda/7.png");
                     height: 80vh;
                     display: flex;
                     flex-direction: column;
@@ -123,10 +114,10 @@ export default function Index() {
                 }
                 .quote {
                     font-style: normal;
-                    font-size: 36px;
+                    font-size: 32px;
                     line-height: 48px;
                     color: #ffffff;
-                    padding: 48px 10vw;
+                    padding: 86px 10vw;
                 }
                 .service {
                     display: flex;
@@ -148,6 +139,11 @@ export default function Index() {
                     display: flex;
                     width: 100%;
                 }
+                .grid-item-3 {
+                    grid-column: span 3;
+                    display: flex;
+                    width: 100%;
+                }
                 .grid-item-1.span-2 {
                     grid-column: 3 / span 1;
                     display: flex;
@@ -156,6 +152,11 @@ export default function Index() {
                 .grid-item-2.span-3 {
                     grid-column: 4 / span 2;
                     display: flex;
+                }
+                .grid-item-3.span-3 {
+                    grid-column: 3 / span 3;
+                    display: flex;
+                    width: 100%;
                 }
                 .grid-item-2.span-3 img {
                     width: 100%;

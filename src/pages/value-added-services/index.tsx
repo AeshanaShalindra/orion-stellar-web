@@ -28,7 +28,10 @@ export default function Index() {
                     <h1>valued added Services</h1>
                     <h2>for Enterprises</h2>
                 </div>
-                <div className="grid-2">
+                <div className="half-grid">
+                    <img src="/images/vas.png" alt="" />
+                </div>
+                {/* <div className="grid-2">
                     <div className="grid-item-1">
                         <div className="text right">
                             Enterprises have relied on Managed Infrastructure
@@ -89,7 +92,7 @@ export default function Index() {
                             end-to-end encryption
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <Footer />
             </div>
             <style jsx>{`
@@ -108,7 +111,7 @@ export default function Index() {
                 }
                 .cover {
                     background-repeat: no-repeat;
-                    background-image: url("/images/cover9.png");
+                    background-image: url("/images/cover11.png");
                     height: 80vh;
                     display: flex;
                     flex-direction: column;
@@ -183,6 +186,11 @@ export default function Index() {
                     justify-content: center;
                     margin-top: -78px;
                     margin-bottom: 75px;
+                }
+                .half-grid {
+                    width: 100%;
+    display: flex;
+    justify-content: center;
                 }
 
                 @media (min-width: 769px) {

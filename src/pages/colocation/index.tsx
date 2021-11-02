@@ -34,7 +34,7 @@ export default function Index() {
                     <div className="service-grid-container">
                         <div className="grid-item1">
                             <img
-                                src="images/colocation/1.jpg"
+                                src="images/colocation/1.png"
                                 alt=""
                                 className="grid-image"
                             />
@@ -67,7 +67,7 @@ export default function Index() {
                         </div>
                         <div className="grid-item6">
                             <img
-                                src="images/colocation/4.jpg"
+                                src="images/colocation/4.png"
                                 alt=""
                                 className="grid-image"
                             />
@@ -150,7 +150,7 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .cover {
-                    background-repeat: no-repeat;
+                    background-repeat: round;
                     background-image: url("/images/co-cover.png");
                     height: 80vh;
                     display: flex;
