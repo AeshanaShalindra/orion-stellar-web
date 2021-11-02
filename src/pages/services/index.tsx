@@ -38,7 +38,11 @@ export default function Index() {
                         challenges such as
                     </p>
 
-                    <div className="challenges">
+                    <div className="full-grid">
+                            <img src="/images/service/list.png" alt="" />
+                        </div>
+
+                    {/* <div className="challenges">
                         <div className="box-row">
                             <div className="box box-first">
                                 <p className="msg">
@@ -71,7 +75,7 @@ export default function Index() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="solutions">
                         <div className="box">
@@ -659,6 +663,9 @@ export default function Index() {
                     font-size: 24px;
                     line-height: 32px;
                     color: #ffffff;
+                }
+                .full-grid{
+                    width: 100%;
                 }
                 .challenges .box-row {
                     margin-top: 30px;
