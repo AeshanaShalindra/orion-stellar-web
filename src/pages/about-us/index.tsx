@@ -8,9 +8,11 @@ import BackTitle from "../../components/BackTitle";
 import ProfileCard from "../../components/ProfileCard";
 import NavBar from "../../components/NavBar";
 import CircleButton from "../../components/CircleButton";
+import Config from "./../../lib/config";
+import Soon from "./../../pages/soon";
 
 export default function Index() {
-    return (
+    const page = (
         <Layout>
             <BasicMeta url={"/"} />
             <OpenGraphMeta url={"/"} />
@@ -863,6 +865,43 @@ export default function Index() {
                 }
                 .main-title.learn {
                 }
+                .mobile {
+                    display: none;
+                }
+
+                @media all and (max-width: 500px) {
+                    .cover {
+                        height: 526px;
+                    }
+                    #company {
+                        display: none;
+                    }
+                    .mtp-wrap {
+                        display: none;
+                    }
+                    .brand-back {
+                        display: none;
+                    }
+                    .container.service {
+                        display: none;
+                    }
+                    .service-grid-line {
+                        display: none;
+                    }
+                    .main-title.service-grid {
+                        display: none;
+                    }
+                    .service-grid-container {
+                        display: none;
+                    }
+                    .top-image {
+                        display: none;
+                    }
+                    .top-text {
+                        display: none;
+                    }
+                }
+
                 @media (min-width: 769px) {
                     h1 {
                         font-size: 3rem;
@@ -873,5 +912,12 @@ export default function Index() {
                 }
             `}</style>
         </Layout>
+    );
+
+    return (
+        <>
+            {Config.published && page}
+            {!Config.published && <Soon />}
+        </>
     );
 }

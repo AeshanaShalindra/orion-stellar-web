@@ -1,9 +1,44 @@
 import BasicMeta from "../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import CircleButton from "../../components/CircleButton";
+import Config from "./../../lib/config";
+import { useRouter } from "next/router";
 
 export default function Index() {
+    const router = useRouter();
+    const [wait, setWait] = useState(false);
+    const path = router.asPath;
+    const nextPath = "/launch?click=1";
+
+    useEffect(() => {
+        console.log(`click`, path);
+        if (path === nextPath) {
+            console.log(`launch`);
+            launch();
+        }
+    }, []);
+
+    const onLaunch = () => {
+        setWait(true);
+        launch();
+    };
+
+    const launch = () => {
+        if (Config.published) {
+            console.log(`published`);
+            router.push("/");
+        } else {
+            console.log(`not published`);
+            router.push(nextPath);
+            setTimeout(() => {
+                console.log(`next path`);
+                router.reload();
+            }, 1000);
+        }
+    };
+
     return (
         <>
             <BasicMeta url={"/"} />
@@ -11,10 +46,12 @@ export default function Index() {
             <TwitterCardMeta url={"/"} />
             <div className="back-wall">
                 <div className="container cover">
-                    <div className="top-card">
-                        <h1>Coming Soon</h1>
-                        <h5>03 November 2021</h5>
-                    </div>
+                    <button
+                        className={wait ? "btn pulse" : "btn"}
+                        onClick={onLaunch}
+                    >
+                        <CircleButton title="Launch" />
+                    </button>
                     <img src="/images/logo.svg" alt="orion sella logo" />
                 </div>
             </div>
@@ -36,7 +73,7 @@ export default function Index() {
 
                 .cover {
                     background-repeat: round;
-                    background-image: url("/images/home/1.jpg");
+                    background-image: url("/images/launch.png");
                     display: -webkit-box;
                     display: -webkit-flex;
                     display: -ms-flexbox;
@@ -66,31 +103,11 @@ export default function Index() {
                     margin-bottom: 24px;
                     margin-top: 100px;
                 }
-                .top-card {
-                    width: 40vw;
-                    padding: 21vh 5vw 5vh;
-                    background: #000000;
-                }
-                .top-card h1 {
-                    font-family: Segoe UI;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 60px;
-                    line-height: 101.01%;
-                    text-align: center;
-                    letter-spacing: 0.07em;
-                    color: #ffffff;
-                }
-                .top-card h5 {
-                    font-family: Segoe UI;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 21px;
-                    text-align: center;
-                    letter-spacing: 0.46em;
-                    text-transform: uppercase;
-                    color: #ffffff;
+                .btn {
+                    margin-top: 27vh;
+                    border: 0;
+                    border-radius: 100%;
+                    background: unset;
                 }
                 .container img {
                     width: 42vw;
@@ -111,6 +128,19 @@ export default function Index() {
                     }
                     .container img {
                         width: 70vw;
+                    }
+                }
+
+                .pulse {
+                    animation: pulse-animation 2s infinite;
+                }
+
+                @keyframes pulse-animation {
+                    0% {
+                        box-shadow: 0 0 0 0px rgb(255 255 255);
+                    }
+                    100% {
+                        box-shadow: 0 0 0 36px rgba(0, 0, 0, 0);
                     }
                 }
             `}</style>

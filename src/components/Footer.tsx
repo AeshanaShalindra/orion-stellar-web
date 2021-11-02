@@ -74,30 +74,12 @@ export default function Footer() {
               <h6>Concept and Design By Pomegranate Design Labs.</h6>
             </div>
             <div className="social-links">
-              {/* <a href="http://">
-                <img src="/images/social/Twitter/Vector.svg" alt="Twitter" />
-              </a> */}
-              {/* <a href="http://">
-                <img
-                  src="/images/social/Facebook/Negative.svg"
-                  alt="Facebook"
-                />
-              </a> */}
-              {/* <a href="http://">
-                <img
-                  src="/images/social/Instagram/Negative.svg"
-                  alt="Instagram"
-                />
-              </a> */}
               <a href="https://www.linkedin.com/">
                 <img
                   src="/images/social/LinkedIn/Negative.svg"
                   alt="LinkedIn"
                 />
               </a>
-              {/* <a href="http://">
-                <img src="/images/social/YouTube/Negative.svg" alt="YouTube" />
-              </a> */}
             </div>
             <div className="tnc-links">
               <a href="">
@@ -152,7 +134,7 @@ export default function Footer() {
           font-family: Roboto;
           font-style: normal;
           font-weight: 900;
-          font-size: 50px;
+          font-size: 42px;
           line-height: 59px;
           color: #ffffff;
         }

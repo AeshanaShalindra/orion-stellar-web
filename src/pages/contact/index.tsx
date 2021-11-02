@@ -5,9 +5,9 @@ import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
 import React from "react";
 import Footer from "../../components/Footer";
 import BackTitle from "../../components/BackTitle";
-import ProfileCard from "../../components/ProfileCard";
 import NavBar from "../../components/NavBar";
-import CircleButton from "../../components/CircleButton";
+import Config from "./../../lib/config";
+import Soon from "./../../pages/soon";
 
 export default function Index() {
     const encode = (data) => {
@@ -74,7 +74,7 @@ export default function Index() {
             });
     };
 
-    return (
+    const page = (
         <Layout>
             <BasicMeta url={"/"} />
             <OpenGraphMeta url={"/"} />
@@ -171,7 +171,7 @@ export default function Index() {
                                 name="Write To Us"
                                 method="POST"
                                 data-netlify="true"
-                                onSubmit={supportRequest}
+                                onSubmit={writeToUs}
                             >
                                 <div className="center-all form-fields">
                                     <h6>Write to us</h6>
@@ -372,7 +372,7 @@ export default function Index() {
                     padding: 10px;
                 }
                 .submit-btn {
-                  background-color: unset;
+                    background-color: unset;
                     border-color: unset;
                     border: black;
                 }
@@ -431,5 +431,12 @@ export default function Index() {
                 }
             `}</style>
         </Layout>
+    );
+
+    return (
+        <>
+            {Config.published && page}
+            {!Config.published && <Soon />}
+        </>
     );
 }

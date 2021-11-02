@@ -1,7 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import Config from './../lib/config'
-import Soon from './../pages/soon'
 
 type Props = {
   children: React.ReactNode;
@@ -28,8 +26,7 @@ export default function Layout({ children }: Props) {
       </Head>
 
       <main>
-        {Config.published && children}
-        {!Config.published && (<Soon />)}
+        {children}
       </main>
       <style jsx>{`
           @font-face {

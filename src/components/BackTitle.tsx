@@ -67,11 +67,19 @@ export default function BackTitle({
                         display: none;
                     }
                     .no-parallax {
-                        display: block;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 160px;
+                        margin-bottom: 100px;
                     }
                     .back-title {
                         text-align: center;
                         font-size: 16vw;
+                        line-height: 160px;
+                    }
+                    .sub-title {
+                        font-size: 18px;
+                        line-height: 94.01%;
                     }
                 }
             `}</style>

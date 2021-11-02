@@ -10,9 +10,11 @@ import ProfileCard from "../../components/ProfileCard";
 import NavBar from "../../components/NavBar";
 import CircleButton from "../../components/CircleButton";
 import ActiveLink from "../../components/ActiveLink";
+import Config from "./../../lib/config";
+import Soon from "./../../pages/soon";
 
 export default function Index() {
-    return (
+    const page = (
         <Layout>
             <BasicMeta url={"/"} />
             <OpenGraphMeta url={"/"} />
@@ -193,5 +195,12 @@ export default function Index() {
                 }
             `}</style>
         </Layout>
+    );
+
+    return (
+        <>
+            {Config.published && page}
+            {!Config.published && <Soon />}
+        </>
     );
 }
