@@ -36,9 +36,9 @@ export default function Index() {
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
                             </div>
-                            <a className="tour-btn" href="#tour">
+                            <a className="tour-btn" href="/services">
                                 <CircleButton
-                                    title="Virtual Tour"
+                                    title="More Services"
                                     dark={true}
                                 />
                             </a>
@@ -53,7 +53,7 @@ export default function Index() {
                     />
                 </a>
 
-                <Parallax className="middle-banner" y={[-20, 20]}>
+                {/* <Parallax className="middle-banner" y={[-20, 20]}>
                     <div className="middle-banner">
                         <img
                             id="cardLogo"
@@ -74,9 +74,9 @@ export default function Index() {
                             in the region.
                         </p>
                     </div>
-                </Parallax>
+                </Parallax> */}
 
-                <div className="small-banner">
+                {/* <div className="small-banner">
                     <img
                         id="cardLogo"
                         src="/images/logo-white.svg"
@@ -94,7 +94,7 @@ export default function Index() {
                         solutions and value-added managed services to the
                         enterprises in the region.
                     </p>
-                </div>
+                </div> */}
 
                 <div className="container">
                     <div className="service">
@@ -204,7 +204,12 @@ export default function Index() {
                         <div className="card-section">
                             <InfoCard
                                 image="/images/home/4.jpg"
-                                title="Sri Lanka’s First High Density Data Center."
+                                titleEl={
+                                    <span>
+                                        Sri Lanka’s 1<sup>st</sup> High Density
+                                        Data Center.
+                                    </span>
+                                }
                                 description={
                                     <ul className="info-des">
                                         <li>15kW+ per Rack</li>
@@ -215,7 +220,12 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/5.jpg"
-                                title="Sri Lanka’s First Carrier Neutral Data Center."
+                                titleEl={
+                                    <span>
+                                        Sri Lanka’s 1<sup>st</sup> Carrier
+                                        Neutral Data Center.
+                                    </span>
+                                }
                                 description={
                                     <ul className="info-des">
                                         <li>2x Meet-me Rooms</li>
@@ -229,7 +239,7 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/6.jpg"
-                                title="More Data Center Rack Space"
+                                title="Superior Rack Space per Footprint"
                                 description={
                                     <ul className="info-des">
                                         <li>
@@ -241,24 +251,29 @@ export default function Index() {
                             />
                             <InfoCard
                                 image="/images/home/7.jpg"
-                                title="Fine Energy Metering Granularity"
+                                title="Energy Metering at Granular Levels"
                                 description={
                                     <ul className="info-des">
                                         <li>
                                             Able to meter power usage at U Level
                                         </li>
-                                        <li>“Pay as you go“ model</li>
+                                        <li>
+                                            <b>Pay as you go</b> model
+                                        </li>
                                     </ul>
                                 }
                             />
                             <InfoCard
                                 image="/images/home/8.jpg"
-                                title="Colombo’s only Tier 3 Rated Data Center With the access to"
+                                title="Colombo city’s only TIA 3 Rated Data Center"
                                 description={
-                                    <ul className="info-des">
-                                        <li>Business Hubs</li>
-                                        <li>IT Parks</li>
-                                    </ul>
+                                    <>
+                                        <p className="info-p">With access,</p>
+                                        <ul className="info-des">
+                                            <li>Business Hubs</li>
+                                            <li>IT Parks</li>
+                                        </ul>
+                                    </>
                                 }
                             />
                             <InfoCard
@@ -279,7 +294,7 @@ export default function Index() {
                     <div id="tour" className="data-center-tour-section">
                         <BackTitle
                             title="Data Center Tour"
-                            subtitle="Virtual Tour"
+                            subtitle="our data center tour"
                         />
                         <div className="content-wrap">
                             <img
@@ -464,6 +479,8 @@ export default function Index() {
                     grid-gap: 12px;
                     justify-items: center;
                     align-items: center;
+                    margin-top: 84px;
+                    margin-bottom: 84px;
                 }
                 .service img {
                     grid-column: 1 / span 3;
@@ -512,6 +529,9 @@ export default function Index() {
                     line-height: 24px;
                     margin-top: 20px;
                     margin-bottom: 40px;
+                }
+                .info-p {
+                    color:black;
                 }
                 .info-des li {
                     margin-bottom: 8px;
@@ -582,6 +602,9 @@ export default function Index() {
                     justify-content: center;
                     align-items: flex-start;
                     flex-direction: row;
+                }
+                .content-wrap img{
+                    width: 95%;
                 }
                 .card-section {
                     display: grid;
