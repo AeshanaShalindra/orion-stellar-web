@@ -296,12 +296,8 @@ export default function Index() {
                             subtitle="our data center tour"
                         />
                         <div className="content-wrap">
-                            {/* <img
-                                src="/images/datacenter.png"
-                                alt="datacenter"
-                            /> */}
                             <ReactPlayer
-                                url="/videos/orionstellar.mov"
+                                url="/videos/intro.mkv"
                                 className="react-player"
                                 controls={true}
                                 playing={true}
@@ -791,13 +787,20 @@ export default function Index() {
                     .partner-section {
                         display: none;
                     }
-                    #tour {
+                    /* #tour {
                         display: none;
-                    }
+                    } */
                 }
 
                 @media (max-width: 1500px) {
                     #tour {
+                        /* display: none; */
+                    }
+                    #tour .message {
+                        margin: 0 54px;
+                        margin-top: 74px;
+                    }
+                    #tour .message img {
                         display: none;
                     }
                     .cover {
