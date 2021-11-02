@@ -791,6 +791,9 @@ export default function Index() {
                     #tour {
                         display: none;
                     }
+                    .cover {
+                        background-repeat: no-repeat;
+                    }
                 }
 
                 @media screen and (max-width: 1500px) {

@@ -902,6 +902,12 @@ export default function Index() {
                     }
                 }
 
+                @media (max-width: 1500px) {
+                    .cover {
+                        background-repeat: no-repeat;
+                    }
+                }
+
                 @media (min-width: 769px) {
                     h1 {
                         font-size: 3rem;

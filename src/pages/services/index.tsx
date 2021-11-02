@@ -245,7 +245,7 @@ export default function Index() {
         </div> */}
 
                     <div className="deliverables">
-                        <BackTitle title="Deliverables" size="28"/>
+                        <BackTitle title="Deliverables" size="28" />
                         <div className="card-section">
                             <InfoCard
                                 image="/images/service/9.png"
@@ -276,7 +276,8 @@ export default function Index() {
                                 image="/images/service/10.png"
                                 titleEl={
                                     <span className="info-text">
-                                        Carrier neutral networking to give more network redundancy and cost benefits
+                                        Carrier neutral networking to give more
+                                        network redundancy and cost benefits
                                     </span>
                                 }
                                 description={
@@ -1102,12 +1103,9 @@ export default function Index() {
                     font-size: 28px;
                 }
 
-                @media (min-width: 769px) {
-                    h1 {
-                        font-size: 3rem;
-                    }
-                    h2 {
-                        font-size: 2.25rem;
+                @media (max-width: 1500px) {
+                    .cover {
+                        background-repeat: no-repeat;
                     }
                 }
             `}</style>
