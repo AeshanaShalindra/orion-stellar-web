@@ -35,9 +35,9 @@ export default function Index() {
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
                             </div>
-                            <a className="tour-btn" href="/services">
+                            <a className="tour-btn" href="#tour">
                                 <CircleButton
-                                    title="More Services"
+                                    title="Virtual Tour"
                                     dark={true}
                                 />
                             </a>
