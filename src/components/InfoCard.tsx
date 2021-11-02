@@ -62,6 +62,14 @@ export default function InfoCard({ title, image, description }: Props) {
           line-height: 27px;
           color: #000000;
         }
+        @media (max-width: 1500px) {
+          .grow {
+          transition: unset;
+        }
+        .grow:hover {
+          transform: unset;
+        }
+        }
       `}</style>
     </>
   );

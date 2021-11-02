@@ -108,6 +108,9 @@ export default function Index() {
                 contents="Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps."
                 image="/images/enterprise.png"
               />
+              <p>
+              Digital infra is a part of the core strategy to accelerate the digitalization. Let OrionStellar be the partner in the journey to accelerate your roadmaps.
+              </p>
             </a>
             <a className="card" href="/services#start-up">
               <CardButton
@@ -116,6 +119,10 @@ export default function Index() {
               OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop."
                 image="/images/startup.png"
               />
+              <p>
+              In their quest to be the next unicorn the time to market, startups focuses to be quick to market, be cost effective and be a lean and mean organization without large IT teams.
+              OrionStellar solutions are tailormade for them with an array of value added services bundled together as a one stop shop.
+              </p>
             </a>
             <a className="btn" href="/services">
               <CircleButton title="Services" />
@@ -445,6 +452,16 @@ export default function Index() {
           grid-column: span 2;
           width: 100%;
         }
+        .service-card-section .card p{
+          display:none;
+          font-family: "SegoeUI";
+          font-style: normal;
+          font-weight: 350;
+          font-size: 16px;
+    line-height: 24px;
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
         .info-des li{
           margin-bottom:8px;
         }
@@ -662,15 +679,18 @@ export default function Index() {
           }
           .service-card-section {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-gap: 17px;
             margin: 0 24px;
           }
 
           .service-card-section .btn {
             margin-top:36px;
-            grid-column: 2 / span 2 !important;
+            grid-column: span 2 !important;
           }
+          .service-card-section .card p{
+          display:block;
+        }
           .card-section {
             grid-template-columns: 1fr;
             grid-gap: 64px;
