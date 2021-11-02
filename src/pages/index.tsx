@@ -30,8 +30,7 @@ export default function Index() {
                             <div className="title-container">
                                 <h1>Sri Lanka’s First</h1>
                                 <h1>
-                                    <strong>High Density</strong> & Carrier
-                                    Neutral
+                                    <strong>High Density & Carrier Neutral</strong>
                                     <br /> Data Center
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
