@@ -156,7 +156,7 @@ export default function Index() {
                             </a>
                             <a href="/value-added-services">
                                 <img
-                                   src="images/service/0.jpg"
+                                    src="images/service/0.jpg"
                                     alt=""
                                     className="image2 grow"
                                 />
@@ -625,6 +625,7 @@ export default function Index() {
                 .service {
                     display: flex;
                     flex-wrap: wrap;
+                    flex-direction: column;
                 }
                 .heading-subtitle {
                     width: 50vw;
@@ -816,6 +817,7 @@ export default function Index() {
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 24px;
+                    font-family: "SegoeUI";
                 }
                 .grid .row-2.description {
                     position: absolute;
@@ -827,16 +829,19 @@ export default function Index() {
                     font-family: Segoe UI;
                     font-style: normal;
                     font-weight: 600;
+                    font-family: "SegoeUI";
                 }
                 .description h1 {
                     margin: 0;
                     font-weight: 600;
                     font-size: 52px !important;
+                    font-family: "SegoeUI";
                 }
                 .description h2 {
                     margin: 0;
                     font-weight: 600;
                     font-size: 36px !important;
+                    font-family: "SegoeUI";
                 }
                 .grid .row-3.description {
                     position: absolute;
@@ -845,6 +850,7 @@ export default function Index() {
                     left: 137px;
                     top: 3430.46px;
                     text-align: right;
+                    font-family: "SegoeUI";
                 }
                 .grid .row-3.description img {
                     width: 249px;
@@ -880,7 +886,6 @@ export default function Index() {
                     -webkit-box-align: center;
                     -ms-flex-align: center;
                     align-items: center;
-                    margin: 0 84px;
                     width: 100%;
                 }
 
