@@ -10,12 +10,10 @@ import Footer from "../components/Footer";
 import BackTitle from "../components/BackTitle";
 import NavBar from "../components/NavBar";
 import { Parallax } from "react-scroll-parallax";
-import PanoramaView from "../components/PanoramaView";
 import BookingView from "../components/BookingView";
-import ActiveLink from "../components/ActiveLink";
 import Config from "./../lib/config";
 import Soon from "./../pages/soon";
-// import ReactPlayer from 'react-player';
+import ReactPlayer from "react-player/lazy";
 
 export default function Index() {
     const page = (
@@ -31,7 +29,8 @@ export default function Index() {
                             <div className="title-container">
                                 <h1>Sri Lanka’s First</h1>
                                 <h1>
-                                    <strong>High Density</strong> & <strong>Carrier Neutral</strong>
+                                    <strong>High Density</strong> &{" "}
+                                    <strong>Carrier Neutral</strong>
                                     <br /> Data Center
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
@@ -199,7 +198,7 @@ export default function Index() {
                         </div>
                     </div>
 
-                    <BackTitle title="Uniqueness" size="24"/>
+                    <BackTitle title="Uniqueness" size="24" />
                     <div className="content-wrap">
                         <div className="card-section">
                             <InfoCard
@@ -301,8 +300,15 @@ export default function Index() {
                                 src="/images/datacenter.png"
                                 alt="datacenter"
                             /> */}
-                            {/* <ReactPlayer url="https://www.video-url.com" /> */}
-                            <iframe src="https://drive.google.com/file/d/1woXPdrXTAtaps6SDXCpluyYOIBbtd6ns/preview" width="640" height="480" allow="autoplay"></iframe>
+                            <ReactPlayer
+                                url="/videos/orionstellar.mov"
+                                className="react-player"
+                                controls={true}
+                                playing={true}
+                                muted={true}
+                                width="80%"
+                                height="100%"
+                            />
                         </div>
                         <div className="message">
                             <div className="iso-message">
@@ -797,8 +803,8 @@ export default function Index() {
                     .cover {
                         background-repeat: no-repeat;
                     }
-                    .env-section{
-                        display:none;
+                    .env-section {
+                        display: none;
                     }
                 }
 
