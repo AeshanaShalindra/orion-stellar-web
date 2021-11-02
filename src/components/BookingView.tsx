@@ -97,7 +97,7 @@ export default function BookingView() {
                         </ul>
                         <div className="btn-wrap">
                             <button type="submit">
-                                <CircleButton title="SEND BOOKING REQUEST" />
+                                <CircleButton title="SEND BOOKING REQUEST" dark={true}/>
                             </button>
                         </div>
                     </div>
