@@ -111,11 +111,11 @@ export default function Footer() {
                     margin: 72px 72px 0 72px;
                     background: linear-gradient(
                         176.64deg,
-                        #ffffff52 -71.48%,
+                        #ffffff00 -71.48%,
                         rgba(255, 255, 255, 0.1) 51.74%
                     );
                     mix-blend-mode: normal;
-                    opacity: 0.7;
+                    opacity: 1;
                     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
                     border-radius: 20px 20px 0 0;
                 }

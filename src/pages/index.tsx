@@ -198,7 +198,7 @@ export default function Index() {
                         </div>
                     </div>
 
-                    <BackTitle title="Uniqueness" />
+                    <BackTitle title="Uniqueness" size="28"/>
                     <div className="content-wrap">
                         <div className="card-section">
                             <InfoCard
@@ -663,7 +663,7 @@ export default function Index() {
                     color: #ffffff;
                 }
                 .book-tour-section .calendar {
-                    margin-top: 400px;
+                    margin-top: 240px;
                 }
                 .partner-section {
                     width: 95%;
