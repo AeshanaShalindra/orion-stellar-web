@@ -198,11 +198,19 @@ export default function Index() {
                         </div>
                     </div>
                     <div className="mobile env">
+                        <div className="title-content">
+                            <h1>Environmentally</h1>
+                            <h2>Sustainable</h2>
+                        </div>
                         <div className="full-grid">
-                            <img src="/images/home/m-ev.png" alt="" />
+                            <img
+                                src="/images/environment.png"
+                                alt="environment"
+                            />
+                            {/* <img src="/images/home/m-ev.png" alt="" /> */}
                         </div>
                         <div className="txt-content">
-                        <ul>
+                            <ul>
                                 <li>
                                     IT consumes 3% of the power off the grid
                                     globally and the power demand keep
@@ -326,7 +334,7 @@ export default function Index() {
                         />
                         <div className="content-wrap">
                             <ReactPlayer
-                                url="/videos/intro.mkv"
+                                url="/videos/intro.mp4"
                                 className="react-player"
                                 controls={true}
                                 playing={true}
@@ -601,7 +609,8 @@ export default function Index() {
                     margin-left: 291px;
                     margin-bottom: -46px;
                 }
-                .env-section h1 {
+                .env-section h1,
+                .env h1 {
                     font-family: "SegoeUI";
                     font-style: normal;
                     font-weight: bold;
@@ -609,7 +618,8 @@ export default function Index() {
                     line-height: 173px;
                     color: #00cb76;
                 }
-                .env-section h2 {
+                .env-section h2,
+                .env h2 {
                     font-family: "SegoeUI";
                     font-style: normal;
                     font-weight: normal;
@@ -765,9 +775,6 @@ export default function Index() {
                 @media screen and (max-width: 768px) {
                 }
                 @media screen and (max-width: 1024px) {
-                    .mobile {
-                        display: block;
-                    }
                     .middle-banner {
                         display: none;
                     }
@@ -839,6 +846,28 @@ export default function Index() {
                     /* #tour {
                         display: none;
                     } */
+                    .mobile {
+                        display: block;
+                    }
+                    .env .title-content {
+                        margin: 10vw 5vw -5vw 5vw !important;
+                    }
+                    .env .txt-content {
+                        margin: 5vw 5vw;
+                    }
+                    .env h1 {
+                        font-size: 64px !important;
+                        line-height: 86px !important;
+                    }
+                    .env h2 {
+                        font-size: 52px !important;
+                        line-height: 64px !important;
+                        margin: 0 !important;
+                    }
+                    .env ul li {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
 
                 @media (max-width: 1500px) {
@@ -857,6 +886,41 @@ export default function Index() {
                     }
                     .env-section {
                         display: none;
+                    }
+                    .mobile {
+                        display: block;
+                    }
+                    .env .title-content {
+                        margin: 5vw 5vw -5vw 5vw;
+                    }
+                    .env .txt-content {
+                        margin: 5vw 5vw;
+                    }
+                    .env h1 {
+                        font-family: "SegoeUI";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 130px;
+                        line-height: 173px;
+                        color: #00cb76;
+                    }
+                    .env h2 {
+                        font-family: "SegoeUI";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 100px;
+                        line-height: 133px;
+                        color: #ffffff;
+                        margin: -40px 0 60px 0;
+                    }
+                    .env ul li {
+                        font-family: "SegoeUI";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #ffffff;
+                        mix-blend-mode: normal;
                     }
                 }
 
