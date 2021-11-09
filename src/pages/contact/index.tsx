@@ -96,7 +96,7 @@ export default function Index() {
                             Existing customers
                         </h4>
                         <div className="center-all form-wrap">
-                            <h2>+94 112 645 386</h2>
+                            <h2>+94 117 650 750</h2>
                             <h5>Network Operating Center</h5>
                             <h5>24x7</h5>
 
@@ -163,7 +163,7 @@ export default function Index() {
                             Sales & business inquiries
                         </h4>
                         <div className="center-all form-wrap">
-                            <h2>+94 112 645 386</h2>
+                            <h2>+94 117 650 700</h2>
                             <h5>Network Operating Center</h5>
 
                             <form
