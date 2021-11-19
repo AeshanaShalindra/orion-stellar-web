@@ -164,7 +164,6 @@ export default function Index() {
                         </h4>
                         <div className="center-all form-wrap">
                             <h2>+94 117 650 700</h2>
-                            <h5>Network Operating Center</h5>
 
                             <form
                                 id="writeToUsForm"
