@@ -41,7 +41,10 @@ export default function Index() {
                         <div className="black-card">Finding and retaining IT staff with modern skills</div>
                         <div className="black-card">Securing IT assets and Data protection</div>
                         <div className="black-card">Modernization of IT assets and connecting old and new. </div>
-                        <div className="black-card">Scaling up the IT infrastructure with rapid demand coming from new breed of technologies Big data, AI, AR</div>
+                        <div className="black-card">
+                            Scaling up the IT infrastructure with rapid demand coming from new breed of technologies Big
+                            data, AI, AR
+                        </div>
                     </div>
                     <div className="empty-back">
                         <h2>OrionStellar for Enterprises</h2>
@@ -265,7 +268,8 @@ export default function Index() {
             </div>
           </div>
         </div> */}
-
+                </div>
+                <div className="container">
                     <div className="deliverables">
                         <BackTitle title="Deliverables" size="28" />
                         <div className="card-section">
@@ -333,7 +337,8 @@ export default function Index() {
                             />
                         </div>
                     </div>
-
+                </div>
+                <div className="container service">
                     {/* <div className="grid-3">
           <div className="logo">
             <img src="/images/logo-white.svg" alt="orion sella logo" />
@@ -548,7 +553,7 @@ export default function Index() {
           </div> */}
                 </div>
 
-                <div className="mobile">
+                <div className="mobile startup">
                     <img className="full-img" src="/images/service/mb-startup.png" alt="team" />
                     <div className="startup title">Start-Ups</div>
                     <div className="empty-back">
@@ -1237,6 +1242,9 @@ export default function Index() {
                     color: #ffffff;
                     padding-left: 16px;
                 }
+                .mobile.startup {
+                    margin-top: 100px;
+                }
                 .mobile .startup.title {
                     text-align: center;
                     margin-top: -50px;
@@ -1265,6 +1273,25 @@ export default function Index() {
                     }
                     .container.service {
                         display: none;
+                    }
+                    .card-section {
+                        grid-template-columns: 1fr 1fr !important;
+                        grid-gap: 8px !important;
+                        margin: 8px;
+                    }
+                    ul.info-des {
+                        padding-left: 16px !important;
+                        color: #000000 !important;
+                    }
+                    .info-des li {
+                        margin-bottom: 8px !important;
+                        font-size: 14px !important;
+                        line-height: 18px !important;
+                    }
+                    .info-text{
+                        margin-bottom: 8px !important;
+                        font-size: 14px !important;
+                        line-height: 18px !important;
                     }
                 }
                 @media (max-width: 1500px) {

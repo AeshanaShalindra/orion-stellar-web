@@ -750,17 +750,12 @@ export default function Index() {
                         grid-gap: 17px;
                         margin: 0 24px;
                     }
-
                     .service-card-section .btn {
                         margin-top: 36px;
                         grid-column: span 2 !important;
                     }
                     .service-card-section .card p {
                         display: block;
-                    }
-                    .card-section {
-                        grid-template-columns: 1fr;
-                        grid-gap: 64px;
                     }
                     .env-section {
                         display: none;
@@ -810,18 +805,17 @@ export default function Index() {
                         line-height: 24px !important;
                     }
 
+                    .data-center-tour-section .iso-message {
+                        font-size: 13px !important;
+                        line-height: 18px !important;
+                        margin-bottom: 32px !important;
+                    }
+
                     .card-section {
                         grid-template-columns: 1fr 1fr;
                         grid-gap: 8px !important;
                         margin: 8px;
                     }
-
-                    .data-center-tour-section .iso-message {
-                        font-size: 13px !important;
-                        line-height: 18px !important;
-                        margin-bottom: 32px !important;
-                    }                   
-
                     ul.info-des {
                         padding-left: 16px !important;
                         color: #000000 !important;

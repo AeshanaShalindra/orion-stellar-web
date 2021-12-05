@@ -12,12 +12,7 @@ import Soon from "./../../pages/soon";
 export default function Index() {
     const encode = (data) => {
         return Object.keys(data)
-            .map(
-                (key) =>
-                    encodeURIComponent(key) +
-                    "=" +
-                    encodeURIComponent(data[key])
-            )
+            .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
     };
 
@@ -50,9 +45,7 @@ export default function Index() {
     const writeToUs = async (event) => {
         event.preventDefault(); // don't redirect the page
 
-        let myForm = document.getElementById(
-            "writeToUsForm"
-        ) as HTMLFormElement;
+        let myForm = document.getElementById("writeToUsForm") as HTMLFormElement;
         let request = {
             "form-name": "Write To Us",
             name: event.target.name.value,
@@ -83,12 +76,9 @@ export default function Index() {
                 <div className="container cover">
                     <NavBar />
                     <h2 className="main-title">Contact Us</h2>
-                    <img
-                        className="main-title-logo"
-                        src="/images/contactLogo.png"
-                        alt="contact"
-                    />
+                    <img className="main-title-logo" src="/images/contactLogo.png" alt="contact" />
                 </div>
+
                 <div className="container forms">
                     <div className="center-all support-form">
                         <h4 className="form-title">
@@ -109,36 +99,11 @@ export default function Index() {
                             >
                                 <div className="center-all form-fields">
                                     <h6>Lodge a support request / ticket</h6>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Name"
-                                    />
-                                    <input
-                                        type="text"
-                                        name="company"
-                                        id="company"
-                                        placeholder="Business name"
-                                    />
-                                    <input
-                                        type="text"
-                                        name="nic"
-                                        id="nic"
-                                        placeholder="Customer Id"
-                                    />
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Email"
-                                    />
-                                    <input
-                                        type="subject"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Subject"
-                                    />
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                    <input type="text" name="company" id="company" placeholder="Business name" />
+                                    <input type="text" name="nic" id="nic" placeholder="Customer Id" />
+                                    <input type="text" name="email" id="email" placeholder="Email" />
+                                    <input type="subject" name="subject" id="subject" placeholder="Subject" />
                                     <textarea
                                         name="message"
                                         id="message"
@@ -147,10 +112,7 @@ export default function Index() {
                                         rows={5}
                                     ></textarea>
 
-                                    <button
-                                        type="submit"
-                                        className="submit-btn grow"
-                                    >
+                                    <button type="submit" className="submit-btn grow">
                                         SEND
                                     </button>
                                 </div>
@@ -159,9 +121,7 @@ export default function Index() {
                     </div>
 
                     <div id="sales" className="center-all info-form">
-                        <h4 className="form-title">
-                            Sales & business inquiries
-                        </h4>
+                        <h4 className="form-title">Sales & business inquiries</h4>
                         <div className="center-all form-wrap">
                             <h2>+94 117 650 700</h2>
 
@@ -174,30 +134,10 @@ export default function Index() {
                             >
                                 <div className="center-all form-fields">
                                     <h6>Write to us</h6>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Name"
-                                    />
-                                    <input
-                                        type="text"
-                                        name="company"
-                                        id="company"
-                                        placeholder="Business name"
-                                    />
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Email"
-                                    />
-                                    <input
-                                        type="subject"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Subject"
-                                    />
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                    <input type="text" name="company" id="company" placeholder="Business name" />
+                                    <input type="text" name="email" id="email" placeholder="Email" />
+                                    <input type="subject" name="subject" id="subject" placeholder="Subject" />
                                     <textarea
                                         name="message"
                                         id="message"
@@ -206,10 +146,7 @@ export default function Index() {
                                         rows={5}
                                     ></textarea>
 
-                                    <button
-                                        type="submit"
-                                        className="submit-btn grow"
-                                    >
+                                    <button type="submit" className="submit-btn grow">
                                         SEND
                                     </button>
                                 </div>
@@ -219,6 +156,84 @@ export default function Index() {
                                 <h6>Drop us a mail</h6>
                                 <h5>sales@orionstellar.com</h5>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mobile forms">
+                    <div className="empty-back">
+                        <img className="logo" src="/images/contactLogo.png" alt="contact" />
+                        <div className="title">Contact Us</div>
+                    </div>
+                    <div className="empty-back">
+                        <h2 className="text-upper">Service support for Existing customers</h2>
+                    </div>
+                    <div className="gray-back">
+                        <h2 className="text-center mb-0">+94 117 650 750</h2>
+                        <h4 className="text-center mt-0 mb-0">Network Operating Center (NOC) 24x7</h4>
+
+                        <form
+                            id="supportForm"
+                            name="Support Request"
+                            method="POST"
+                            data-netlify="true"
+                            onSubmit={supportRequest}
+                        >
+                            <h5 className="text-center">Lodge a support request / ticket</h5>
+                            <div className="text-center">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                                <input type="text" name="company" id="company" placeholder="Business name" />
+                                <input type="text" name="nic" id="nic" placeholder="Customer Id" />
+                                <input type="text" name="email" id="email" placeholder="Email" />
+                                <input type="subject" name="subject" id="subject" placeholder="Subject" />
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="Issue/Message"
+                                    cols={30}
+                                    rows={5}
+                                ></textarea>
+
+                                <button type="submit" className="submit-btn">
+                                    SEND
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div className="gray-back">
+                        <h2 className="text-center mb-0">+94 117 650 700</h2>
+                        <h4 className="text-center mt-0">Call or Whatsapp</h4>
+                        <form
+                            id="writeToUsForm"
+                            name="Write To Us"
+                            method="POST"
+                            data-netlify="true"
+                            onSubmit={writeToUs}
+                        >
+                            <h5 className="text-center">Write to us</h5>
+                            <div className="text-center">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                                <input type="text" name="company" id="company" placeholder="Business name" />
+                                <input type="text" name="email" id="email" placeholder="Email" />
+                                <input type="subject" name="subject" id="subject" placeholder="Subject" />
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="Message"
+                                    cols={30}
+                                    rows={5}
+                                ></textarea>
+
+                                <button type="submit" className="submit-btn">
+                                    SEND
+                                </button>
+                            </div>
+                        </form>
+
+                        <div className="text-center">
+                            <p className="text-upper ">Drop us a mail</p>
+                            <div className="email">sales@orionstellar.com</div>
                         </div>
                     </div>
                 </div>
@@ -278,11 +293,7 @@ export default function Index() {
                     top: 267px;
                 }
                 .contents {
-                    background: linear-gradient(
-                        115deg,
-                        #000000 32.35%,
-                        #c1c1c1 248.34%
-                    );
+                    background: linear-gradient(115deg, #000000 32.35%, #c1c1c1 248.34%);
                 }
                 .center-all {
                     display: flex;
@@ -419,6 +430,165 @@ export default function Index() {
                     margin-left: 160px;
                     margin-top: -376px;
                     z-index: 20;
+                }
+                .mt-0 {
+                    margin-top: 0 !important;
+                }
+                .mb-0 {
+                    margin-bottom: 0 !important;
+                }
+                .text-center {
+                    text-align: center !important;
+                }
+                .text-upper {
+                    text-transform: uppercase !important;
+                }
+                .mobile {
+                    display: none;
+                }
+                .mobile p {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h2 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #ffffff;
+                }
+                .mobile h3 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h4 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h5 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 125.19%;
+                    letter-spacing: 0.125em;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
+                .mobile h3 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 29px;
+                    color: #ffffff;
+                }
+                .mobile ul li {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile.forms {
+                    margin-top: -130px;
+                }
+                .mobile .logo {
+                    width: 64px;
+                }
+                .mobile .title {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 128.51%;
+                    color: #ffffff;
+                }
+                .mobile .email {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: normal;
+font-size: 26px;
+line-height: 115.51%;
+                    color: #ffffff;
+                }
+                .mobile .black-back {
+                    background-color: #000000;
+                    padding: 36px 16px;
+                }
+                .mobile .gray-back {
+                    background: linear-gradient(
+                        131.77deg,
+                        rgba(141, 141, 141, 0.4234) 10.66%,
+                        rgba(255, 255, 255, 0.1508) 95.86%
+                    );
+                    backdrop-filter: blur(30px);
+                    padding: 36px 16px;
+                }
+                .mobile .empty-back {
+                    padding: 36px 16px;
+                }
+                .mobile input {
+                    width: 95%;
+    height: 42px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 8px;
+                }
+                .mobile textarea {
+                    width: 95%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 8px;
+                }
+                .mobile .submit-btn {
+                    margin-top: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 86px;
+    background: -webkit-linear-gradient(#055476,#72c4de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    text-align: center;
+                }
+                @media screen and (max-width: 1024px) {
+                    .mobile {
+                        display: block;
+                    }
+                    .container.cover .main-title {
+                        display: none;
+                    }
+                    .container.cover .main-title-logo {
+                        display: none;
+                    }
+                    .container.forms {
+                        display: none;
+                    }
+                    .cover {
+                        background-repeat: no-repeat;
+                        background-image: url(/images/contact/md-cover.png);
+                        background-size: cover;
+                        height: 70vh;
+                    }
+                    .container.location {
+                        margin-top: 0 !important;
+                    }
                 }
                 @media (min-width: 769px) {
                     h1 {
