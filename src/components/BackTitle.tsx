@@ -9,13 +9,7 @@ type Props = {
     color?: string;
 };
 
-export default function BackTitle({
-    title,
-    subtitle,
-    size,
-    bottom,
-    color,
-}: Props) {
+export default function BackTitle({ title, subtitle, size, bottom, color }: Props) {
     return (
         <>
             <div className="parallax">

@@ -36,6 +36,7 @@ export default function InfoCard({ title, image, titleEl, description }: Props) 
                 .text {
                     padding: 0 44px;
                     text-align: left;
+                    color: #000000 !important;
                 }
                 img {
                     width: 100%;

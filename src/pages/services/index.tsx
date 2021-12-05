@@ -19,28 +19,80 @@ export default function Index() {
             <div className="back-wall">
                 <div className="container cover">
                     <NavBar />
-                    <div className="pre-subtitle">
-                        Digital infrastructure solutions for{" "}
-                    </div>
+                    <div className="pre-subtitle">Digital infrastructure solutions for </div>
                     <h1 className="heading">Enterprise</h1>
+                    <div className="mobile">
+                        <div className="sub-title">Digital infrastructure solutions for</div>
+                        <div className="title">Enterprise</div>
+                    </div>
                 </div>
+
+                <div className="mobile up">
+                    <div className="empty-back">
+                        <p>
+                            Enterprises seeking to thrive in a digital economy in which they can both innovate and bring
+                            products and services to market faster, thus staying ahead of their competition — treat IT
+                            infrastructure as a strategic and enabling asset.{" "}
+                        </p>
+                    </div>
+                    <div className="empty-back">
+                        <h4>Therefore, enterprises are confronted with new business challenges such as </h4>
+                        <div className="black-card">Enabling the digital transformation and fostering innovation</div>
+                        <div className="black-card">Finding and retaining IT staff with modern skills</div>
+                        <div className="black-card">Securing IT assets and Data protection</div>
+                        <div className="black-card">Modernization of IT assets and connecting old and new. </div>
+                        <div className="black-card">Scaling up the IT infrastructure with rapid demand coming from new breed of technologies Big data, AI, AR</div>
+                    </div>
+                    <div className="empty-back">
+                        <h2>OrionStellar for Enterprises</h2>
+                        <p>
+                            Digital infra is a part of the core strategy to accelerate the digitalization hence
+                            enterprise looking to take the lead in the new era of industrial 4.0 need a reliable
+                            industry leading partner to host their IT infrastructure.
+                        </p>
+                        <p>
+                            Colocation will be the preferred choice for most of the large enterprises to keep the
+                            control of their applications and data archives to meet regulatory and performance
+                            requirements.
+                        </p>
+                        <p>
+                            OrionStellar offers an array of colocation services compliment by managed value-added
+                            services to simplify the digital infrastructure challenges of the enterprises.
+                        </p>
+                    </div>
+                    <div className="gray-back">
+                        <p>
+                            Finding feasible solutions to above challenges within their circle and with the limited
+                            resources and knowledge is not what today’s business leaders are supposed to spend their
+                            invaluable management time.
+                        </p>
+                        <p>
+                            Not having the proper IT infrastructure platform even questions the very existence of the
+                            business and the sustainability as never before in the history.
+                        </p>
+                        <p>
+                            We, OrionStellar have realized the new challenges the enterprises are facing every day and
+                            we have designed an array of services specially designed for the Enterprises.
+                        </p>
+                        <p>
+                            Our technical expertise and the service professionalism will ensure that we are keeping our
+                            promise to Accelerate Enterprise Digitalization as our tagline denotes.
+                        </p>
+                    </div>
+                </div>
+
                 <div className="container service">
                     <p className="heading-subtitle">
                         <div className="subtitle-circle"></div>
-                        Enterprises seeking to thrive in a digital economy in
-                        which they can both innovate and bring products and
-                        services to market faster, thus staying ahead of their
-                        competition — treat IT infrastructure as a strategic and
-                        enabling asset.
+                        Enterprises seeking to thrive in a digital economy in which they can both innovate and bring
+                        products and services to market faster, thus staying ahead of their competition — treat IT
+                        infrastructure as a strategic and enabling asset.
                     </p>
-                    <p className="title">
-                        Therefore, enterprises are confronted with new business
-                        challenges such as
-                    </p>
+                    <p className="title">Therefore, enterprises are confronted with new business challenges such as</p>
 
                     <div className="full-grid">
-                            <img src="/images/service/list.png" alt="" />
-                        </div>
+                        <img src="/images/service/list.png" alt="" />
+                    </div>
 
                     {/* <div className="challenges">
                         <div className="box-row">
@@ -80,58 +132,40 @@ export default function Index() {
                     <div className="solutions">
                         <div className="box">
                             <p>
-                                Finding feasible solutions to above challenges
-                                within their circle and with the limited
-                                resources and knowledge is not what today’s
-                                business leaders are supposed to spend their
-                                invaluable management time. The new business
-                                norms are such that it is mandatory for every
-                                business and enterprises to be equipped with the
-                                modern IT infrastructure facilities since
-                                business decisions are made based on data driven
-                                knowledge.
+                                Finding feasible solutions to above challenges within their circle and with the limited
+                                resources and knowledge is not what today’s business leaders are supposed to spend their
+                                invaluable management time. The new business norms are such that it is mandatory for
+                                every business and enterprises to be equipped with the modern IT infrastructure
+                                facilities since business decisions are made based on data driven knowledge.
                             </p>
                             <p>
-                                Not having the proper IT infrastructure platform
-                                even questions the very existence of the
-                                business and the sustainability as never before
-                                in the history.
+                                Not having the proper IT infrastructure platform even questions the very existence of
+                                the business and the sustainability as never before in the history.
                             </p>
                             <p>
-                                We, OrionStellar have realized the new
-                                challenges the enterprises are facing every day
-                                and we have designed an array of services
-                                specially designed for the Enterprises.
+                                We, OrionStellar have realized the new challenges the enterprises are facing every day
+                                and we have designed an array of services specially designed for the Enterprises.
                             </p>
                             <p>
-                                Our technical expertise and the service
-                                professionalism will ensure that we are keeping
-                                our promise to Accelerate Enterprise
-                                Digitalization as our tagline denotes.
+                                Our technical expertise and the service professionalism will ensure that we are keeping
+                                our promise to Accelerate Enterprise Digitalization as our tagline denotes.
                             </p>
                         </div>
                         <div className="no-box">
-                            <p className="title">
-                                OrionStellar for Enterprises
+                            <p className="title">OrionStellar for Enterprises</p>
+                            <p>
+                                Digital infra is a part of the core strategy to accelerate the digitalization hence
+                                enterprise looking to take the lead in the new era of industrial 4.0 need a reliable
+                                industry leading partner to host their IT infrastructure.
                             </p>
                             <p>
-                                Digital infra is a part of the core strategy to
-                                accelerate the digitalization hence enterprise
-                                looking to take the lead in the new era of
-                                industrial 4.0 need a reliable industry leading
-                                partner to host their IT infrastructure.
+                                Colocation will be the preferred choice for most of the large enterprises to keep the
+                                control of their applications and data archives to meet regulatory and performance
+                                requirements.
                             </p>
                             <p>
-                                Colocation will be the preferred choice for most
-                                of the large enterprises to keep the control of
-                                their applications and data archives to meet
-                                regulatory and performance requirements.
-                            </p>
-                            <p>
-                                OrionStellar offers an array of colocation
-                                services compliment by managed value-added
-                                services to simplify the digital infrastructure
-                                challenges of the enterprises.
+                                OrionStellar offers an array of colocation services compliment by managed value-added
+                                services to simplify the digital infrastructure challenges of the enterprises.
                             </p>
                         </div>
                     </div>
@@ -154,18 +188,10 @@ export default function Index() {
             </div> */}
                         <div className="row">
                             <a href="/colocation">
-                                <img
-                                    src="images/colo1.png"
-                                    alt=""
-                                    className="image1 grow"
-                                />
+                                <img src="images/colo1.png" alt="" className="image1 grow" />
                             </a>
                             <a href="/value-added-services">
-                                <img
-                                    src="images/service/0.jpg"
-                                    alt=""
-                                    className="image2 grow"
-                                />
+                                <img src="images/service/0.jpg" alt="" className="image2 grow" />
                             </a>
                             <div className="row-2 description">
                                 <h2>Managed</h2>
@@ -178,27 +204,15 @@ export default function Index() {
                         </div>
                         <div className="row">
                             <div className="row-3 description">
-                                <img
-                                    src="images/logo-white.svg"
-                                    alt=""
-                                    className="title-logo"
-                                />
+                                <img src="images/logo-white.svg" alt="" className="title-logo" />
                                 <h2>Managed</h2>
                                 <h1>Services</h1>
                             </div>
                             <a href="/managed-services">
-                                <img
-                                    src="images/colo3.png"
-                                    alt=""
-                                    className="image3 grow"
-                                />
+                                <img src="images/colo3.png" alt="" className="image3 grow" />
                             </a>
                             <a href="/service-delivery">
-                                <img
-                                    src="images/service/2.png"
-                                    alt=""
-                                    className="image4 grow"
-                                />
+                                <img src="images/service/2.png" alt="" className="image4 grow" />
                             </a>
                         </div>
                     </div>
@@ -261,10 +275,7 @@ export default function Index() {
                                 description={
                                     <ul className="info-des">
                                         <li> Pay as you go usage </li>
-                                        <li>
-                                            Unmatched power Efficiency of 1.4
-                                            PUE
-                                        </li>
+                                        <li>Unmatched power Efficiency of 1.4 PUE</li>
                                     </ul>
                                 }
                             />
@@ -273,10 +284,7 @@ export default function Index() {
                                 title="15% more rack space"
                                 description={
                                     <ul className="info-des">
-                                        <li>
-                                            Cost efficiencies via optimized rack
-                                            utilization
-                                        </li>
+                                        <li>Cost efficiencies via optimized rack utilization</li>
                                     </ul>
                                 }
                             />
@@ -284,16 +292,12 @@ export default function Index() {
                                 image="/images/service/10.png"
                                 titleEl={
                                     <span className="info-text">
-                                        Carrier neutral networking to give more
-                                        network redundancy and cost benefits
+                                        Carrier neutral networking to give more network redundancy and cost benefits
                                     </span>
                                 }
                                 description={
                                     <ul className="info-des">
-                                        <li>
-                                            More network bandwidth options to
-                                            select
-                                        </li>
+                                        <li>More network bandwidth options to select</li>
                                     </ul>
                                 }
                             />
@@ -303,9 +307,7 @@ export default function Index() {
                                 description={
                                     <ul className="info-des">
                                         <li>
-                                            With our high density racks up to
-                                            15Kw enabling new breed of
-                                            technologies
+                                            With our high density racks up to 15Kw enabling new breed of technologies
                                         </li>
                                     </ul>
                                 }
@@ -315,10 +317,7 @@ export default function Index() {
                                 title="Savings in real estate & travel"
                                 description={
                                     <ul className="info-des">
-                                        <li>
-                                            Ability to house production IT
-                                            systems in a world-class data center
-                                        </li>
+                                        <li>Ability to house production IT systems in a world-class data center</li>
                                     </ul>
                                 }
                             />
@@ -327,14 +326,8 @@ export default function Index() {
                                 title="SME, Start-up bundle"
                                 description={
                                     <ul className="info-des">
-                                        <li>
-                                            With SDWAN capability to have high
-                                            speed access
-                                        </li>
-                                        <li>
-                                            Includes everything you need to
-                                            kick-off your business
-                                        </li>
+                                        <li>With SDWAN capability to have high speed access</li>
+                                        <li>Includes everything you need to kick-off your business</li>
                                     </ul>
                                 }
                             />
@@ -366,41 +359,29 @@ export default function Index() {
             sustainability
           </p>
         </div> */}
-
                     <div id="start-up" className="grid-4">
-                        <img
-                            src="/images/startup-back.png"
-                            alt="startup background"
-                        />
+                        <img src="/images/startup-back.png" alt="startup background" />
                         <div className="main-title">Start-Ups</div>
                         <div className="startup-message">
                             <div className="black-circle"></div>
-                            If you are a startup, or with a SME set up, we
-                            believe that OrionStellar can be your trusted
-                            technology partner since we understand the start-up
-                            business format and the business requirements.
+                            If you are a startup, or with a SME set up, we believe that OrionStellar can be your trusted
+                            technology partner since we understand the start-up business format and the business
+                            requirements.
                             <br />
                             <br />
-                            Our genes are mostly liked with startups since our
-                            top management believe in startups, support the
-                            startup culture and has been the pioneers in
-                            creating the flourishing startup culture in the
-                            country. Our mother company Orion City is the first
-                            and the largest IT park in the country while Hatch
-                            works Sri Lanka’s premier coworking, Incubator and
-                            accelerator center , hosting a large number of
-                            starts ups, is our sister company. Our chairman, Mr.
-                            Jeevan Gnanam has been the visionary behind the
-                            country’s IT startup culture. Hence, we know the
-                            heartbeat of startups and we are dedicated to serve
-                            your start up or SME business set up.
+                            Our genes are mostly liked with startups since our top management believe in startups,
+                            support the startup culture and has been the pioneers in creating the flourishing startup
+                            culture in the country. Our mother company Orion City is the first and the largest IT park
+                            in the country while Hatch works Sri Lanka’s premier coworking, Incubator and accelerator
+                            center , hosting a large number of starts ups, is our sister company. Our chairman, Mr.
+                            Jeevan Gnanam has been the visionary behind the country’s IT startup culture. Hence, we know
+                            the heartbeat of startups and we are dedicated to serve your start up or SME business set
+                            up.
                             <br />
                             <br />
-                            We have introduced customized service packages that
-                            Include everything you need to kick-off your
-                            business. You can choose the package depending on
-                            your requirement and we will help in further
-                            customizing your service if required as well.
+                            We have introduced customized service packages that Include everything you need to kick-off
+                            your business. You can choose the package depending on your requirement and we will help in
+                            further customizing your service if required as well.
                         </div>
                     </div>
 
@@ -566,6 +547,34 @@ export default function Index() {
             </div>
           </div> */}
                 </div>
+
+                <div className="mobile">
+                    <img className="full-img" src="/images/service/mb-startup.png" alt="team" />
+                    <div className="startup title">Start-Ups</div>
+                    <div className="empty-back">
+                        <p>
+                            If you are a startup, or with a SME set up, we believe that OrionStellar can be your trusted
+                            technology partner since we understand the start-up business format and the business
+                            requirements.
+                        </p>
+                        <p>
+                            Our genes are mostly liked with startups since our top management believe in startups,
+                            support the startup culture and has been the pioneers in creating the flourishing startup
+                            culture in the country. Our mother company Orion City is the first and the largest IT park
+                            in the country while Hatch works Sri Lanka’s premier coworking, Incubator and accelerator
+                            center , hosting a large number of starts ups, is our sister company. Our chairman, Mr.
+                            Jeevan Gnanam has been the visionary behind the country’s IT startup culture. Hence, we know
+                            the heartbeat of startups and we are dedicated to serve your start up or SME business set
+                            up.
+                        </p>
+                        <p>
+                            We have introduced customized service packages that Include everything you need to kick-off
+                            your business. You can choose the package depending on your requirement and we will help in
+                            further customizing your service if required as well.
+                        </p>
+                    </div>
+                </div>
+
                 <Footer />
             </div>
             <style jsx>{`
@@ -576,11 +585,7 @@ export default function Index() {
                     transform: scale(1.05);
                 }
                 .back-wall {
-                    background: linear-gradient(
-                        100deg,
-                        #0f1d31 30.98%,
-                        rgba(3, 96, 102, 0.81) 163.03%
-                    );
+                    background: linear-gradient(100deg, #0f1d31 30.98%, rgba(3, 96, 102, 0.81) 163.03%);
                 }
                 .container {
                     width: 100%;
@@ -664,7 +669,7 @@ export default function Index() {
                     line-height: 32px;
                     color: #ffffff;
                 }
-                .full-grid{
+                .full-grid {
                     width: 100%;
                 }
                 .challenges .box-row {
@@ -1124,6 +1129,144 @@ export default function Index() {
                     font-size: 28px;
                 }
 
+                .mt-0 {
+                    margin-top: 0 !important;
+                }
+                .mb-0 {
+                    margin-bottom: 0 !important;
+                }
+                .text-center {
+                    text-align: center !important;
+                }
+                .mobile {
+                    display: none;
+                }
+                .mobile p {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h2 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #ffffff;
+                }
+                .mobile h3 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h4 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h3 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 29px;
+                    color: #ffffff;
+                }
+                .mobile ul li {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile .black-back {
+                    background-color: #000000;
+                    padding: 36px 16px;
+                }
+                .mobile .gray-back {
+                    background: linear-gradient(
+                        131.77deg,
+                        rgba(255, 255, 255, 0.4234) 10.66%,
+                        rgba(255, 255, 255, 0.1508) 95.86%
+                    );
+                    backdrop-filter: blur(30px);
+                    padding: 36px 16px;
+                }
+                .mobile .empty-back {
+                    padding: 36px 16px;
+                }
+                .mobile .black-card {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #ffffff;
+
+                    padding: 36px 16px;
+                    margin: 8px 0;
+                    background: #000000;
+                    backdrop-filter: blur(30px);
+                }
+                .mobile .sub-title {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                    padding-left: 16px;
+                }
+                .mobile .title {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 56px;
+                    line-height: 74px;
+                    color: #ffffff;
+                    padding-left: 16px;
+                }
+                .mobile .startup.title {
+                    text-align: center;
+                    margin-top: -50px;
+                }
+                .mobile .full-img {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    .mobile {
+                        display: block;
+                    }
+                    .mobile.up {
+                        margin-top: -220px;
+                    }
+                    .container.cover {
+                        height: 70vh;
+                        background-repeat: round;
+                        background-image: url("/images/service/mb-cover.png");
+                    }
+                    .container .pre-subtitle {
+                        display: none;
+                    }
+                    .container .heading {
+                        display: none;
+                    }
+                    .container.service {
+                        display: none;
+                    }
+                }
                 @media (max-width: 1500px) {
                     .cover {
                         background-repeat: no-repeat;

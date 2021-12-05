@@ -365,7 +365,9 @@ export default function Index() {
                     <img id="team" className="team-image" src="/images/team.jpg" alt="team" />
                     <div className="black-back">
                         <p>
-                        Our highly trained support team are based locally at our Data Centre for faster response times and are available 24/7.  Our team ensures that we provide the best possible support for all our customers.
+                            Our highly trained support team are based locally at our Data Centre for faster response
+                            times and are available 24/7. Our team ensures that we provide the best possible support for
+                            all our customers.
                         </p>
                     </div>
                     <div className="empty-back">
@@ -904,14 +906,22 @@ export default function Index() {
                 }
                 .main-title.learn {
                 }
-                .mt-0{
-                    margin-top:0 !important;
+                .mt-0 {
+                    margin-top: 0 !important;
                 }
-                .mb-0{
-                    margin-bottom:0 !important;
+                .mb-0 {
+                    margin-bottom: 0 !important;
                 }
                 .mobile {
                     display: none;
+                }
+                .mobile p {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
                 }
                 .mobile h2 {
                     font-family: "SegoeUI";
@@ -942,7 +952,7 @@ export default function Index() {
                     font-style: normal;
                     font-weight: 600;
                     font-size: 22px;
-                    line-height: 29px
+                    line-height: 29px;
                     color: #ffffff;
                 }
                 .mobile ul li {
@@ -1004,10 +1014,10 @@ export default function Index() {
                     .mobile {
                         display: block;
                     }
-                    .cop-image{
-                        padding:0 !important;
+                    .cop-image {
+                        padding: 0 !important;
                     }
-                    .leader-section{
+                    .leader-section {
                         padding: 16px !important;
                     }
                 }
