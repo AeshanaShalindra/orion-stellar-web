@@ -822,8 +822,9 @@ export default function Index() {
                         margin-bottom: 32px !important;
                     }                   
 
-                    ul .info-des {
+                    ul.info-des {
                         padding-left: 16px !important;
+                        color: #000000 !important;
                     }
                 }
 

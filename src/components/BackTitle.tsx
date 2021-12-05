@@ -77,8 +77,8 @@ export default function BackTitle({
                     }
                     .back-title {
                         text-align: center;
-                        font-size: 10vw;
-                        line-height: 160px;
+                        font-size: 16vw;
+                        line-height: 68px;
                     }
                     .sub-title {
                         font-size: 13px !important;

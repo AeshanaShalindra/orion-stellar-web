@@ -24,9 +24,7 @@ export default function InfoCard({ title, image, titleEl, description }: Props) 
                 .button {
                     max-width: 450px;
                     width: 100%;
-                    max-height: 650px;
-                    min-height: 330px;
-                    height: fit-content;
+                    height: 650px;
                     transition: transform 0.2s;
                     cursor: pointer;
                     border: none;
@@ -81,6 +79,9 @@ export default function InfoCard({ title, image, titleEl, description }: Props) 
                     }
                     .content {
                         display: none !important;
+                    }
+                    .button {
+                        height: 350px !important;
                     }
                 }
                 @media (max-width: 1500px) {

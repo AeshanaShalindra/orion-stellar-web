@@ -23,12 +23,10 @@ export default function Index() {
                     <div id="company" className="company-back">
                         <h2 className="main-title company">Our Company</h2>
                         <p>
-                            Orionstellar is a newly established digital
-                            infrastructure services brand from digital realty
-                            pvt limited, jointly held by Dialog Broadband
-                            Network (Pvt) Limited, a fully owned subsidiary of
-                            Dialog Axiata Plc and St. Anthony’s Property
-                            Developers (Private) Limited (SAPD)
+                            Orionstellar is a newly established digital infrastructure services brand from digital
+                            realty pvt limited, jointly held by Dialog Broadband Network (Pvt) Limited, a fully owned
+                            subsidiary of Dialog Axiata Plc and St. Anthony’s Property Developers (Private) Limited
+                            (SAPD)
                         </p>
                     </div>
 
@@ -42,16 +40,13 @@ export default function Index() {
                                 A <b>new breed</b> technology company
                             </li>
                             <li>
-                                Emphasis on <b>stellar performance</b> and{" "}
-                                <b>global standards</b>
+                                Emphasis on <b>stellar performance</b> and <b>global standards</b>
                             </li>
                             <li>
-                                <b>Lean and mean</b> organization structure with
-                                a start up thinking
+                                <b>Lean and mean</b> organization structure with a start up thinking
                             </li>
                             <li>
-                                <b>A focus in B2B markets</b> in Sri Lanka and
-                                the region.
+                                <b>A focus in B2B markets</b> in Sri Lanka and the region.
                             </li>
                         </ul>
                     </div>
@@ -59,10 +54,7 @@ export default function Index() {
                     <div id="brand" className="brand-back">
                         <div className="tour-button">
                             <a href="/#tour">
-                                <CircleButton
-                                    title="Virtual Tour"
-                                    dark={true}
-                                />
+                                <CircleButton title="Virtual Tour" dark={true} />
                             </a>
                         </div>
                         <h2 className="main-title brand">
@@ -71,27 +63,20 @@ export default function Index() {
                             Story
                         </h2>
                         <p>
-                            The origin of our brand name “OrionStellar” is
-                            linked to the main brand “Orion city” which is the
-                            country’s largest IT park. The second part of the
-                            name ‘Stellar” stands for the higher standards and
-                            star performance we are striving for.
+                            The origin of our brand name “OrionStellar” is linked to the main brand “Orion city” which
+                            is the country’s largest IT park. The second part of the name ‘Stellar” stands for the
+                            higher standards and star performance we are striving for.
                             <br />
                             <br />
-                            Our brand story is all about the high performance,
-                            high standards together with the new opportunities
-                            we would spark for those who are around us. We would
-                            ideally help our client companies to raise their
-                            bars to reach the heights.
+                            Our brand story is all about the high performance, high standards together with the new
+                            opportunities we would spark for those who are around us. We would ideally help our client
+                            companies to raise their bars to reach the heights.
                         </p>
                         <div id="mtp" className="attributes">
                             <h2 className="main-title mtp">Our MTP</h2>
-                            <h3 className="sub-title mtp">
-                                (Massive Transformative Purpose)
-                            </h3>
+                            <h3 className="sub-title mtp">(Massive Transformative Purpose)</h3>
                             <h4 className="quote mtp">
-                                “Simplify enterprise digital infrastructure
-                                challenges to
+                                “Simplify enterprise digital infrastructure challenges to
                                 <br />
                                 accelerate digitalization & growth.”
                             </h4>
@@ -99,8 +84,71 @@ export default function Index() {
                     </div>
                 </div>
 
+                <div className="mobile">
+                    <div className="black-back">
+                        <h2>Our Company</h2>
+                        <p>
+                            Orionstellar is a newly established digital infrastructure services brand from digital
+                            realty pvt limited, jointly held by Dialog Broadband Network (Pvt) Limited, a fully owned
+                            subsidiary of Dialog Axiata Plc and St. Anthony’s Property Developers (Private) Limited
+                            (SAPD)
+                        </p>
+                    </div>
+                    <div className="empty-back">
+                        <h2>Our Brand Attributes</h2>
+                        <ul>
+                            <li>
+                                A <b>new breed</b> technology company
+                            </li>
+                            <li>
+                                Emphasis on <b>stellar performance</b> and <b>global standards</b>
+                            </li>
+                            <li>
+                                <b>Lean and mean</b> organization structure with a start up thinking
+                            </li>
+                            <li>
+                                <b>A focus in B2B markets</b> in Sri Lanka and the region.
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="gray-back">
+                        <h2>Our Brand Story</h2>
+                        <p>
+                            The origin of our brand name “OrionStellar” is linked to the main brand “Orion city” which
+                            is the country’s largest IT park. The second part of the name ‘Stellar” stands for the
+                            higher standards and star performance we are striving for.
+                        </p>
+                        <br />
+                        <p>
+                            Our brand story is all about the high performance, high standards together with the new
+                            opportunities we would spark for those who are around us. We would ideally help our client
+                            companies to raise their bars to reach the heights.
+                        </p>
+                    </div>
+                    <div className="empty-back">
+                        <h2 className="mb-0">Our MTP</h2>
+                        <h4 className="mt-0">(Massive Transformative Purpose)</h4>
+                        <h3>
+                            “Simplify enterprise <br /> digital infrastructure <br /> challenges to accelerate <br />{" "}
+                            digitalization & growth.”
+                        </h3>
+                    </div>
+                </div>
+
                 <div className="cop-image">
                     <img src="/images/cop-val.png" alt="cooperate" />
+                </div>
+
+                <div className="mobile">
+                    <div className="empty-back">
+                        <h2>Our Corporate Values</h2>
+                        <ul>
+                            <li>Technology inclusion and equal opportunities</li>
+                            <li>Power of data in decision making</li>
+                            <li>Continuous improvement to meet global standards</li>
+                            <li>Commitment to environmental sustainability</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div id="co-value" className="container service">
@@ -124,44 +172,26 @@ export default function Index() {
               <div className="grid-text">
                 FOCUS ON YOUR <br /> CORE BUSINESS <br /> AND INNOVATION
               </div> */}
-                            <img
-                                src="images/about/1.png"
-                                alt=""
-                                className="grid-image"
-                            />
+                            <img src="images/about/1.png" alt="" className="grid-image" />
                         </div>
                         <div className="grid-item2">
-                            <img
-                                src="images/colo5.png"
-                                alt=""
-                                className="grid-image"
-                            />
+                            <img src="images/colo5.png" alt="" className="grid-image" />
                         </div>
                         <div className="grid-item3">
                             <div className="grid-text">
-                                ACCELLERATE YOUR <br /> DIGITALISATION <br />{" "}
-                                ROADMAP
+                                ACCELLERATE YOUR <br /> DIGITALISATION <br /> ROADMAP
                             </div>
                         </div>
                         <div className="grid-item4">
                             <div className="grid-text">
-                                RATIONALISE <br /> YOUR IT <br /> INFRASTRUCTURE{" "}
-                                <br /> COST
+                                RATIONALISE <br /> YOUR IT <br /> INFRASTRUCTURE <br /> COST
                             </div>
                         </div>
                         <div className="grid-item5">
-                            <img
-                                src="images/colo6.png"
-                                alt=""
-                                className="grid-image"
-                            />
+                            <img src="images/colo6.png" alt="" className="grid-image" />
                         </div>
                         <div className="grid-item6">
-                            <img
-                                src="images/about/2.png"
-                                alt=""
-                                className="grid-image"
-                            />
+                            <img src="images/about/2.png" alt="" className="grid-image" />
                         </div>
                     </div>
 
@@ -230,12 +260,9 @@ export default function Index() {
            Best Power Efficiency"
           />
         </div> */}
-
-                    <BackTitle
-                        title="Leadership"
-                        subtitle="Thought Leaders"
-                        bottom={40}
-                    />
+                </div>
+                <div className="container">
+                    <BackTitle title="Leadership" subtitle="Thought Leaders" bottom={40} />
                     <div id="leaders" className="leader-section">
                         <ProfileCard
                             image="/images/team/Rajendra.png"
@@ -294,39 +321,28 @@ export default function Index() {
            He also holds Diploma in Management accounting from CIMA UK"
                         />
                     </div>
-
+                </div>
+                <div className="container service">
                     <BackTitle title="Team" />
-                    <img
-                        id="team"
-                        className="team-image"
-                        src="/images/team.jpg"
-                        alt="team"
-                    />
+                    <img id="team" className="team-image" src="/images/team.jpg" alt="team" />
 
                     <div className="top-image"></div>
                     <div className="top-text">
-                        Our highly trained support team are based locally at our
-                        Data Centre for faster response times and are available
-                        24/7. Our team ensures that we provide the best possible
-                        support for all our customers.
+                        Our highly trained support team are based locally at our Data Centre for faster response times
+                        and are available 24/7. Our team ensures that we provide the best possible support for all our
+                        customers.
                     </div>
 
                     <div className="team-details">
                         <div className="black-circle"></div>
-                        We foster a culture of{" "}
-                        <b>“Think big ,start small and move faster”</b>. We
-                        value the diversity in the workplace to bring out the
-                        best out of the talent. Our highly trained customer
-                        support teams and technical teams, fully equipped with
-                        the state of the art tools are focusing on best in class
-                        service delivery .Our delivery assurance would ensure
-                        seamless onboarding of customers to our data center.{" "}
-                        <br /> <br />
-                        Our sales and marketing team will focus on customer life
-                        cycle management adding value to our clients throughout
-                        the journey. Senior management team is always available
-                        for client consultations, feedback, and escalations to
-                        ensure we deliver what we promise as OrionStellar.
+                        We foster a culture of <b>“Think big ,start small and move faster”</b>. We value the diversity
+                        in the workplace to bring out the best out of the talent. Our highly trained customer support
+                        teams and technical teams, fully equipped with the state of the art tools are focusing on best
+                        in class service delivery .Our delivery assurance would ensure seamless onboarding of customers
+                        to our data center. <br /> <br />
+                        Our sales and marketing team will focus on customer life cycle management adding value to our
+                        clients throughout the journey. Senior management team is always available for client
+                        consultations, feedback, and escalations to ensure we deliver what we promise as OrionStellar.
                     </div>
 
                     {/* <div className="learn-back">
@@ -343,15 +359,38 @@ export default function Index() {
             <img className="coo" src="/images/team/Nalaka.png" alt="nalaka" />
           </div> */}
                 </div>
+
+                <div className="mobile">
+                    <BackTitle title="Team" />
+                    <img id="team" className="team-image" src="/images/team.jpg" alt="team" />
+                    <div className="black-back">
+                        <p>
+                        Our highly trained support team are based locally at our Data Centre for faster response times and are available 24/7.  Our team ensures that we provide the best possible support for all our customers.
+                        </p>
+                    </div>
+                    <div className="empty-back">
+                        <p>
+                            We foster a culture of “Think big, start small and move faster”. We value the diversity in
+                            the workplace to bring out the best out of the talent. Our highly trained customer support
+                            teams and technical teams, fully equipped with the state-of-the-art tools are focusing on
+                            best in class service delivery. Our delivery assurance would ensure seamless onboarding of
+                            customers to our data center.
+                        </p>
+                        <br />
+                        <p>
+                            Our sales and marketing team will focus on customer life cycle management adding value to
+                            our clients throughout the journey. Senior management team is always available for client
+                            consultations, feedback, and escalations to ensure we deliver what we promise as
+                            OrionStellar.
+                        </p>
+                    </div>
+                </div>
+
                 <Footer />
             </div>
             <style jsx>{`
                 .back-wall {
-                    background: linear-gradient(
-                        125.54deg,
-                        #0f1d31 30.98%,
-                        rgba(3, 91, 91, 0.77) 163.03%
-                    );
+                    background: linear-gradient(125.54deg, #0f1d31 30.98%, rgba(3, 91, 91, 0.77) 163.03%);
                 }
                 .container {
                     width: 100%;
@@ -865,8 +904,70 @@ export default function Index() {
                 }
                 .main-title.learn {
                 }
+                .mt-0{
+                    margin-top:0 !important;
+                }
+                .mb-0{
+                    margin-bottom:0 !important;
+                }
                 .mobile {
                     display: none;
+                }
+                .mobile h2 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #ffffff;
+                }
+                .mobile h3 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h4 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile h3 {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 29px
+                    color: #ffffff;
+                }
+                .mobile ul li {
+                    font-family: "SegoeUI";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #ffffff;
+                }
+                .mobile .black-back {
+                    background-color: #000000;
+                    padding: 36px 16px;
+                }
+                .mobile .gray-back {
+                    background: linear-gradient(
+                        131.77deg,
+                        rgba(141, 141, 141, 0.4234) 10.66%,
+                        rgba(255, 255, 255, 0.1508) 95.86%
+                    );
+                    backdrop-filter: blur(30px);
+                    padding: 36px 16px;
+                }
+                .mobile .empty-back {
+                    padding: 36px 16px;
                 }
 
                 @media all and (max-width: 500px) {
@@ -899,6 +1000,15 @@ export default function Index() {
                     }
                     .top-text {
                         display: none;
+                    }
+                    .mobile {
+                        display: block;
+                    }
+                    .cop-image{
+                        padding:0 !important;
+                    }
+                    .leader-section{
+                        padding: 16px !important;
                     }
                 }
 
