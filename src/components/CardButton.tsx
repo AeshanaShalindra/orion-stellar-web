@@ -12,6 +12,11 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                 <img src={image} alt={title} />
                 {contents && <div className="content">{contents}</div>}
             </button>
+            <button type="button" className="card">
+                <h5>{title}</h5>
+                <img src={image} alt={title} />
+                {contents && <div className="content">{contents}</div>}
+            </button>
             <style jsx>{`
                 .grow {
                     transition: all 0.2s ease-in-out;
@@ -21,7 +26,8 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                 }
                 .button {
                     max-height: 650px;
-                    height: -webkit-fill-available;
+                    min-height: 330px;
+                    height: fit-content;
                     transition: transform 0.2s;
                     cursor: pointer;
                     border: none;
@@ -29,10 +35,7 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                     margin-left: ${marginLeft || 0};
                 }
                 button:active,
-        /* button:hover {
-          transform: scale(0.95);
-        } */
-        img {
+                img {
                     width: 100%;
                     height: 100%;
                 }
@@ -69,11 +72,17 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                     justify-content: center;
                     align-items: center;
                 }
-                button:hover .content {
+                button:hover.button .content {
                     display: flex;
                     animation: fadeIn 0.5s;
                     opacity: 1;
                 }
+                .card {
+                    display: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
                 @keyframes fadeIn {
                     from {
                         opacity: 0;
@@ -88,13 +97,18 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                 @media screen and (max-width: 768px) {
                 }
                 @media screen and (max-width: 1024px) {
+                    .button {
+                        display: none;
+                    }
+                    .card {
+                        display: block;
+                    }
                     h5 {
                         font-size: 16px !important;
                         line-height: 105.51% !important;
                         margin-bottom: 8px;
                         margin-top: 23px !important;
                     }
-                   
                 }
                 @media screen and (max-width: 1500px) {
                     .content {

@@ -742,7 +742,7 @@ export default function Index() {
                     .service .content {
                         grid-column: span 4 !important;
                         text-align: center;
-                        margin: -98px 10vw 10vw !important;
+                        margin: -65px 10vw 10vw !important;
                     }
                     .service-card-section {
                         display: grid;
