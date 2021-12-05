@@ -26,8 +26,6 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                 }
                 .button {
                     max-height: 650px;
-                    min-height: 330px;
-                    height: fit-content;
                     transition: transform 0.2s;
                     cursor: pointer;
                     border: none;
@@ -81,6 +79,9 @@ export default function CardButton({ title, contents, image, marginLeft }: Props
                     display: none;
                     padding: 0;
                     margin: 0;
+                    box-shadow: none;
+                    background-color: unset;
+                    border: unset;
                 }
 
                 @keyframes fadeIn {

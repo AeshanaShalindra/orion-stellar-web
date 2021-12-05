@@ -25,7 +25,8 @@ export default function InfoCard({ title, image, titleEl, description }: Props) 
                     max-width: 450px;
                     width: 100%;
                     max-height: 650px;
-                    height: -webkit-fill-available;
+                    min-height: 330px;
+                    height: fit-content;
                     transition: transform 0.2s;
                     cursor: pointer;
                     border: none;
