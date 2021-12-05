@@ -522,8 +522,8 @@ export default function Index() {
                     font-family: "SegoeUI";
                     font-style: normal;
                     font-weight: normal;
-font-size: 26px;
-line-height: 115.51%;
+                    font-size: 26px;
+                    line-height: 115.51%;
                     color: #ffffff;
                 }
                 .mobile .black-back {
@@ -544,28 +544,29 @@ line-height: 115.51%;
                 }
                 .mobile input {
                     width: 95%;
-    height: 42px;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 8px;
+                    height: 42px;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                    margin-bottom: 8px;
                 }
                 .mobile textarea {
                     width: 95%;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 8px;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                    margin-bottom: 8px;
                 }
                 .mobile .submit-btn {
                     margin-top: 5px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 86px;
-    background: -webkit-linear-gradient(#055476,#72c4de);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    text-align: center;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 86px;
+                    background: -webkit-linear-gradient(#055476, #72c4de);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    cursor: pointer;
+                    text-align: center;
+                    color: #ccc;
                 }
                 @media screen and (max-width: 1024px) {
                     .mobile {
