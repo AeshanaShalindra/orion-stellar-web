@@ -8,16 +8,9 @@ export default function Footer() {
                         <div className="form">
                             <h2>Accelerating Enterprise Digitalization</h2>
                             <p>
-                                Get Exclusive{" "}
-                                <span>Digitalization Technology</span> updates
-                                straight to your inbox
+                                Get Exclusive <span>Digitalization Technology</span> updates straight to your inbox
                             </p>
-                            <input
-                                type="text"
-                                name="email"
-                                id="email"
-                                placeholder="Email address"
-                            />
+                            <input type="text" name="email" id="email" placeholder="Email address" />
                         </div>
                         <div className="link-group">
                             <h5>About Us</h5>
@@ -25,14 +18,10 @@ export default function Footer() {
                                 <a href="/about-us#company">Our Company</a>
                                 <a href="/about-us#brand">Our Brand</a>
                                 <a href="/about-us#mtp">Our MTP</a>
-                                <a href="/about-us#co-value">
-                                    Our Corporate Value
-                                </a>
+                                <a href="/about-us#co-value">Our Corporate Value</a>
                                 {/* <a href="/about-us#stands">What do we stand for</a> */}
                                 {/* <a href="/about-us#key-deliverables">Our Key Deliverables</a> */}
-                                <a href="/about-us#leaders">
-                                    Our Leadership Team
-                                </a>
+                                <a href="/about-us#leaders">Our Leadership Team</a>
                                 <a href="/about-us#team">Our Team</a>
                                 {/* <a href="/about-us#more">Learn more about<br/>OrionSteallar</a> */}
                             </div>
@@ -65,30 +54,19 @@ export default function Footer() {
                         </div>
                         <div className="top-social-links">
                             <a href="https://www.linkedin.com/">
-                                <img
-                                    src="/images/social/LinkedIn/Negative.svg"
-                                    alt="LinkedIn"
-                                />
+                                <img src="/images/social/LinkedIn/Negative.svg" alt="LinkedIn" />
                             </a>
                         </div>
                     </div>
                     <hr />
                     <div className="end">
                         <div className="copyright">
-                            <h6>
-                                Copyright © 2021 OrionStealler. All rights
-                                reserved.
-                            </h6>
-                            <h6>
-                                Concept and Design By Pomegranate Design Labs.
-                            </h6>
+                            <h6>Copyright © 2021 OrionStealler. All rights reserved.</h6>
+                            <h6>Concept and Design By Pomegranate Design Labs.</h6>
                         </div>
                         <div className="social-links">
                             <a href="https://www.linkedin.com/">
-                                <img
-                                    src="/images/social/LinkedIn/Negative.svg"
-                                    alt="LinkedIn"
-                                />
+                                <img src="/images/social/LinkedIn/Negative.svg" alt="LinkedIn" />
                             </a>
                         </div>
                         <div className="tnc-links">
@@ -109,11 +87,7 @@ export default function Footer() {
                 .footer {
                     padding: 64px 64px 0 64px;
                     margin: 72px 72px 0 72px;
-                    background: linear-gradient(
-                        176.64deg,
-                        #ffffff00 -71.48%,
-                        rgba(255, 255, 255, 0.1) 51.74%
-                    );
+                    background: linear-gradient(176.64deg, #ffffff00 -71.48%, rgba(255, 255, 255, 0.1) 51.74%);
                     mix-blend-mode: normal;
                     opacity: 1;
                     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -127,11 +101,7 @@ export default function Footer() {
                     margin: 72px;
                     position: absolute;
 
-                    background: linear-gradient(
-                        176.64deg,
-                        #ffffff -71.48%,
-                        rgba(255, 255, 255, 0.1) 51.74%
-                    );
+                    background: linear-gradient(176.64deg, #ffffff -71.48%, rgba(255, 255, 255, 0.1) 51.74%);
                     mix-blend-mode: normal;
                     opacity: 0.15;
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -262,8 +232,8 @@ export default function Footer() {
                 }
                 @media screen and (max-width: 1024px) {
                     .footer {
-                        padding: 64px 24px 0;
-                        margin: 53px 24px 0;
+                        padding: 32px 24px 0 !important;
+                        margin: 53px 24px 0 !important;
                     }
                     .footer .link-group {
                         grid-column: span 6;
@@ -284,6 +254,32 @@ export default function Footer() {
                     .footer .end h6 {
                         font-weight: 400;
                         font-size: 12px;
+                    }
+                    .footer .form h2 {
+                        font-weight: 600 !important;
+                        font-size: 23px !important;
+                        line-height: 35px !important;
+                    }
+                    .footer .form p {
+                        font-size: 14px !important;
+                    }
+                    .footer .form span {
+                        font-size: 14px !important;
+                    }
+                    .footer .link-group h5 {
+                        font-size: 20px !important;
+                        line-height: 0px !important;
+                    }
+                    .footer .link-group .link-list a {
+                        font-weight: 400 !important;
+                        font-size: 14px !important;
+                        line-height: 25px !important;
+                    }
+                    .footer .form input {
+                        height: 39px;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                        font-size: 14px;
                     }
                 }
                 @media screen and (max-width: 1500px) {

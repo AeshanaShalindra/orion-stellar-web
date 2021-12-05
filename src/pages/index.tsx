@@ -29,27 +29,19 @@ export default function Index() {
                             <div className="title-container">
                                 <h1>Sri Lanka’s First</h1>
                                 <h1>
-                                    <strong>High Density</strong> &{" "}
-                                    <strong>Carrier Neutral</strong>
+                                    <strong>High Density</strong> & <strong>Carrier Neutral</strong>
                                     <br /> Data Center
                                 </h1>
                                 <h5>Nimble | Connected | Sustainable</h5>
                             </div>
                             <a className="tour-btn" href="#tour">
-                                <CircleButton
-                                    title="Virtual Tour"
-                                    dark={true}
-                                />
+                                <CircleButton title="Virtual Tour" dark={true} />
                             </a>
                         </div>
                     </Parallax>
                 </div>
                 <a className="tour-btn-small" href="#tour">
-                    <CircleButton
-                        title="Virtual Tour"
-                        dark={true}
-                        size="104px"
-                    />
+                    <CircleButton title="Virtual Tour" dark={true} size="104px" />
                 </a>
 
                 {/* <Parallax className="middle-banner" y={[-20, 20]}>
@@ -99,25 +91,16 @@ export default function Index() {
                     <div className="service">
                         <img src="/images/home/2.jpg" alt="services" />
                         <div className="content">
-                            <img
-                                className="mini-logo"
-                                src="/images/logo-color.png"
-                                alt="orion sella logo"
-                            />
+                            <img className="mini-logo" src="/images/logo-color.png" alt="orion sella logo" />
                             <h1>Services</h1>
                             <p>
-                                In the era of 4th industrial revolution and
-                                digital economy, the Digital infrastructure is
-                                in the middle of business strategy and CIOs are
-                                challenged continuously to scale up the IT
-                                systems to meet the exponential demands in terms
-                                of volume, computational power and information
-                                security challenges. OrionStellar offers a range
-                                of digital infrastructure services and managed
-                                value-added services to unburden these
-                                challenges such that businesses could focus on
-                                their core business and innovation in their
-                                forward march to become a digital enterprise.
+                                In the era of 4th industrial revolution and digital economy, the Digital infrastructure
+                                is in the middle of business strategy and CIOs are challenged continuously to scale up
+                                the IT systems to meet the exponential demands in terms of volume, computational power
+                                and information security challenges. OrionStellar offers a range of digital
+                                infrastructure services and managed value-added services to unburden these challenges
+                                such that businesses could focus on their core business and innovation in their forward
+                                march to become a digital enterprise.
                             </p>
                         </div>
                     </div>
@@ -130,10 +113,8 @@ export default function Index() {
                                 image="/images/enterprise.png"
                             />
                             <p>
-                                Digital infra is a part of the core strategy to
-                                accelerate the digitalization. Let OrionStellar
-                                be the partner in the journey to accelerate your
-                                roadmaps.
+                                Digital infra is a part of the core strategy to accelerate the digitalization. Let
+                                OrionStellar be the partner in the journey to accelerate your roadmaps.
                             </p>
                         </a>
                         <a className="card" href="/services#start-up">
@@ -144,13 +125,10 @@ export default function Index() {
                                 image="/images/startup.png"
                             />
                             <p>
-                                In their quest to be the next unicorn the time
-                                to market, startups focuses to be quick to
-                                market, be cost effective and be a lean and mean
-                                organization without large IT teams.
-                                OrionStellar solutions are tailormade for them
-                                with an array of value added services bundled
-                                together as a one stop shop.
+                                In their quest to be the next unicorn the time to market, startups focuses to be quick
+                                to market, be cost effective and be a lean and mean organization without large IT teams.
+                                OrionStellar solutions are tailormade for them with an array of value added services
+                                bundled together as a one stop shop.
                             </p>
                         </a>
                         <a className="btn" href="/services">
@@ -163,38 +141,22 @@ export default function Index() {
                             <h2>Sustainable</h2>
                             <ul>
                                 <li>
-                                    IT consumes 3% of the power off the grid
-                                    globally and the power demand keep
-                                    increasing hence the need for power
-                                    efficient datacenters has become a necessity
-                                    in terms of environmental protection.{" "}
+                                    IT consumes 3% of the power off the grid globally and the power demand keep
+                                    increasing hence the need for power efficient datacenters has become a necessity in
+                                    terms of environmental protection.{" "}
                                 </li>
                                 <li>
-                                    OrionStellar data center has the most
-                                    optimum Power Usage Efficiency (PUE) in the
+                                    OrionStellar data center has the most optimum Power Usage Efficiency (PUE) in the
                                     country.
                                 </li>
-                                <li>
-                                    Lighting control system that could give 50%
-                                    of energy saving
-                                </li>
-                                <li>
-                                    LEED silver certified green building housing
-                                    the datacenter
-                                </li>
+                                <li>Lighting control system that could give 50% of energy saving</li>
+                                <li>LEED silver certified green building housing the datacenter</li>
                             </ul>
-                            <img
-                                className="badge"
-                                src="/images/cert-leed.png"
-                                alt="leed certification"
-                            />
+                            <img className="badge" src="/images/cert-leed.png" alt="leed certification" />
                         </div>
                         <div className="white-line"></div>
                         <div className="img-content">
-                            <img
-                                src="/images/environment.png"
-                                alt="environment"
-                            />
+                            <img src="/images/environment.png" alt="environment" />
                         </div>
                     </div>
                     <div className="mobile env">
@@ -203,34 +165,22 @@ export default function Index() {
                             <h2>Sustainable</h2>
                         </div>
                         <div className="full-grid">
-                            <img
-                                src="/images/environment.png"
-                                alt="environment"
-                            />
+                            <img src="/images/environment.png" alt="environment" />
                             {/* <img src="/images/home/m-ev.png" alt="" /> */}
                         </div>
                         <div className="txt-content">
                             <ul>
                                 <li>
-                                    IT consumes 3% of the power off the grid
-                                    globally and the power demand keep
-                                    increasing hence the need for power
-                                    efficient datacenters has become a necessity
-                                    in terms of environmental protection.{" "}
+                                    IT consumes 3% of the power off the grid globally and the power demand keep
+                                    increasing hence the need for power efficient datacenters has become a necessity in
+                                    terms of environmental protection.{" "}
                                 </li>
                                 <li>
-                                    OrionStellar data center has the most
-                                    optimum Power Usage Efficiency (PUE) in the
+                                    OrionStellar data center has the most optimum Power Usage Efficiency (PUE) in the
                                     country.
                                 </li>
-                                <li>
-                                    Lighting control system that could give 50%
-                                    of energy saving
-                                </li>
-                                <li>
-                                    LEED silver certified green building housing
-                                    the datacenter
-                                </li>
+                                <li>Lighting control system that could give 50% of energy saving</li>
+                                <li>LEED silver certified green building housing the datacenter</li>
                             </ul>
                         </div>
                     </div>
@@ -242,8 +192,7 @@ export default function Index() {
                                 image="/images/home/4.jpg"
                                 titleEl={
                                     <span>
-                                        Sri Lanka’s 1<sup>st</sup> High Density
-                                        Data Center
+                                        Sri Lanka’s 1<sup>st</sup> High Density Data Center
                                     </span>
                                 }
                                 description={
@@ -258,17 +207,13 @@ export default function Index() {
                                 image="/images/home/5.jpg"
                                 titleEl={
                                     <span>
-                                        Sri Lanka’s 1<sup>st</sup> Carrier
-                                        Neutral Data Center
+                                        Sri Lanka’s 1<sup>st</sup> Carrier Neutral Data Center
                                     </span>
                                 }
                                 description={
                                     <ul className="info-des">
                                         <li>2 Meet-me Rooms</li>
-                                        <li>
-                                            Both SLT, Dialog available with
-                                            fiber rings
-                                        </li>
+                                        <li>Both SLT, Dialog available with fiber rings</li>
                                         <li>SD-WAN Enabled</li>
                                     </ul>
                                 }
@@ -278,9 +223,7 @@ export default function Index() {
                                 title="Superior Rack Space per Footprint"
                                 description={
                                     <ul className="info-des">
-                                        <li>
-                                            50U Vs 42U in other data centers
-                                        </li>
+                                        <li>50U Vs 42U in other data centers</li>
                                         <li>Space optimization</li>
                                     </ul>
                                 }
@@ -290,9 +233,7 @@ export default function Index() {
                                 title="Energy Metering at Granular Levels"
                                 description={
                                     <ul className="info-des">
-                                        <li>
-                                            Able to meter power usage at U level
-                                        </li>
+                                        <li>Able to meter power usage at U level</li>
                                         <li>
                                             <b>"Pay as you go"</b> model
                                         </li>
@@ -316,11 +257,8 @@ export default function Index() {
                                 image="/images/home/9.jpg"
                                 title="SME, Start Up Co-Location Packages with an array of Value-Added services"
                                 description={
-                                    <ul>
-                                        <li>
-                                            With SDWAN capability to have high
-                                            speed access
-                                        </li>
+                                    <ul className="info-des">
+                                        <li>With SDWAN capability to have high speed access</li>
                                     </ul>
                                 }
                             />
@@ -328,10 +266,7 @@ export default function Index() {
                     </div>
 
                     <div id="tour" className="data-center-tour-section">
-                        <BackTitle
-                            title="Data Center Tour"
-                            subtitle="our data center tour"
-                        />
+                        <BackTitle title="Data Center Tour" subtitle="our data center tour" />
                         <div className="content-wrap">
                             <ReactPlayer
                                 url="/videos/intro.mp4"
@@ -345,32 +280,21 @@ export default function Index() {
                         </div>
                         <div className="message">
                             <div className="iso-message">
-                                We welcome you to experience our
-                                State-of-the-Art data center located at Orion
-                                city, the largest IT park in the county .
+                                We welcome you to experience our State-of-the-Art data center located at Orion city, the
+                                largest IT park in the county .
                                 <br />
                                 <br />
-                                You will learn about the best-in-class
-                                technologies used in the DC built and operation
-                                and management using Schneider Eco structure
-                                DCIM platform. We can demonstrate how
-                                multilayered physical security systems are in
-                                operation to ensure the physical security as per
-                                ISO 2700:2013 framework.
+                                You will learn about the best-in-class technologies used in the DC built and operation
+                                and management using Schneider Eco structure DCIM platform. We can demonstrate how
+                                multilayered physical security systems are in operation to ensure the physical security
+                                as per ISO 2700:2013 framework.
                             </div>
-                            <img
-                                className="cer-image"
-                                src="/images/cert-iso.png"
-                                alt="iso certification"
-                            />
+                            <img className="cer-image" src="/images/cert-iso.png" alt="iso certification" />
                         </div>
                     </div>
 
                     <div className="book-tour-section">
-                        <BackTitle
-                            title="Data Center Tour"
-                            subtitle="Book A Tour"
-                        />
+                        <BackTitle title="Data Center Tour" subtitle="Book A Tour" />
                         <div className="calendar">
                             <BookingView />
                         </div>
@@ -401,11 +325,7 @@ export default function Index() {
             </div>
             <style jsx>{`
                 .back-wall {
-                    background: linear-gradient(
-                        125.54deg,
-                        #0f1d31 30.98%,
-                        rgba(62, 9, 114, 0.86) 163.03%
-                    );
+                    background: linear-gradient(125.54deg, #0f1d31 30.98%, rgba(62, 9, 114, 0.86) 163.03%);
                 }
                 .container {
                     width: 100%;
@@ -757,6 +677,14 @@ export default function Index() {
                     width: 100%;
                     margin-top: 100px;
                 }
+                .mobile.env .title-content h1 {
+                    font-size: 42px !important;
+                    line-height: 57px !important;
+                }
+                .mobile.env .title-content h2 {
+                    font-size: 42px !important;
+                    line-height: 26px !important;
+                }
                 .env ul li {
                     font-family: "SegoeUI";
                     font-style: normal;
@@ -779,7 +707,7 @@ export default function Index() {
                         display: none;
                     }
                     .cover {
-                        height: 90vh;
+                        height: 70vh;
                         max-height: 800px;
                     }
                     .cover .main-row.first .tour-btn {
@@ -867,6 +795,35 @@ export default function Index() {
                     .env ul li {
                         font-size: 24px;
                         line-height: 32px;
+                    }
+
+                    .service .content .mini-logo {
+                        display: none;
+                    }
+                    .service h1 {
+                        font-size: 71px !important;
+                        line-height: 85px;
+                    }
+
+                    .env ul li {
+                        font-size: 16px !important;
+                        line-height: 24px !important;
+                    }
+
+                    .card-section {
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 8px !important;
+                        margin: 8px;
+                    }
+
+                    .data-center-tour-section .iso-message {
+                        font-size: 13px !important;
+                        line-height: 18px !important;
+                        margin-bottom: 32px !important;
+                    }                   
+
+                    ul .info-des {
+                        padding-left: 16px !important;
                     }
                 }
 

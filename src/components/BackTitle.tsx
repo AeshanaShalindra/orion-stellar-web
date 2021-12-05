@@ -81,7 +81,7 @@ export default function BackTitle({
                         line-height: 160px;
                     }
                     .sub-title {
-                        font-size: 18px;
+                        font-size: 13px !important;
                         line-height: 94.01%;
                         text-align: center;
                         margin-top: 58px;
