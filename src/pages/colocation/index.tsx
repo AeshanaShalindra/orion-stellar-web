@@ -48,14 +48,14 @@ export default function Index() {
                         </div>
                         <div className="grid-item3">
                             <div className="grid-text">
-                                Dedicated cages with biometric access control
-                                for large enterprises specially for BFIS
+                                Dedicated Cages With Biometric Access Control
+                                For Large Enterprises Specially For BFIS
                             </div>
                         </div>
                         <div className="grid-item4">
                             <div className="grid-text">
-                                Individual racks with biometric or lockable
-                                doors
+                                Individual Racks With Biometric or Lockable
+                                Doors
                             </div>
                         </div>
                         <div className="grid-item5">
@@ -131,7 +131,7 @@ export default function Index() {
                 .quote .text {
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 24px;
+                    font-size: 26px;
                     line-height: 32px;
                     text-align: center;
                     color: white;
@@ -697,10 +697,8 @@ export default function Index() {
                 .service-grid-container .grid-text {
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 24px;
+                    font-size: 29px;
                     line-height: 127.69%;
-                    letter-spacing: 0.29em;
-                    text-transform: uppercase;
                     color: #ffffff;
                 }
                 .service-grid-container .grid-image {

@@ -24,8 +24,7 @@ export default function Index() {
                     <NavBar />
                 </div>
                 <div className="header">
-                    <h3>Managed</h3>
-                    <h1>valued added Services</h1>
+                    <h1>Managed value added Services</h1>
                     <h2>for Enterprises</h2>
                 </div>
                 <div className="half-grid">
@@ -78,7 +77,7 @@ export default function Index() {
                         <img src="/images/mvas/1.png" alt="" />
                         <div className="btn">
                             <CircleButton
-                                title="Back Up"
+                                title="Back Up A"
                                 dark={true}
                                 size="148px"
                             />

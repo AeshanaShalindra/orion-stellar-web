@@ -32,10 +32,8 @@ export default function Footer() {
                                 <a href="/services">Enterprise</a>
                                 <a href="/services#start-up">Start Ups</a>
                                 {/* <a href="/services#">More Services</a> */}
-                                <a href="/services">
-                                    OrionStellar Data
-                                    <br />
-                                    Center Key Highlights
+                                <a href="/services#Deliverables">
+                                    Deliverables
                                 </a>
                             </div>
                         </div>
@@ -85,7 +83,7 @@ export default function Footer() {
                     width: 100%;
                 }
                 .footer {
-                    padding: 64px 64px 0 64px;
+                    padding: 4px 64px 0 64px;
                     margin: 72px 72px 0 72px;
                     background: linear-gradient(176.64deg, #ffffff00 -71.48%, rgba(255, 255, 255, 0.1) 51.74%);
                     mix-blend-mode: normal;

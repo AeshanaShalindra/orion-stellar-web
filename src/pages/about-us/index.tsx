@@ -823,7 +823,6 @@ export default function Index() {
                     background: #000000;
                 }
                 .top-image {
-                    background: #070707;
                     filter: blur(100px);
                     width: 571px;
                     position: relative;
@@ -833,13 +832,15 @@ export default function Index() {
                 .top-text {
                     width: 571px;
                     position: relative;
-                    top: -20vh;
+                    bottom: 15vh;
                     right: -32vw;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 24px;
                     line-height: 32px;
                     color: #ffffff;
+                    background-color: #000;
+                    padding: 30px;
                 }
                 .learn-back {
                     width: 100%;

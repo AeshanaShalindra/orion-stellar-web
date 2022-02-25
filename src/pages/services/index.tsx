@@ -207,7 +207,7 @@ export default function Index() {
                         </div>
                         <div className="row">
                             <div className="row-3 description">
-                                <img src="images/logo-white.svg" alt="" className="title-logo" />
+                                <img /*src="images/logo-white.svg" alt="" className="title-logo" */ />
                                 <h2>Managed</h2>
                                 <h1>Services</h1>
                             </div>
@@ -269,7 +269,7 @@ export default function Index() {
           </div>
         </div> */}
                 </div>
-                <div className="container">
+                <div id="Deliverables" className="container">
                     <div className="deliverables">
                         <BackTitle title="Deliverables" size="28" />
                         <div className="card-section">
@@ -617,7 +617,7 @@ export default function Index() {
                     width: 1616px;
                     height: 122px;
                     left: 131px;
-                    top: 585px;
+                    top: 530px;
                     font-family: Segoe UI;
                     font-style: normal;
                     font-weight: bold;
@@ -630,12 +630,11 @@ export default function Index() {
                     width: 1616px;
                     height: 345px;
                     left: 110px;
-                    top: 333px;
-
+                    top: 290px;
                     font-family: "SegoeUI";
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 340px;
+                    font-size: 300px;
                     line-height: 452px;
 
                     color: #ffffff;
@@ -650,8 +649,8 @@ export default function Index() {
                     font-family: "SegoeUI";
                     font-style: normal;
                     font-weight: 350;
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 22px;
+                    line-height: 28px;
                     margin-top: 64px;
                     margin-left: 200px;
                     color: #ffffff;
@@ -1023,6 +1022,7 @@ export default function Index() {
                 .grid-4 .startup-message {
                     width: 1049px;
                     margin-left: 280px;
+                    margin-bottom: 300px;
                     font-style: normal;
                     font-weight: 350;
                     font-size: 18px;
