@@ -77,7 +77,7 @@ export default function Index() {
                         <img src="/images/mvas/1.png" alt="" />
                         <div className="btn">
                             <CircleButton
-                                title="Back Up A"
+                                title="Back Up"
                                 dark={true}
                                 size="148px"
                             />
